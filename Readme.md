@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Rustam Arkharov](https://up.htmlacademy.ru/adaptive/16/user/794021).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Вечканов](https://github.com/Hydrock).
 
 ---
 
