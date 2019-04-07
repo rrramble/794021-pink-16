@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">Приложение Пинк</h1>
+
+  <header class="page-header">
+    <a class="page-header__logo"
+      href="index.html"
+    >
+      <img class="page-header__logo" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип сайта">
+    </a>
+
+    <nav class="page-header__nav page-nav">
+      <ul class="page-nav__menu site-menu">
+        <li class="site-menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-menu__item">
+          <a>Конкурс</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content">
+      <h1 class="page-content__header">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
+      <p class="page-content__text">
+        Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash;
+        1000&nbsp;миль на&nbsp;вашу бонусную карту!
+      </p>
+
+      <form class="competitor"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
+
+        <fieldset class="competitor__names person-name">
+          <label class="person-name__legend"
+            for="surname">
+            Фамилия:
+          </label>
+          <input class="person-name__content"
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Укажите фамилию *"
+            required
+          />
+
+          <label class="person-name__legend"
+            for="first-name">
+            Имя:
+          </label>
+          <input class="person-name__content"
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Введите ваше имя *"
+            required
+          />
+
+          <label class="person-name__legend"
+            for="patronym">
+            Отчество:
+          </label>
+          <input class="person-name__content"
+            type="text"
+            name="patronym"
+            id="patronym"
+            placeholder="Ну и отчество тоже"
+          />
+        </fieldset>
+
+        <fieldset class="competitor__achievments acheivments">
+          <legend class="achievments__legend">
+            Ваши безбашенные достижения в&nbsp;путешествии
+          </legend>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="shark-selfi"
+            id="shark-selfi"
+            value="shark-selfi"
+            checked
+          />
+          <label class="acheivment__legend"
+            for="shark-selfi">
+            Сделал селфи с акулой
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="over-tanned"
+            id="over-tanned"
+            value="over-tanned"
+            checked
+          />
+          <label class="acheivment__legend"
+            for="over-tanned">
+            Обгорел на пляже
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="seen-chuck-norris"
+            id="seen-chuck-norris"
+            value="seen-chuck-norris"
+          />
+          <label class="acheivment__legend"
+            for="seen-chuck-norris">
+            Видел Чака Норриса
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="bought-souvenirs"
+            id="bought-souvenirs"
+            value="bought-souvenirs"
+          />
+          <label class="acheivment__legend"
+            for="bought-souvenirs">
+            Накупил сувениров
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="hold-tower"
+            id="hold-tower"
+            value="hold-tower"
+            checked
+          />
+          <label class="acheivment__legend"
+            for="hold-tower">
+            Удержал башню
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="destroyed-hotel"
+            id="destroyed-hotel"
+            value="destroyed-hotel"
+          />
+          <label class="acheivment__legend"
+            for="destroyed-hotel">
+            Разгромил отель
+          </label>
+        </fieldset>
+
+        <fieldset class="competitor__contacts contacts">
+          <h3 class="visually-hidden">
+            Контакты
+          </h3>
+
+          <label class="contacts__legend">
+            Номер телефона
+          </label>
+          <input class="contacts__content"
+            type="tel"
+            placeholder="Номер, пожалуйста"
+          />
+
+          <label class="contacts__legend">
+            Адрес почты
+          </label>
+          <input class="contacts__content"
+            type="tel"
+            required
+            placeholder="Введите почту *"
+          />
+        </fieldset>
+
+        <fieldset class="competitor__phone phone-type">
+          <legend>
+            С каким приложением путешествовали?
+          </legend>
+          <input class="phone-type__selection"
+            type="radio"
+            name="ios"
+            id="ios"
+            value="ios"
+            checked
+          />
+          <label class="phone-type__legend"
+            for="ios"
+          >
+            Pink для iOS
+          </label>
+
+          <input class="phone-type__selection"
+            type="radio"
+            name="android"
+            id="android"
+            value="android"
+          />
+          <label class="phone-type__legend"
+            for="android"
+          >
+            Pink на Android
+          </label>
+
+          <input class="phone-type__selection"
+            type="radio"
+            name="windows-phone"
+            id="windows-phone"
+            value="windows-phone"
+          />
+          <label class="phone-type__legend"
+            for="windows-phone"
+          >
+            Windows Phone
+          </label>
+        </fieldset>
+
+        <div class="comptitor__comment comment">
+          <label class="comment__legend"
+            for="comment">
+            Опишите свои эмоции
+          </label>
+          <textarea class="comment__content"
+            rows="5" cols="20"
+            name="comment"
+            id="comment"
+            placeholder="Можно прямо в красках, не стесняясь в выражениях"
+          ></textarea>
+        </div>
+
+        <button class="competitor__submit"
+          type="submit"
+        >
+          Отправить форму
+        </button>
+
+        <p class="comptitor__helper">
+          <span class="comptitor__helper-asterisk"
+          >*
+          </span>
+
+          <span class="competitor__helper-text"
+          >&mdash;&nbsp;обязательные поля
+          </span>
+        </p>
+      </form>
+
+  </main>
+
+  <footer class="page-footer">
+    <span class="page-footer__logo">
+    </span>
+
+    <span class="page-footer__socials socials">
+      <a class="socials__twitter socials__link"
+        href="#"
+      >
+        <span class="visually-hidden">Твиттер</span>
+      </a>
+
+      <a class="socials__facebook socials__link"
+        href="#"
+      >
+        <span class="visually-hidden">Фейсбук</span>
+      </a>
+
+      <a class="socials__youtube socials__link"
+        href="#"
+      >
+        <span class="visually-hidden">Ютюб</span>
+      </a>
+    </span>
+
+    <div class="page-footer__academy academy">
+      <p class="academy__text">
+        Разработано
+      </p>
+      <a class="academy__logo"
+        href="https://htmlacademy.ru/intensive/adaptive"
+      >
+      <span class="visually-hidden">
+        HTML Academy
+      </span>
+      <img class="academy_logo"
+          src="#"
+          width="27" height="34"
+          alt="Логотип HTML Academy"
+        />
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

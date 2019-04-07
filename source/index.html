@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
   <body>
+    <h1 class="visually-hidden">Приложение Пинк</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <img class="page-header__logo" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип сайта">
 
-  </body>
+      <nav class="page-header__nav page-nav">
+        <ul class="page-nav__menu site-menu">
+          <li class="site-menu__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-menu__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content">
+
+      <section class="work-example">
+        <h2 class="visually-hidden">Посмотрите как это работает</h2>
+        <img class="work-example__original" src="https://placehold.it/320x462" width="320" height="462" alt="Фото до">
+        <img class="work-example__result" src="https://placehold.it/111x197" width="111" height="197" alt="Фото после">
+        <img class="work-example__hand-with-phone" src="https://placehold.it/320x462" width="320" height="314" alt="Рука держит смартфон">
+      </section>
+
+      <section class="app-download">
+        <h2 class="visually-hidden">Скачайте</h2>
+        <a class="app-download__btn" href="#">Скачать приложение</a>
+        <ul class="app-platforms">
+          <li class="app-platforms-versions__apple">
+          </li>
+          <li class="app-platforms-versions__android">
+          </li>
+          <li class="app-platforms-versions__windows">
+          </li>
+        </ul>
+        <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
+      </section>
+
+      <section class="motivation">
+          <h2 class="visually-hidden">Мотивация</h2>
+          <p class="motivation__intro-text">Устали от серости мегаполиса?</p>
+          <p class="motivation__intro-text">Нам есть, что вам предложить!</p>
+
+          <h3 class="motivation__fact-header">
+            Поднимает настроение
+          </h3>
+          <p class="motivation__fact-text">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+
+          <h3 class="motivation__fact-header">
+            Меняет мир вокруг
+          </h3>
+          <p class="motivation__fact-text">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+
+          <h3 class="motivation__fact-header">
+            Заводит новых друзей
+          </h3>
+          <p class="motivation__fact-text">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+
+          <img class="motivation__image"
+            src="https://placehold.it/157x320"
+            width="157" height="320"
+            alt="Пример работы"
+          />
+      </section>
+
+      <section class="user-opinions">
+        <h2 class="visually-hidden">Истории успеха</h2>
+        <ul class="user-opinions__list">
+          <li class="user-opinions__item user-opinion">
+            <h3 class="user-opinion__name">
+              Николай Петров
+            </h3>
+            <p class="user-opinion__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на&nbsp;привычные серые вещи!
+              А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="buy-app-sets">
+        <h2 class="visually-hidden">
+          Купить
+        </h2>
+        <ul class="buy-app-sets__variants">
+          <li class="buy-app-sets__variant app-variant app-variant--hit">
+            <h3 class="app-variant__header">
+              Стандарт
+            </h3>
+            <p class="app-variant__price">
+              3,99&nbsp;USD
+            </p>
+
+            <ul class="app-variant__options-set">
+              <li class="app-variant__option--selected">
+                Розовый фильтр
+              </li>
+              <li class="app-variant__option--selected">
+                Смайлики
+              </li>
+              <li class="app-variant__option--not-selected">
+                Комментари
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">
+          Контакты
+        </h2>
+
+        <p class="contacts__text">
+          Остались вопросы? Свяжитесь с&nbsp;нами!
+        </p>
+
+        <h3 class="contacts__header">
+          Звоните:
+        </h3>
+        <a class="contacts__phone"
+          href="tel:+7(812)555-66-66"
+        >
+          +7&nbsp;(812) 555-66-66
+        </a>
+
+        <h3 class="contacts__header">
+            Пишите:
+        </h3>
+        <a class="contacts__email"
+          href="mailto:mail@htmlacademy.ru"
+        >
+          mail@htmlacademy.ru
+        </a>
+
+        <h3 class="contacts__header">
+            Приезжайте в гости:
+        </h3>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, 19/8
+        </address>
+
+        <img class="contacts__map"
+          src="https://placehold.it/320x645"
+          width="320" height="645"
+          alt="Офис на карте"
+        />
+      </section>
+
+    </main>
+
+
+</body>
 </html>
