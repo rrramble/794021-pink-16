@@ -102,82 +102,81 @@
       </li>
     </ul>
 
-  </main>
-
-  <form class="post-photo"
-    action="#"
-    method="POST"
-  >
-    <h2 class="visually-hidden">
-      Отправить фотографию
-    </h2>
-
-    <span class="post-photo__header-text">
-      Затмите их всех! Выкладывайте все, что накопилось в&nbsp;телефоне!
-    </span>
-
-    <input class="post-photo__img"
-      type="image"
-      src="http://placehold.it/280x374"
-      width="280" height="374"
-    />
-
-    <div class="post-photo__filters filters">
-      <label class="visually-hidden"
-        for="crop"
-      >
-        Обрезка
-      </label>
-      <input class="filters filters__crop"
-        type="button"
-        name="crop"
-      />
-
-      <label class="visually-hidden"
-        for="fill"
-      >
-        Заливка
-      </label>
-      <input class="filters filters__fill"
-        type="button"
-        name="fill"
-      />
-
-      <label class="visually-hidden"
-        for="color"
-      >
-        Заливка
-      </label>
-      <input class="filters filters__color"
-        type="button"
-        name="color"
-      />
-    </div>
-
-    <label class="visually-hidden"
-      for="light"
+    <form class="post-photo"
+      action="#"
+      method="POST"
     >
-      Освещение
-    </label>
-    <input
-      class="post-photo__filters filters__light"
-      type="range" min="0" max="100" value="80"
-      name="light"
-    />
+      <h2 class="visually-hidden">
+        Отправить фотографию
+      </h2>
 
-    <span class="post-photo__btns">
-      <button class="post-photo__btn-post"
-        type="submit"
+      <span class="post-photo__header-text">
+        Затмите их всех! Выкладывайте все, что накопилось в&nbsp;телефоне!
+      </span>
+
+      <input class="post-photo__img"
+        type="image"
+        src="http://placehold.it/280x374"
+        width="280" height="374"
+      />
+
+      <div class="post-photo__filters filters">
+        <label class="visually-hidden"
+          for="crop"
+        >
+          Обрезка
+        </label>
+        <input class="filters filters__crop"
+          type="button"
+          name="crop"
+        />
+
+        <label class="visually-hidden"
+          for="fill"
+        >
+          Заливка
+        </label>
+        <input class="filters filters__fill"
+          type="button"
+          name="fill"
+        />
+
+        <label class="visually-hidden"
+          for="color"
+        >
+          Заливка
+        </label>
+        <input class="filters filters__color"
+          type="button"
+          name="color"
+        />
+      </div>
+
+      <label class="visually-hidden"
+        for="light"
       >
-        Запостить
-      </button>
-      <button class="post-photo__btn-cancel post-photo__btn-cancel--disabled"
-        type="button"
-      >
-      Отмена
-      </button>
-    </span>
-  </form>
+        Освещение
+      </label>
+      <input
+        class="post-photo__filters filters__light"
+        type="range" min="0" max="100" value="80"
+        name="light"
+      />
+
+      <span class="post-photo__btns">
+        <button class="post-photo__btn-post"
+          type="submit"
+        >
+          Запостить
+        </button>
+        <button class="post-photo__btn-cancel post-photo__btn-cancel--disabled"
+          type="button"
+        >
+        Отмена
+        </button>
+      </span>
+    </form>
+  </main>
 
   <footer class="page-footer">
     <span class="page-footer__logo">
