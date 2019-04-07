@@ -1,0 +1,7 @@
+$background-color: lighten(black, 30.2%);
+
+.page-header {
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+}
