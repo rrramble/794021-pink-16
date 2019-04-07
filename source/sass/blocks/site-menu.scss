@@ -1,0 +1,33 @@
+$text-color: white;
+$text-color-hover: #d22856;
+$text-color-pressed: rgba(255, 255, 255, 0.302);
+
+$background-color: #283645;
+
+
+$font-size: 18px;
+$font-height: 32px;
+
+.site-menu {
+  list-style: none;
+  background-color: $background-color;
+}
+
+.site-menu__item {
+  color: $text-color;
+  font-size: $font-size;
+  text-decoration: none;
+}
+
+.site-menu__item:hover,
+.site-menu__item:focus {
+  color: $text-color-hover;
+}
+
+.site-menu__item:active {
+  color: $text-color-pressed;
+}
+
+.site-menu__item--not-clickable {
+  color: $text-color;
+}
