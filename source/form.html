@@ -46,6 +46,38 @@
         action="#"
         method="POST"
       >
+
+        <fieldset class="contest__names person-name">
+          <label class="person-name__legend"
+            for="surname">
+            Фамилия:
+          </label>
+          <input class="person-name__content"
+            type="text" name="surname"
+            placeholder="Укажите фамилию *"
+            required
+          />
+
+          <label class="person-name__legend"
+            for="first-name">
+            Имя:
+          </label>
+          <input class="person-name__content"
+            type="text" name="first-name"
+            placeholder="Введите ваше имя *"
+            required
+          />
+
+          <label class="person-name__legend"
+            for="patronym">
+            Отчество:
+          </label>
+          <input class="person-name__content"
+            type="text" name="patronym"
+            placeholder="Ну и отчество тоже"
+          />
+        </fieldset>
+
       </form>
 
   </main>
