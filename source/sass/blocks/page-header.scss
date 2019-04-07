@@ -1,7 +1,27 @@
 $background-color: lighten(black, 30.2%);
 
+$logo-height: 22.859px;
+$logo-width: 75px;
+$header-height: 70px;
+$padding-vertical: ($header-height - $logo-height) / 2;
+$padding-horizontal: $padding-vertical;
+$logo-url: "../img/logo-pink-white-mobile.svg";
+
 .page-header {
+  align-items: center;
   background-color: $background-color;
   display: flex;
-  align-items: center;
+  padding: $padding-vertical $padding-vertical;
+}
+
+.page-header__logo {
+  background-image: url($logo-url);
+  background-repeat: no-repeat;
+  margin-right: auto;
+  min-height: $logo-height;
+  min-width: $logo-width;
+}
+
+.page-header__nav {
+  margin-left: auto;
 }
