@@ -42,12 +42,12 @@
         1000&nbsp;миль на&nbsp;вашу бонусную карту!
       </p>
 
-      <form class="contest"
+      <form class="competitor"
         action="#"
         method="POST"
       >
 
-        <fieldset class="contest__names person-name">
+        <fieldset class="competitor__names person-name">
           <label class="person-name__legend"
             for="surname">
             Фамилия:
@@ -76,6 +76,69 @@
             type="text" name="patronym"
             placeholder="Ну и отчество тоже"
           />
+        </fieldset>
+
+        <fieldset class="competitor__achievments acheivments">
+          <legend class="achievments__legend">
+            Ваши безбашенные достижения в&nbsp;путешествии
+          </legend>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="shark-selfi"
+            checked
+          />
+          <label checkbox="acheivment__legend"
+            for="shark-selfi">
+            Сделал селфи с акулой
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="over-tanned"
+            checked
+          />
+          <label checkbox="acheivment__legend"
+            for="over-tanned">
+            Обгорел на пляже
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="seen-chuck-norris"
+          />
+          <label checkbox="acheivment__legend"
+            for="seen-chuck-norris">
+            Видел Чака Норриса
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="bought-souvenirs"
+          />
+          <label checkbox="acheivment__legend"
+            for="bought-souvenirs">
+            Накупил сувениров
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="hold-tower"
+            checked
+          />
+          <label checkbox="acheivment__legend"
+            for="hold-tower">
+            Удержал башню
+          </label>
+
+          <input class="acheivment__selection"
+            type="checkbox"
+            name="destroyed-hotel"
+          />
+          <label checkbox="acheivment__legend"
+            for="destroyed-hotel">
+            Разгромил отель
+          </label>
         </fieldset>
 
       </form>
