@@ -116,9 +116,9 @@
 
       <input class="post-photo__img"
         type="image"
+        alt="Отправить фото"
         src="http://placehold.it/280x374"
         width="280" height="374"
-        required
       />
 
       <div class="post-photo__filters filters">
@@ -130,6 +130,8 @@
         <input class="filters filters__crop"
           type="button"
           name="crop"
+          value="0:0"
+          id="crop"
         />
 
         <label class="visually-hidden"
@@ -140,6 +142,8 @@
         <input class="filters filters__fill"
           type="button"
           name="fill"
+          value="0"
+          id="fill"
         />
 
         <label class="visually-hidden"
@@ -150,6 +154,8 @@
         <input class="filters filters__color"
           type="button"
           name="color"
+          value="0"
+          id="color"
         />
       </div>
 
@@ -160,9 +166,11 @@
       </label>
       <input
         class="post-photo__filters filters__light"
-        type="range" min="0" max="100" value="80"
+        type="range" min="0" max="100"
+        value="80"
         name="light"
-      />
+        id="light"
+        />
 
       <span class="post-photo__btns">
         <button class="post-photo__btn-post"
