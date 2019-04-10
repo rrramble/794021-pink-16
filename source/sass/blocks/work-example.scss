@@ -1,18 +1,18 @@
 $hand-with-phone-width: 320px;
+$hand-with-phone-height: 314px;
 
 .work-example {
   display: flex;
+  position: relative;
+  top: -10px;
 }
 
 .work-example__original {
   width: 100%;
 }
 
-.work-example__result {
-  position: absolute;
-}
-
 .work-example__hand-with-phone {
   left: 50% - $hand-with-phone-width / 2;
+  top: 50% - $hand-with-phone-height / 2;
   position: absolute;
 }
