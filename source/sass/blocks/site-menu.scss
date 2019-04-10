@@ -4,7 +4,7 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 
 $background-color: #283645;
 
-$icon-menu-burger-url: "img/icon-menu-burger.svg";
+$icon-menu-burger-url: "../img/icon-menu-burger.svg";
 $icon-menu-closed: $icon-menu-burger-url;
 $icon-closed-x-size: 50px;
 $icon-closed-y-size: 24px;
@@ -15,20 +15,18 @@ $font-height: 32px;
 .site-menu {
   list-style: none;
   background-color: $background-color;
-}
-
-.site-menu--closed {
   background-image: url($icon-menu-closed);
   background-repeat: no-repeat;
   background-size: $icon-closed-x-size $icon-closed-y-size;
 }
 
-.site-menu--closed::before {
+.site-menu::before {
   content: ".";
 }
 
 .site-menu__item {
   color: $text-color;
+  display: none;
   font-size: $font-size;
   text-decoration: none;
 }
