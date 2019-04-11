@@ -1,7 +1,9 @@
 $hand-with-phone-width: 320;
 $hand-with-phone-height: 314;
+$original-photo-average-color: #283645;
 
 .work-example {
+  background-color: $original-photo-average-color;
   display: flex;
   position: relative;
   top: -10px;
@@ -10,7 +12,6 @@ $hand-with-phone-height: 314;
 .work-example__original {
   flex-grow: 1;
   flex-shrink: 1;
-  height: 100%;
   left: 0;
   position: relative;
   top: 0;
