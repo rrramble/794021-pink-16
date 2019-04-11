@@ -1,5 +1,5 @@
-$hand-with-phone-width: 320px;
-$hand-with-phone-height: 314px;
+$hand-with-phone-width: 320;
+$hand-with-phone-height: 314;
 
 .work-example {
   display: flex;
@@ -8,11 +8,18 @@ $hand-with-phone-height: 314px;
 }
 
 .work-example__original {
-  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
 }
 
 .work-example__hand-with-phone {
-  left: 50% - $hand-with-phone-width / 2;
-  top: 50% - $hand-with-phone-height / 2;
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-self: center;
   position: absolute;
 }
