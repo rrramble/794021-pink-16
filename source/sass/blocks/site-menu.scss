@@ -6,8 +6,8 @@ $background-color: #283645;
 
 $icon-menu-burger-url: "../img/icon-menu-burger.svg";
 $icon-menu-closed: $icon-menu-burger-url;
-$icon-closed-x-size: 50px;
-$icon-closed-y-size: 24px;
+$icon-closed-width: 50px;
+$icon-closed-height: 24px;
 
 $font-size: 18px;
 $font-height: 32px;
@@ -17,11 +17,8 @@ $font-height: 32px;
   background-color: $background-color;
   background-image: url($icon-menu-closed);
   background-repeat: no-repeat;
-  background-size: $icon-closed-x-size $icon-closed-y-size;
-}
-
-.site-menu::before {
-  content: ".";
+  min-width: $icon-closed-width;
+  min-height: $icon-closed-height;
 }
 
 .site-menu__item {
