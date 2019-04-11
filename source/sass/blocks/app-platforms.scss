@@ -1,0 +1,33 @@
+$Logo: (
+  apple: (
+    filename: "../img/logo-apple.svg",
+    width: 46.21px,
+    height: 56.753px,
+  ),
+  android: (
+    filename: "../img/logo-android.svg",
+    width: 42.084px,
+    height: 47.041px,
+  ),
+  windows: (
+    filename: "../img/logo-microsoft.svg",
+    width: 43.922px,
+    height: 41.992px,
+  ),
+);
+
+.app-platforms {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+@each $platform, $data in $Logo {
+  .app-platforms__#{$platform} {
+    background-image: url(map-get($data, filename));
+    min-width: map-get($data, width);
+    min-height: map-get($data, height);
+    background-repeat: no-repeat;
+  }
+}
