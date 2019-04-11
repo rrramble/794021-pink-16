@@ -29,7 +29,5 @@ $button-border-color: white;
 }
 
 .app-download__platforms {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  list-style: none;
 }
