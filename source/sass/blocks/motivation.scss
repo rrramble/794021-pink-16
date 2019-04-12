@@ -1,24 +1,28 @@
-$background-color: white;
-$fact-color: #000;
-$fact-background-color: rgb(242, 242, 242);
-$intro-font-size: 24px;
-$intro-color: rgb(40, 54, 69);
+$iphone-screen-mobile-height: 320px;
+$iphone-screen-mobile-height-cut: 45px;
+$iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
 
 .motivation {
+  align-content: center;
   display: flex;
-  background-color: $background-color;
   flex-direction: column;
-  padding-top: 24px;
+  justify-content: flex-start;
+  padding-top: 30px;
 }
 
-.motivation__intro-text {
-  color: $intro-color;
-  font-size: $intro-font-size;
-  line-height: 24px * 1.2;
-  margin-bottom: 24px;
-  text-align: center;
+.motivation__intro {
+  background-color: white;
 }
 
 .motivation__facts {
-  background-color: $fact-background-color;
+  background-color: rgb(242, 242, 242);
+}
+
+.motivation__image {
+  background-color: rgb(242, 242, 242);
+  background-image: url($iphone-screen-mobile-filename);
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
+  min-width: 100%;
 }
