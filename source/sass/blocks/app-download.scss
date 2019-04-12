@@ -12,14 +12,16 @@ $button-border-color: white;
 }
 
 .app-download__btn {
+  align-self: center;
   border-color: $button-border-color;
-  border-radius: 10px;
+  border-radius: 25px;
   border-width: 3px;
   border-style: solid;
   color: $button-text-color;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
+  margin-bottom: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   text-decoration: none;
