@@ -25,7 +25,7 @@ $Logo: (
 
 @each $platform, $data in $Logo {
   .app-platforms__#{$platform} {
-    background-image: url(map-get($data, filename));
+    background-image: url("#{map-get($data, filename)}");
     min-width: map-get($data, width);
     min-height: map-get($data, height);
     background-repeat: no-repeat;
