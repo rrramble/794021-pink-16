@@ -26,12 +26,14 @@ $button-border-color: white;
   padding-bottom: 12px;
   text-decoration: none;
   text-align: center;
-  align-self: center;
   width: 80%;
 }
 
 .app-download__platforms {
   list-style: none;
+  margin-bottom: 20px;
+}
+
 .app-download__info {
   color: white;
   font-size: 14px;
