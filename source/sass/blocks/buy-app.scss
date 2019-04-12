@@ -1,0 +1,73 @@
+.buy-app {
+  align-items: flex-start;
+  display: flex;
+  overflow-x: auto;
+}
+
+.buy-app__set {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 90%;
+}
+
+.buy-app__set-header {
+  align-items: center;
+  background-color: #283645;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.buy-app__set-header--hit {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
+}
+
+.buy-app__set-name {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.buy-app__set-price {
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+}
+
+.buy-app__options {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.buy-app__option {
+  color: black;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.buy-app__option--selected {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.buy-app__option--not-selected {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
