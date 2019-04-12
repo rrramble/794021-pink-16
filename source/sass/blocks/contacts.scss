@@ -1,5 +1,6 @@
 $header-color: rgb(40, 54, 69);
 $contact-color: #d22856;
+$map-height: 200px;
 $text-color: rgb(40, 54, 69);
 
 .contacts {
@@ -36,4 +37,12 @@ $text-color: rgb(40, 54, 69);
   line-height: 24px * 1.2;
   text-align: center;
   text-decoration: none;
+}
+
+.contacts__map {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: $map-height;
 }
