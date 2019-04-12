@@ -1,0 +1,24 @@
+$background-color: white;
+$fact-color: #000;
+$fact-background-color: rgb(242, 242, 242);
+$intro-font-size: 24px;
+$intro-color: rgb(40, 54, 69);
+
+.motivation {
+  display: flex;
+  background-color: $background-color;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.motivation__intro-text {
+  color: $intro-color;
+  font-size: $intro-font-size;
+  line-height: 24px * 1.2;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.motivation__facts {
+  background-color: $fact-background-color;
+}
