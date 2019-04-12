@@ -1,0 +1,30 @@
+.user-opinions {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.user-opinions__list {
+  list-style: none;
+}
+
+.user-opinions__item-header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+
+.user-opinions__item-text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.user-opinions__item-text::before {
+  content: "«";
+}
+
+.user-opinions__item-text::after {
+  content: "»";
+}
