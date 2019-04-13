@@ -1,0 +1,29 @@
+$main-photo-average-color: #283645;
+$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+$main-photo-y-shift: -65px;
+
+
+.users-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.users-posts__intro-header {
+    background-color: $main-photo-average-color;
+    background-image: url($main-photo-image-filename);
+    background-position-y: $main-photo-y-shift;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 24px * 1.2;
+    min-height: 175px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+.users-posts__intro-text {
+    text-align: center;
+}
