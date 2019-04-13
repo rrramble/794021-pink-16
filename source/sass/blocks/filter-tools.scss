@@ -14,7 +14,7 @@ $button-width: 48px;
 }
 
 .filter-tools__crop {
-  background-image: url(map-get($CropIcon, filename));
+  background-image: url("#{map-get($CropIcon, filename)}");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
