@@ -229,7 +229,7 @@
         <p class="post-photo__header-text">Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
       </header>
 
-      <div class="post-photo__container">
+      <div class="post-photo__images">
         <input class="post-photo__img"
           type="image"
           alt="Отправить фото"
@@ -238,37 +238,26 @@
         />
       </div>
 
-      <div class="post-photo__filters filters">
-        <label class="visually-hidden"
-          for="crop"
-        >
-          Обрезка
-        </label>
-        <input class="filters filters__crop"
+      <div class="post-photo__filters filter-tools">
+
+        <label class="visually-hidden" for="crop">Обрезка</label>
+        <input class="filter-tools__crop"
           type="button"
           name="crop"
           value="0:0"
           id="crop"
         />
 
-        <label class="visually-hidden"
-          for="fill"
-        >
-          Заливка
-        </label>
-        <input class="filters filters__fill"
+        <label class="visually-hidden" for="fill">Заливка</label>
+        <input class="filter-tools__fill"
           type="button"
           name="fill"
           value="0"
           id="fill"
         />
 
-        <label class="visually-hidden"
-          for="color"
-        >
-          Заливка
-        </label>
-        <input class="filters filters__color"
+        <label class="visually-hidden" for="color">Заливка</label>
+        <input class="filter-tools__color"
           type="button"
           name="color"
           value="0"
@@ -276,13 +265,9 @@
         />
       </div>
 
-      <label class="visually-hidden"
-        for="light"
-      >
-        Освещение
-      </label>
+      <label class="visually-hidden" for="light">Освещение</label>
       <input
-        class="post-photo__filters filters__light"
+        class="filter-tools__light"
         type="range" min="0" max="100"
         value="80"
         name="light"

@@ -1,0 +1,50 @@
+$CropIcon: (
+  filename: "../img/icon-editor-crop.svg",
+);
+
+$button-height: 48px;
+$button-width: 48px;
+
+.filter-tools {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.filter-tools__crop {
+  background-image: url(map-get($CropIcon, filename));
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: $button-height;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+}
+
+.filter-tools__fill {
+  background-image: url("../img/icon-editor-fill.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: $button-height;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+}
+
+.filter-tools__color {
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: $button-height;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+}
