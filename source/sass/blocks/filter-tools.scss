@@ -2,18 +2,25 @@ $CropIcon: (
   filename: "../img/icon-editor-crop.svg",
 );
 
+$bg-color: #f2f2f2;
+$border-bottom-color: rgba(black, 0.102);
 $button-height: 48px;
 $button-width: 48px;
+$gap-after-button: 20px;
 
 .filter-tools {
   align-items: flex-start;
+  background-color: $bg-color;
+  border-bottom: 1px solid $border-bottom-color;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 .filter-tools__crop {
+  background-color: $bg-color;
   background-image: url("#{map-get($CropIcon, filename)}");
   background-position-x: center;
   background-position-y: center;
@@ -21,11 +28,13 @@ $button-width: 48px;
   border: 0;
   height: $button-height;
   margin: 0;
+  margin-bottom: $gap-after-button;
   padding: 0;
   width: $button-width;
 }
 
 .filter-tools__fill {
+  background-color: $bg-color;
   background-image: url("../img/icon-editor-fill.svg");
   background-position-x: center;
   background-position-y: center;
@@ -33,11 +42,13 @@ $button-width: 48px;
   border: 0;
   height: $button-height;
   margin: 0;
+  margin-bottom: $gap-after-button;
   padding: 0;
   width: $button-width;
 }
 
 .filter-tools__contrast {
+  background-color: $bg-color;
   background-image: url("../img/icon-editor-contrast.svg");
   background-position-x: center;
   background-position-y: center;
@@ -45,6 +56,12 @@ $button-width: 48px;
   border: 0;
   height: $button-height;
   margin: 0;
+  margin-bottom: $gap-after-button;
   padding: 0;
   width: $button-width;
+}
+
+.filter-tools__lightness {
+  max-width: 240px;
+  min-width: 240px;
 }
