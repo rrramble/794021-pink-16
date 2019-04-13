@@ -34,3 +34,10 @@ $text-color: #283645;
   padding-top: 50px;
   text-align: center;
 }
+
+.users-posts__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
