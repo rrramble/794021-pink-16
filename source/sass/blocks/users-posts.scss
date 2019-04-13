@@ -1,13 +1,14 @@
+$gap-between-posts: 20px;
 $main-photo-average-color: #283645;
 $main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
 $main-photo-y-shift: -65px;
 $text-color: #283645;
 
-
 .users-posts {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: -$gap-between-posts;
 }
 
 .users-posts__intro-header {
