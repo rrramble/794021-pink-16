@@ -4,7 +4,6 @@ $like-image-height: 11.99px;
 $like-color: #d22856;
 $color: rgb(40, 54, 69);
 
-
 .user-post-info__header {
   display: flex;
   flex-direction: row;
@@ -49,16 +48,8 @@ $color: rgb(40, 54, 69);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 5px;
-  width: $width-standard;
-}
-
-
-.user-post-info__footer {
   margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: $width-standard;
 }
 
 .user-post-info__set-your-like {
@@ -77,4 +68,3 @@ $color: rgb(40, 54, 69);
   font-size: 12px;
   line-height: 24px;
 }
-
