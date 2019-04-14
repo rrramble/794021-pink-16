@@ -19,46 +19,38 @@ $gap-after-button: 20px;
   padding-bottom: 20px;
 }
 
-.filter-tools__crop {
+@mixin filter-tool-common() {
   background-color: $bg-color;
-  background-image: url("#{map-get($CropIcon, filename)}");
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   border: 0;
-  height: $button-height;
   margin: 0;
   margin-bottom: $gap-after-button;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
+}
+
+.filter-tools__crop {
+  background-image: url("#{map-get($CropIcon, filename)}");
+  height: $button-height;
   width: $button-width;
+  @include filter-tool-common();
 }
 
 .filter-tools__fill {
-  background-color: $bg-color;
   background-image: url("../img/icon-editor-fill.svg");
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  border: 0;
   height: $button-height;
-  margin: 0;
-  margin-bottom: $gap-after-button;
-  padding: 0;
   width: $button-width;
+  @include filter-tool-common();
 }
 
 .filter-tools__contrast {
-  background-color: $bg-color;
   background-image: url("../img/icon-editor-contrast.svg");
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  border: 0;
   height: $button-height;
-  margin: 0;
-  margin-bottom: $gap-after-button;
-  padding: 0;
   width: $button-width;
+  @include filter-tool-common();
 }
 
 .filter-tools__lightness {
