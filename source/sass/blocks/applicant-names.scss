@@ -1,0 +1,29 @@
+$fieldname-text-color: #d22856;
+$content-text-color: #283645;
+$bg-color-shaded: rgba(242, 242, 242);
+$bg-color-light: white;
+
+.applicant-names {
+  background-color: $bg-color-light;
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.applicant-names__legend {
+  color: $fieldname-text-color;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.applicant-names__content {
+  color: $content-text-color;
+  border-color: $bg-color-shaded;
+  border-width: 1px;
+  font-size: 18px;
+  line-height: 30px;
+  min-width: 280px;
+}
