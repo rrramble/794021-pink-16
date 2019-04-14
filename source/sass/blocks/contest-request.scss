@@ -1,0 +1,28 @@
+$mobile-min-width: 320px;
+$bg-color-light: white;
+$bg-color-shaded: rbg(242, 242, 242);
+$field-text-color: #d22856;
+
+.contest-request {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.contest-request__names {
+  margin-bottom: 20px;
+}
+
+.contest-request__achievments {
+  margin-bottom: 20px;
+}
+
+.contest-request__contacts {
+  margin-bottom: 20px;
+}
+
+.contest-request__phone {
+  margin-bottom: 20px;
+}
