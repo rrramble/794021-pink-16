@@ -45,6 +45,10 @@ $font-height: 32px;
   color: $text-color-pressed;
 }
 
+.site-menu__item--hidden {
+  display: none;
+}
+
 .site-menu__item--not-clickable {
   color: $text-color;
 }
