@@ -1,0 +1,44 @@
+$color: rgb(40, 54, 69);
+$bg-color: #f2f2f2;
+$like-color: #d22856;
+$shaded-color: #dddfe0;
+$btn-bottom-margin: 10px;
+
+.post-actions {
+  align-items: flex-start;
+  background-color: $bg-color;
+  border-bottom: 1px solid $border-bottom-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 30px - $btn-bottom-margin;
+  padding-top: 30px;
+}
+
+@mixin common-for-buttons() {
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 20px;
+  border-style: solid;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: $btn-bottom-margin;
+  max-width: 240px;
+  min-width: 240px;
+  padding: 12px;
+}
+
+.post-actions__send {
+  border-color: $like-color;
+  color: $like-color;
+
+  @include common-for-buttons();
+}
+
+.post-actions__cancel {
+  border-color: $shaded-color;
+  color: $shaded-color;
+
+  @include common-for-buttons();
+}
