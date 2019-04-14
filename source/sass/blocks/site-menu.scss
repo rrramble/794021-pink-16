@@ -5,7 +5,9 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 $background-color: #283645;
 
 $icon-menu-burger-url: "../img/icon-menu-burger.svg";
+$icon-menu-cross-url: "../img/icon-menu-cross.svg";
 $icon-menu-closed: $icon-menu-burger-url;
+$icon-menu-open: $icon-menu-cross-url;
 $icon-closed-width: 50px;
 $icon-closed-height: 24px;
 
@@ -14,12 +16,17 @@ $font-height: 32px;
 
 .site-menu {
   list-style: none;
-  background-color: $background-color;
+  background-color: transparent;
   background-image: url($icon-menu-closed);
+  background-position: right;
   background-repeat: no-repeat;
   display: flex;
   min-width: $icon-closed-width;
   min-height: $icon-closed-height;
+}
+
+.site-menu--open {
+  background-image: url($icon-menu-open);
 }
 
 .site-menu__item {
