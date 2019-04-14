@@ -1,6 +1,42 @@
+$color: rgb(40, 54, 69);
+$main-photo-average-color: #283645;
+$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+$header-height: 170px;
+$header-font-size: 24px;
+$header-line-height: $header-font-size * 1.2;
+$header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
+
 .page-content {
   align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.page-content__header {
+  background-color: $main-photo-average-color;
+  background-image: url($main-photo-image-filename);
+  background-position-x: top;
+  background-position-y: center;
+  color: white;
+  font-size: $header-font-size;
+  font-weight: 100;
+  line-height: $header-line-height;
+  padding-bottom: $header-padding-vertical;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: $header-padding-vertical;
+  text-align: center;
+}
+
+.page-content__text {
+  background-color: white;
+  color: $color;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  text-align: center;
 }
