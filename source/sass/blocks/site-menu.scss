@@ -14,25 +14,46 @@ $icon-closed-height: 24px;
 $font-size: 18px;
 $font-height: 32px;
 
+$menu-item-width: 320px;
+
 .site-menu {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.site-menu::before {
   background-color: transparent;
   background-image: url($icon-menu-closed);
   background-position: right;
   background-repeat: no-repeat;
-  display: flex;
+  content: "";
+  margin-right: 20px;
+  margin-top: 20px;
   min-width: $icon-closed-width;
   min-height: $icon-closed-height;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.site-menu--open {
+.site-menu--open::before {
   background-image: url($icon-menu-open);
 }
 
 .site-menu__item {
   color: $text-color;
-  display: none;
+  border-top-color: gray;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   font-size: $font-size;
+  width: $menu-item-width;
+  padding: 15px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -51,4 +72,16 @@ $font-height: 32px;
 
 .site-menu__item--not-clickable {
   color: $text-color;
+}
+
+.site-menu__item-text {
+  color: white;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-menu__item-text:visited {
+  color: white;
 }

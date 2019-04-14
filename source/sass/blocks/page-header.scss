@@ -2,7 +2,6 @@ $header-color: #1c2530;
 $main-photo-average-color: #283645;
 $navigation-bg-color: rgba(0, 0, 0, 0);
 $padding-vertical: 20px;
-$padding-horizontal: $padding-vertical;
 
 .page-header {
   background-color: $main-photo-average-color;
@@ -12,5 +11,5 @@ $padding-horizontal: $padding-vertical;
 .page-header__nav {
   width: 100%;
   background-color: rgba($header-color, 0.5);
-  padding: $padding-vertical $padding-horizontal;
+  padding-top: $padding-vertical;
 }

@@ -6,12 +6,15 @@ $logo-url: "../img/logo-pink-white-mobile.svg";
 
 .page-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  position: relative;
 }
 
 .page-nav__logo {
   background-image: url($logo-url);
   background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: 20px;
   margin-right: auto;
   min-height: $logo-height;
   min-width: $logo-width;
