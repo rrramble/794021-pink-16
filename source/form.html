@@ -194,46 +194,35 @@
           />
         </fieldset>
 
-        <fieldset class="contest-request__phone phone-type">
-          <legend>
-            С каким приложением путешествовали?
-          </legend>
-          <input class="phone-type__selection"
-            type="radio"
-            name="ios"
-            id="ios"
-            value="ios"
-            checked
-          />
-          <label class="phone-type__legend"
-            for="ios"
-          >
-            Pink для iOS
-          </label>
+        <fieldset class="contest-request__phone-type applicant-phone-type">
+          <h3 class="applicant-phone-type__header">С каким приложением путешествовали?</h3>
 
-          <input class="phone-type__selection"
-            type="radio"
-            name="android"
-            id="android"
-            value="android"
-          />
-          <label class="phone-type__legend"
-            for="android"
-          >
-            Pink на Android
-          </label>
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="ios" id="ios" value="ios"
+              checked
+            />
+            <label class="applicant-phone-type__legend" for="ios">
+              Pink для iOS
+            </label>
+          </div>
 
-          <input class="phone-type__selection"
-            type="radio"
-            name="windows-phone"
-            id="windows-phone"
-            value="windows-phone"
-          />
-          <label class="phone-type__legend"
-            for="windows-phone"
-          >
-            Windows Phone
-          </label>
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="android" id="android" value="android"
+            />
+            <label class="applicant-phone-type__legend"
+              for="android"
+            >Pink на Android</label>
+          </div>
+
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="windows-phone" id="windows-phone" value="windows-phone"
+            />
+            <label class="applicant-phone-type__legend" for="windows-phone"
+              >Windows Phone
+            </label>
         </fieldset>
 
         <div class="contest-request__comment comment">
