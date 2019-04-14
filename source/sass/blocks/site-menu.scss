@@ -17,6 +17,7 @@ $font-height: 32px;
   background-color: $background-color;
   background-image: url($icon-menu-closed);
   background-repeat: no-repeat;
+  display: flex;
   min-width: $icon-closed-width;
   min-height: $icon-closed-height;
 }
