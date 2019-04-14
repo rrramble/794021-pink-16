@@ -2,6 +2,7 @@ $mobile-min-width: 320px;
 $bg-color-light: white;
 $bg-color-shaded: rbg(242, 242, 242);
 $field-text-color: #d22856;
+$highlighted-text-color: #d22856;
 $submit-button-bg-color: rgb(42, 171, 109);
 
 .contest-request {
@@ -36,7 +37,20 @@ $submit-button-bg-color: rgb(42, 171, 109);
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
+  margin-bottom: 20px;
   min-width: 280px;
   padding: 16px;
   text-transform: uppercase;
+}
+
+.contest-request__helper-text {
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-request__helper-text--highlight {
+  color: $highlighted-text-color;
 }
