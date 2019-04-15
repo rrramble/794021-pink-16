@@ -1,0 +1,61 @@
+$bg-color: #f2f2f2;
+$border-bottom-color: rgba(black, 0.102);
+$button-height: 48px;
+$button-width: 48px;
+$gap-after-button: 20px;
+
+.filter-tools {
+  align-items: flex-start;
+  background-color: $bg-color;
+  border-bottom: 1px solid $border-bottom-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+@mixin filter-tool-common($url, $width, $height) {
+  background-color: $bg-color;
+  background-image: url($url);
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: $height;
+  margin: 0;
+  margin-bottom: $gap-after-button;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0;
+  width: $width;
+}
+
+.filter-tools__crop {
+  @include filter-tool-common(
+    "../img/icon-editor-crop.svg",
+    $button-width,
+    $button-height);
+}
+
+.filter-tools__fill {
+  @include filter-tool-common(
+    "../img/icon-editor-fill.svg",
+    $button-width,
+    $button-height,
+  );
+}
+
+.filter-tools__contrast {
+  @include filter-tool-common(
+    "../img/icon-editor-contrast.svg",
+    $button-width,
+    $button-height,
+  );
+}
+
+.filter-tools__lightness {
+  min-height: 18px;
+  max-width: 240px;
+  min-width: 240px;
+}

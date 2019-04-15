@@ -3,29 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
   <body>
     <h1 class="visually-hidden">Приложение Пинк</h1>
 
     <header class="page-header">
-      <img class="page-header__logo" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип сайта">
-
       <nav class="page-header__nav page-nav">
-        <ul class="page-nav__menu site-menu">
-          <li class="site-menu__item">
-            <a>Главная</a>
+        <span class="page-nav__logo"></span>
+
+        <ul class="page-nav__menu site-menu site-menu--open">
+          <li class="site-menu__item site-menu__item-text">
+            Главная
           </li>
           <li class="site-menu__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-menu__item-text"
+              href="photo.html">Фотографии
+            </a>
           </li>
           <li class="site-menu__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-menu__item-text"
+              href="form.html">Конкурс
+            </a>
           </li>
           <li class="site-menu__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="site-menu__item-text"
+              href="https://htmlacademy.ru">HTML Academy
+            </a>
           </li>
         </ul>
+
       </nav>
     </header>
 
@@ -33,20 +42,22 @@
 
       <section class="work-example">
         <h2 class="visually-hidden">Посмотрите как это работает</h2>
-        <img class="work-example__original" src="https://placehold.it/320x462" width="320" height="462" alt="Фото до">
-        <img class="work-example__result" src="https://placehold.it/111x197" width="111" height="197" alt="Фото после">
-        <img class="work-example__hand-with-phone" src="https://placehold.it/320x462" width="320" height="314" alt="Рука держит смартфон">
+        <div class="work-example__original"></div>
+        <img class="work-example__hand-with-phone" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука держит смартфон">
       </section>
 
       <section class="app-download">
         <h2 class="visually-hidden">Скачайте</h2>
         <a class="app-download__btn" href="#">Скачать приложение</a>
-        <ul class="app-platforms">
-          <li class="app-platforms-versions__apple">
+        <ul class="app-download__platforms app-platforms">
+          <li class="app-platforms__apple">
+            <span class="visually-hidden">Эппл</span>
           </li>
-          <li class="app-platforms-versions__android">
-          </li>
-          <li class="app-platforms-versions__windows">
+          <li class="app-platforms__android">
+              <span class="visually-hidden">Андроид</span>
+            </li>
+          <li class="app-platforms__windows">
+            <span class="visually-hidden">Виндоуз</span>
           </li>
         </ul>
         <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
@@ -54,45 +65,47 @@
 
       <section class="motivation">
           <h2 class="visually-hidden">Мотивация</h2>
-          <p class="motivation__intro-text">Устали от серости мегаполиса?</p>
-          <p class="motivation__intro-text">Нам есть, что вам предложить!</p>
 
-          <h3 class="motivation__fact-header">
-            Поднимает настроение
-          </h3>
-          <p class="motivation__fact-text">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
+          <div class="motivation__intro motivation-intro">
+            <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
+            <p class="motivation-intro__text">Нам есть, что вам предложить!</p>
+          </div>
 
-          <h3 class="motivation__fact-header">
-            Меняет мир вокруг
-          </h3>
-          <p class="motivation__fact-text">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
+          <div class="motivation__facts motivation-facts">
+            <h3 class="motivation-facts__header">
+              Поднимает настроение
+            </h3>
+            <p class="motivation-facts__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
 
-          <h3 class="motivation__fact-header">
-            Заводит новых друзей
-          </h3>
-          <p class="motivation__fact-text">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
+            <h3 class="motivation-facts__header">
+              Меняет мир вокруг
+            </h3>
+            <p class="motivation-facts__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
 
-          <img class="motivation__image"
-            src="https://placehold.it/157x320"
-            width="157" height="320"
-            alt="Пример работы"
-          />
+            <h3 class="motivation-facts__header">
+              Заводит новых друзей
+            </h3>
+            <p class="motivation-facts__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+
+          <div class="motivation__image">
+          </div>
       </section>
 
       <section class="user-opinions">
         <h2 class="visually-hidden">Истории успеха</h2>
         <ul class="user-opinions__list">
-          <li class="user-opinions__item user-opinion">
-            <h3 class="user-opinion__name">
+          <li class="user-opinions__item">
+            <h3 class="user-opinions__item-header">
               Николай Петров
             </h3>
-            <p class="user-opinion__text">
+            <p class="user-opinions__item-text">
               Это приложение перевернуло мой мир и позволило по-новому взглянуть на&nbsp;привычные серые вещи!
               А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
             </p>
@@ -100,39 +113,36 @@
         </ul>
       </section>
 
-      <section class="buy-app-sets">
-        <h2 class="visually-hidden">
-          Купить
-        </h2>
-        <ul class="buy-app-sets__variants">
-          <li class="buy-app-sets__variant app-variant app-variant--hit">
-            <h3 class="app-variant__header">
+      <h2 class="visually-hidden">Купить</h2>
+      <ul class="buy-app">
+
+        <li class="buy-app__set">
+          <div class="buy-app__set-header buy-app__set-header--hit">
+            <h3 class="buy-app__set-name">
               Стандарт
             </h3>
-            <p class="app-variant__price">
+            <p class="buy-app__set-price">
               3,99&nbsp;USD
             </p>
+          </div>
 
-            <ul class="app-variant__options-set">
-              <li class="app-variant__option--selected">
-                Розовый фильтр
-              </li>
-              <li class="app-variant__option--selected">
-                Смайлики
-              </li>
-              <li class="app-variant__option--not-selected">
-                Комментари
-              </li>
-            </ul>
+          <ul class="buy-app__options">
+            <li class="buy-app__option buy-app__option--selected">
+              Розовый фильтр
+            </li>
+            <li class="buy-app__option buy-app__option--selected">
+              Смайлики
+            </li>
+            <li class="buy-app__option buy-app__option--not-selected">
+              Комментари
+            </li>
+          </ul>
+        </li>
 
-          </li>
-        </ul>
-      </section>
+      </ul>
 
       <section class="contacts">
-        <h2 class="visually-hidden">
-          Контакты
-        </h2>
+        <h2 class="visually-hidden">Контакты</h2>
 
         <p class="contacts__text">
           Остались вопросы? Свяжитесь с&nbsp;нами!
@@ -141,7 +151,7 @@
         <h3 class="contacts__header">
           Звоните:
         </h3>
-        <a class="contacts__phone"
+        <a class="contacts__contact"
           href="tel:+7(812)555-66-66"
         >
           +7&nbsp;(812) 555-66-66
@@ -150,7 +160,7 @@
         <h3 class="contacts__header">
             Пишите:
         </h3>
-        <a class="contacts__email"
+        <a class="contacts__contact"
           href="mailto:mail@htmlacademy.ru"
         >
           mail@htmlacademy.ru
@@ -159,15 +169,12 @@
         <h3 class="contacts__header">
             Приезжайте в гости:
         </h3>
-        <address class="contacts__address">
+        <address class="contacts__contact">
           ул. Большая Конюшенная, 19/8
         </address>
 
-        <img class="contacts__map"
-          src="https://placehold.it/320x645"
-          width="320" height="645"
-          alt="Офис на карте"
-        />
+        <div class="contacts__map">
+        </div>
       </section>
 
     </main>

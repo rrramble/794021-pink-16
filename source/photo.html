@@ -3,102 +3,224 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <h1 class="visually-hidden">Приложение Пинк</h1>
 
   <header class="page-header">
-    <a class="page-header__logo"
-      href="index.html"
-    >
-      <img class="page-header__logo" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип сайта">
-    </a>
-
     <nav class="page-header__nav page-nav">
-      <ul class="page-nav__menu site-menu">
+      <a class="page-nav__logo"
+        href="/index.html"
+      >
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+
+      <ul class="page-nav__menu site-menu site-menu--open">
         <li class="site-menu__item">
-          <a href="index.html">Главная</a>
+          <a  class="site-menu__item-text"
+            href="index.html">Главная
+          </a>
+        </li>
+        <li class="site-menu__item site-menu__item-text">Фотографии
         </li>
         <li class="site-menu__item">
-          <a>Фотографии</a>
+          <a class="site-menu__item-text"
+            href="form.html">Конкурс
+          </a>
         </li>
         <li class="site-menu__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-menu__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-menu__item-text"
+            href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-content user-posts">
-    <div class="user-posts__header">
-      <h2 class="users-posts__header-text">Посты пользователей</h2>
-      <p class="users-posts__text">
-        Взгляните на&nbsp;фотографии, которые выкладывают пользователи!
-        Видите, как не&nbsp;хватает ваших?
-      </p>
-    </div>
+  <main class="page-content users-posts">
+    <h2 class="users-posts__intro-header">Посты пользователей</h2>
+    <p class="users-posts__intro-text">
+      Взгляните на&nbsp;фотографии, которые выкладывают пользователи!
+      Видите, как не&nbsp;хватает ваших?
+    </p>
 
-    <ul class="user-posts__list">
-      <li class="user-p__item user-post"
+    <ul class="users-posts__list">
+      <li class="user-post"
       >
-        <img class="user-post__img user-post__img--best-of-the-day"
-          src="https://placehold.it/320x137"
+        <img class="user-post__img user-post__img--panoram-of-the-day"
+          src="img/panorama-mobile@1x.jpg" width="320" height="137"
           alt="Фото пользователя"
         />
-        <span class="user-post__name">
-          Анна
-        </span>
-        <span class="user-post__time-passed">
-          (
-          <span class="user-post__time-passed-text">
-            5 минут
-          </span>
-          назад)
-        </span>
-        <p class="user-post__text">
-          Прыгать или нет? Напишите в&nbsp;комментарии свой ответ и смотрите прямую трансляцию
-          в&nbsp;перископе, задавайте свои вопросы!
-        </p>
-        <span class="user-post__likes">
-          Нравится:
-          <span class="user-post__likes-count"
-          >
-            215
-          </span>
-        </span>
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Анна</h3>
+            <p class="user-post-info__time-passed">5 минут назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+              Прыгать или нет? Напишите в&nbsp;комментарии свой ответ и смотрите прямую трансляцию
+              в&nbsp;перископе, задавайте свои вопросы!
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 215</p>
+          </footer>
+        </div>
       </li>
 
-      <li class="user-posts__item user-post"
+      <li class="user-post"
       >
         <img class="user-post__img"
-          src="https://placehold.it/320x137"
+          src="img/photo-car-mobile@1x.jpg" width="280" height="180"
           alt="Фото пользователя"
         />
-        <span class="user-post__name">
-          Левон
-        </span>
-        <span class="user-post__time-passed">
-          (
-          <span class="user-post__time-passed-text">
-            5 часов
-          </span>
-          назад)
-        </span>
-        <p>
-          Вчера он на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал!
-        </p>
-        <span class="user-post__likes">
-          Нравится:
-          <span class="user-post__likes-count"
-          >
-            356
-          </span>
-        </span>
 
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Левон</h3>
+            <p class="user-post-info__time-passed">5 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Вчера он на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 356</p>
+          </footer>
+        </div>
+      </li>
+
+      <li class="user-post"
+      >
+        <img class="user-post__img"
+          src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
+          alt="Фото пользователя"
+        />
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Антон</h3>
+            <p class="user-post-info__time-passed">12 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Соседи будут рады!
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 666</p>
+          </footer>
+        </div>
+      </li>
+
+      <li class="user-post"
+      >
+        <img class="user-post__img"
+          src="img/photo-window-mobile@1x.jpg" width="280" height="180"
+          alt="Фото пользователя"
+        />
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Борис</h3>
+            <p class="user-post-info__time-passed">20 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 215</p>
+          </footer>
+        </div>
+      </li>
+
+      <li class="user-post"
+      >
+        <img class="user-post__img"
+          src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
+          alt="Фото пользователя"
+        />
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Сергей</h3>
+            <p class="user-post-info__time-passed">25 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Самая кубанская в мире!
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 4</p>
+          </footer>
+        </div>
+      </li>
+
+      <li class="user-post"
+      >
+        <img class="user-post__img"
+          src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
+          alt="Фото пользователя"
+        />
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Максим</h3>
+            <p class="user-post-info__time-passed">40 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Где снег-то?
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 150</p>
+          </footer>
+        </div>
+      </li>
+
+      <li class="user-post"
+      >
+        <img class="user-post__img"
+          src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
+          alt="Фото пользователя"
+        />
+
+        <div class="user-post__info">
+          <header class="user-post-info__header">
+            <h3 class="user-post-info__name">Надежда</h3>
+            <p class="user-post-info__time-passed">45 часов назад</p>
+          </header>
+
+          <p class="user-post-info__text">
+            Всем GM и взаимные лайки!
+          </p>
+          <footer class="user-post-info__footer">
+            <button class="user-post-info__set-your-like" type="button">
+              <span class="visually-hidden">Лайкнуть</span>
+            </button>
+            <p class="user-post-info__likes-count">Нравится: 2560</p>
+          </footer>
+        </div>
       </li>
     </ul>
 
@@ -106,79 +228,64 @@
       action="https://echo.htmlacademy.ru"
       method="POST"
     >
-      <h2 class="visually-hidden">
-        Отправить фотографию
-      </h2>
+      <header class="post-photo__header">
+        <h2 class="visually-hidden">Отправить фотографию</h2>
+        <p class="post-photo__header-text">Затмите их всех!</p>
+        <p class="post-photo__header-text">Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
+      </header>
 
-      <span class="post-photo__header-text">
-        Затмите их всех! Выкладывайте все, что накопилось в&nbsp;телефоне!
-      </span>
+      <div class="post-photo__images">
+        <input class="post-photo__img"
+          type="image"
+          alt="Отправить фото"
+          src="img/photo-road-mobile@1x.jpg"
+          width="280" height="374"
+        />
+      </div>
 
-      <input class="post-photo__img"
-        type="image"
-        alt="Отправить фото"
-        src="https://placehold.it/280x374"
-        width="280" height="374"
-      />
+      <div class="post-photo__filters filter-tools">
 
-      <div class="post-photo__filters filters">
-        <label class="visually-hidden"
-          for="crop"
-        >
-          Обрезка
-        </label>
-        <input class="filters filters__crop"
+        <label class="visually-hidden" for="crop">Обрезка</label>
+        <input class="filter-tools__crop"
           type="button"
           name="crop"
           value="0:0"
           id="crop"
         />
 
-        <label class="visually-hidden"
-          for="fill"
-        >
-          Заливка
-        </label>
-        <input class="filters filters__fill"
+        <label class="visually-hidden" for="fill">Заливка</label>
+        <input class="filter-tools__fill"
           type="button"
           name="fill"
           value="0"
           id="fill"
         />
 
-        <label class="visually-hidden"
-          for="color"
-        >
-          Заливка
-        </label>
-        <input class="filters filters__color"
+        <label class="visually-hidden" for="contrast">Контраст</label>
+        <input class="filter-tools__contrast"
           type="button"
-          name="color"
+          name="contrast"
           value="0"
-          id="color"
+          id="contrast"
         />
+
+        <label class="visually-hidden" for="lightness">Осветление</label>
+        <input
+          class="filter-tools__lightness"
+          type="range" min="0" max="100"
+          value="80"
+          name="lightness"
+          id="lightness"
+          />
       </div>
 
-      <label class="visually-hidden"
-        for="light"
-      >
-        Освещение
-      </label>
-      <input
-        class="post-photo__filters filters__light"
-        type="range" min="0" max="100"
-        value="80"
-        name="light"
-        id="light"
-        />
-
-      <span class="post-photo__btns">
-        <button class="post-photo__btn-post"
+      <span class="post-photo__actions post-actions">
+        <button class="post-actions__send"
           type="submit"
         >
           Запостить
         </button>
-        <button class="post-photo__btn-cancel post-photo__btn-cancel--disabled"
+        <button class="post-actions__cancel"
           type="button"
         >
         Отмена
@@ -188,44 +295,34 @@
   </main>
 
   <footer class="page-footer">
-    <span class="page-footer__logo">
-    </span>
+    <div class="page-footer__logo"></div>
 
-    <span class="page-footer__socials socials">
-      <a class="socials__twitter socials__link"
+    <div class="page-footer__socials">
+      <a class="page-footer__social-twitter"
         href="#"
       >
         <span class="visually-hidden">Твиттер</span>
       </a>
 
-      <a class="socials__facebook socials__link"
+      <a class="page-footer__social-facebook"
         href="#"
       >
         <span class="visually-hidden">Фейсбук</span>
       </a>
 
-      <a class="socials__youtube socials__link"
+      <a class="page-footer__social-youtube"
         href="#"
       >
         <span class="visually-hidden">Ютюб</span>
       </a>
-    </span>
+    </div>
 
-    <div class="page-footer__academy academy">
-        <p class="academy__text">
-          Разработано
-        </p>
-        <a class="academy__logo"
+    <div class="page-footer__academy">
+        <p class="page-footer__text">Разработано</p>
+        <a class="page-footer__academy-logo"
           href="https://htmlacademy.ru/intensive/adaptive"
         >
-        <span class="visually-hidden">
-          HTML Academy
-        </span>
-        <img class="academy_logo"
-            src="https://placehold.it/27x34"
-            width="27" height="34"
-            alt="Логотип HTML Academy"
-          />
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
   </footer>

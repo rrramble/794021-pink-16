@@ -1,0 +1,44 @@
+$original-photo-average-color: #283645;
+$button-text-color: white;
+$button-border-color: white;
+
+.app-download {
+  background-color: $original-photo-average-color;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
+
+.app-download__btn {
+  align-self: center;
+  border-color: $button-border-color;
+  border-radius: 25px;
+  border-width: 3px;
+  border-style: solid;
+  color: $button-text-color;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  text-align: center;
+  width: 90%;
+}
+
+.app-download__platforms {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.app-download__info {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}

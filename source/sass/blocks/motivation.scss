@@ -1,0 +1,28 @@
+$iphone-screen-mobile-height: 320px;
+$iphone-screen-mobile-height-cut: 45px;
+$iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
+
+.motivation {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.motivation__intro {
+  background-color: white;
+}
+
+.motivation__facts {
+  background-color: rgb(242, 242, 242);
+}
+
+.motivation__image {
+  background-color: rgb(242, 242, 242);
+  background-image: url($iphone-screen-mobile-filename);
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
+  min-width: 100%;
+}

@@ -1,0 +1,44 @@
+$gap-between-posts: 20px;
+$main-photo-average-color: #283645;
+$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+$main-photo-y-shift: -65px;
+$text-color: #283645;
+
+.users-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: -$gap-between-posts;
+}
+
+.users-posts__intro-header {
+  background-color: $main-photo-average-color;
+  background-image: url($main-photo-image-filename);
+  background-position-y: $main-photo-y-shift;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px * 1.2;
+  min-height: 175px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-align: center;
+}
+
+.users-posts__intro-text {
+  background-color: white;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.users-posts__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}

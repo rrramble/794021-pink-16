@@ -1,0 +1,30 @@
+$color: rgb(40, 54, 69);
+$message-bg-color: #f2f2f2;
+$width-standard: 280 / 320 * 100%;
+$width-wide: 100%;
+$gap-between-posts: 20px;
+
+.user-post {
+  align-content: stretch;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: $gap-between-posts;
+}
+
+.user-post__img {
+  width: $width-standard;
+  height: auto;
+}
+
+.user-post__img--panoram-of-the-day {
+  width: $width-wide;
+}
+
+.user-post__info {
+  background-color: $message-bg-color;
+  padding: 20px;
+  padding-top: 22px;
+  width: $width-standard;
+}

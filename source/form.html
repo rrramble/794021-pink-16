@@ -3,31 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <h1 class="visually-hidden">Приложение Пинк</h1>
 
   <header class="page-header">
-    <a class="page-header__logo"
-      href="index.html"
-    >
-      <img class="page-header__logo" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип сайта">
-    </a>
-
     <nav class="page-header__nav page-nav">
-      <ul class="page-nav__menu site-menu">
+      <a class="page-nav__logo"
+        href="/index.html"
+      >
+        <span class="visually-hidden">Главная страница</span>
+      </a>
+
+      <ul class="page-nav__menu page-nav__menu--open site-menu site-menu--open">
         <li class="site-menu__item">
-          <a href="index.html">Главная</a>
+          <a class="site-menu__item-text" href="index.html">Главная</a>
         </li>
         <li class="site-menu__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-menu__item-text" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-menu__item site-menu__item-text">
+          Конкурс
         </li>
         <li class="site-menu__item">
-          <a>Конкурс</a>
-        </li>
-        <li class="site-menu__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="site-menu__item-text" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -42,17 +44,17 @@
         1000&nbsp;миль на&nbsp;вашу бонусную карту!
       </p>
 
-      <form class="competitor"
+      <form class="contest-request"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
 
-        <fieldset class="competitor__names person-name">
-          <label class="person-name__legend"
+        <fieldset class="contest-request__names applicant-names">
+          <label class="applicant-names__legend"
             for="surname">
             Фамилия:
           </label>
-          <input class="person-name__content"
+          <input class="applicant-names__content"
             type="text"
             name="surname"
             id="surname"
@@ -60,11 +62,11 @@
             required
           />
 
-          <label class="person-name__legend"
+          <label class="applicant-names__legend"
             for="first-name">
             Имя:
           </label>
-          <input class="person-name__content"
+          <input class="applicant-names__content"
             type="text"
             name="first-name"
             id="first-name"
@@ -72,11 +74,11 @@
             required
           />
 
-          <label class="person-name__legend"
+          <label class="applicant-names__legend"
             for="patronym">
             Отчество:
           </label>
-          <input class="person-name__content"
+          <input class="applicant-names__content"
             type="text"
             name="patronym"
             id="patronym"
@@ -84,152 +86,151 @@
           />
         </fieldset>
 
-        <fieldset class="competitor__achievments acheivments">
-          <legend class="achievments__legend">
-            Ваши безбашенные достижения в&nbsp;путешествии
-          </legend>
+        <fieldset class="contest-request__achievments applicant-achievments">
+          <h2 class="applicant-achievments__header">
+              Ваши безбашенные достижения в&nbsp;путешествии
+          </h2>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="shark-selfi"
-            id="shark-selfi"
-            value="shark-selfi"
-            checked
-          />
-          <label class="acheivment__legend"
-            for="shark-selfi">
-            Сделал селфи с акулой
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="shark-selfi"
+              id="shark-selfi"
+              value="shark-selfi"
+              checked
+            />
+            <label class="applicant-achievments__legend"
+              for="shark-selfi">
+              Сделал селфи с акулой
+            </label>
+          </div>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="over-tanned"
-            id="over-tanned"
-            value="over-tanned"
-            checked
-          />
-          <label class="acheivment__legend"
-            for="over-tanned">
-            Обгорел на пляже
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="over-tanned"
+              id="over-tanned"
+              value="over-tanned"
+              checked
+            />
+            <label class="applicant-achievments__legend"
+              for="over-tanned">
+              Обгорел на пляже
+            </label>
+          </div>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="seen-chuck-norris"
-            id="seen-chuck-norris"
-            value="seen-chuck-norris"
-          />
-          <label class="acheivment__legend"
-            for="seen-chuck-norris">
-            Видел Чака Норриса
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="seen-chuck-norris"
+              id="seen-chuck-norris"
+              value="seen-chuck-norris"
+            />
+            <label class="applicant-achievments__legend"
+              for="seen-chuck-norris">
+              Видел Чака Норриса
+            </label>
+          </div>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="bought-souvenirs"
-            id="bought-souvenirs"
-            value="bought-souvenirs"
-          />
-          <label class="acheivment__legend"
-            for="bought-souvenirs">
-            Накупил сувениров
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="bought-souvenirs"
+              id="bought-souvenirs"
+              value="bought-souvenirs"
+            />
+            <label class="applicant-achievments__legend"
+              for="bought-souvenirs">
+              Накупил сувениров
+            </label>
+          </div>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="hold-tower"
-            id="hold-tower"
-            value="hold-tower"
-            checked
-          />
-          <label class="acheivment__legend"
-            for="hold-tower">
-            Удержал башню
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="hold-tower"
+              id="hold-tower"
+              value="hold-tower"
+              checked
+            />
+            <label class="applicant-achievments__legend"
+              for="hold-tower">
+              Удержал башню
+            </label>
+          </div>
 
-          <input class="acheivment__selection"
-            type="checkbox"
-            name="destroyed-hotel"
-            id="destroyed-hotel"
-            value="destroyed-hotel"
-          />
-          <label class="acheivment__legend"
-            for="destroyed-hotel">
-            Разгромил отель
-          </label>
+          <div class="applicant-achievments__field">
+            <input class="applicant-achievments__selection"
+              type="checkbox"
+              name="destroyed-hotel"
+              id="destroyed-hotel"
+              value="destroyed-hotel"
+            />
+            <label class="applicant-achievments__legend"
+              for="destroyed-hotel">
+              Разгромил отель
+            </label>
+          </div>
         </fieldset>
 
-        <fieldset class="competitor__contacts contacts">
-          <h3 class="visually-hidden">
-            Контакты
-          </h3>
+        <fieldset class="contest-request__contacts applicant-contacts">
+          <h3 class="visually-hidden">Контакты</h3>
 
-          <label class="contacts__legend">
+          <label class="applicant-contacts__legend">
             Номер телефона
           </label>
-          <input class="contacts__content"
+          <input class="applicant-contacts__content"
             type="tel"
             placeholder="Номер, пожалуйста"
           />
 
-          <label class="contacts__legend">
+          <label class="applicant-contacts__legend">
             Адрес почты
           </label>
-          <input class="contacts__content"
-            type="tel"
+          <input class="applicant-contacts__content"
+            type="email"
             required
             placeholder="Введите почту *"
           />
         </fieldset>
 
-        <fieldset class="competitor__phone phone-type">
-          <legend>
-            С каким приложением путешествовали?
-          </legend>
-          <input class="phone-type__selection"
-            type="radio"
-            name="ios"
-            id="ios"
-            value="ios"
-            checked
-          />
-          <label class="phone-type__legend"
-            for="ios"
-          >
-            Pink для iOS
-          </label>
+        <fieldset class="contest-request__phone-type applicant-phone-type">
+          <h3 class="applicant-phone-type__header">С каким приложением путешествовали?</h3>
 
-          <input class="phone-type__selection"
-            type="radio"
-            name="android"
-            id="android"
-            value="android"
-          />
-          <label class="phone-type__legend"
-            for="android"
-          >
-            Pink на Android
-          </label>
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="ios" id="ios" value="ios"
+              checked
+            />
+            <label class="applicant-phone-type__legend" for="ios">
+              Pink для iOS
+            </label>
+          </div>
 
-          <input class="phone-type__selection"
-            type="radio"
-            name="windows-phone"
-            id="windows-phone"
-            value="windows-phone"
-          />
-          <label class="phone-type__legend"
-            for="windows-phone"
-          >
-            Windows Phone
-          </label>
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="android" id="android" value="android"
+            />
+            <label class="applicant-phone-type__legend"
+              for="android"
+            >Pink на Android</label>
+          </div>
+
+          <div class="applicant-phone-type__field">
+            <input class="applicant-phone-type__selection"
+              type="radio" name="windows-phone" id="windows-phone" value="windows-phone"
+            />
+            <label class="applicant-phone-type__legend" for="windows-phone"
+              >Windows Phone
+            </label>
+          </div>
         </fieldset>
 
-        <div class="comptitor__comment comment">
-          <label class="comment__legend"
-            for="comment">
-            Опишите свои эмоции
+        <div class="contest-request__comment applicant-comment">
+          <label class="applicant-comment__header"
+            for="comment">Опишите свои эмоции
           </label>
-          <textarea class="comment__content"
+          <textarea class="applicant-comment__content"
             rows="5" cols="20"
             name="comment"
             id="comment"
@@ -237,19 +238,12 @@
           ></textarea>
         </div>
 
-        <button class="competitor__submit"
-          type="submit"
-        >
-          Отправить форму
-        </button>
+        <button class="contest-request__submit"
+          type="submit">Отправить форму</button>
 
-        <p class="comptitor__helper">
-          <span class="comptitor__helper-asterisk"
-          >*
-          </span>
-
-          <span class="competitor__helper-text"
-          >&mdash;&nbsp;обязательные поля
+        <p class="contest-request__helper">
+          <span class="contest-request__helper-text--highlight">*</span>
+          <span class="contest-request__helper-text">&mdash;&nbsp;обязательные поля
           </span>
         </p>
       </form>
@@ -257,46 +251,36 @@
   </main>
 
   <footer class="page-footer">
-    <span class="page-footer__logo">
-    </span>
+    <div class="page-footer__logo"></div>
 
-    <span class="page-footer__socials socials">
-      <a class="socials__twitter socials__link"
+    <div class="page-footer__socials">
+      <a class="page-footer__social-twitter"
         href="#"
       >
         <span class="visually-hidden">Твиттер</span>
       </a>
 
-      <a class="socials__facebook socials__link"
+      <a class="page-footer__social-facebook"
         href="#"
       >
         <span class="visually-hidden">Фейсбук</span>
       </a>
 
-      <a class="socials__youtube socials__link"
+      <a class="page-footer__social-youtube"
         href="#"
       >
         <span class="visually-hidden">Ютюб</span>
       </a>
-    </span>
-
-    <div class="page-footer__academy academy">
-      <p class="academy__text">
-        Разработано
-      </p>
-      <a class="academy__logo"
-        href="https://htmlacademy.ru/intensive/adaptive"
-      >
-      <span class="visually-hidden">
-        HTML Academy
-      </span>
-      <img class="academy_logo"
-          src="#"
-          width="27" height="34"
-          alt="Логотип HTML Academy"
-        />
-      </a>
     </div>
+
+    <div class="page-footer__academy">
+        <p class="page-footer__text">Разработано</p>
+        <a class="page-footer__academy-logo"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
   </footer>
 
 </body>

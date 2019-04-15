@@ -1,0 +1,70 @@
+$like-image-filename: "../img/icon-heart.svg";
+$like-image-width: 12.545px;
+$like-image-height: 11.99px;
+$like-color: #d22856;
+$color: rgb(40, 54, 69);
+
+.user-post-info__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: $width-standard;
+  margin-bottom: 5px;
+}
+
+.user-post-info__name {
+  color: $color;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px * 1.714;
+  margin-right: 5px;
+}
+
+.user-post-info__time-passed {
+  color: $color;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 14px * 1.714;
+}
+
+.user-post-info__time-passed::before {
+  content: "(";
+}
+
+.user-post-info__time-passed::after {
+  content: ")";
+}
+
+.user-post-info__text {
+  color: $color;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.user-post-info__footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  width: $width-standard;
+}
+
+.user-post-info__set-your-like {
+  background-color: transparent;
+  background-image: url($like-image-filename);
+  background-repeat: no-repeat;
+  min-width: $like-image-width;
+  min-height: $like-image-height;
+  border: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.user-post-info__likes-count {
+  color: $like-color;
+  font-size: 12px;
+  line-height: 24px;
+}

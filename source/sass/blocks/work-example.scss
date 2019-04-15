@@ -1,0 +1,28 @@
+$main-photo-average-color: #283645;
+$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+$main-photo-height: 462px; // точно 462
+$main-photo-height-bottom-cut: 70px;
+$main-photo-y-shift: -65px;
+$hand-with-phone-width: 320;
+$hand-with-phone-height: 314;
+
+.work-example {
+  background-color: $main-photo-average-color;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.work-example__original {
+  background-image: url($main-photo-image-filename);
+  background-position-y: $main-photo-y-shift;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: $main-photo-height - $main-photo-height-bottom-cut;
+}
+
+.work-example__hand-with-phone {
+  position: absolute;
+  bottom: 0;
+}
