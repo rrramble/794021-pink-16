@@ -1,7 +1,10 @@
 $background-color: #283645;
 $logo-height: 22.859px;
+$logo-tablet-height: 40px;
 $logo-width: 74.426px;
+$logo-tablet-width: 147px;
 $logo-url: "../img/logo-pink-white-mobile.svg";
+$logo-tablet-url: "../img/logo-pink-white-tablet.svg";
 
 .page-nav {
   display: flex;
@@ -21,4 +24,13 @@ $logo-url: "../img/logo-pink-white-mobile.svg";
 
 .page-nav__menu {
   margin-left: auto;
+}
+
+@media (min-width: 660px) {
+  .page-nav__logo {
+    background-image: url($logo-tablet-url);
+    margin-bottom: 42px;
+    min-height: $logo-tablet-height;
+    min-width: $logo-tablet-width;
+  }
 }
