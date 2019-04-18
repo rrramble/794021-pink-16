@@ -1,15 +1,17 @@
-$header-color: #1c2530;
-$main-photo-average-color: #283645;
-$navigation-bg-color: rgba(0, 0, 0, 0);
-$padding-vertical: 20px;
-
 .page-header {
-  background-color: $main-photo-average-color;
-  width: 100%;
+  background-color: $main-bg-color-fallback;
+  background-image: url($main-bg-image-mobile-filename);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;  width: 100%;
 }
 
 .page-header__nav {
   width: 100%;
-  background-color: rgba($header-color, 0.5);
-  padding-top: $padding-vertical;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-header {
+    background-image: url($main-bg-image-tablet-filename);
+  }
 }

@@ -1,36 +1,49 @@
-$background-color: #283645;
-$logo-height: 22.859px;
+$navigation-bg-color: rgba(black, 0.3);
+
+$logo-mobile-height: 22px;
 $logo-tablet-height: 40px;
-$logo-width: 74.426px;
+
+$logo-mobile-width: 75px;
 $logo-tablet-width: 147px;
-$logo-url: "../img/logo-pink-white-mobile.svg";
+
+$logo-mobile-url: "../img/logo-pink-white-mobile.svg";
 $logo-tablet-url: "../img/logo-pink-white-tablet.svg";
 
+$padding-before-content-mobile: 20px;
+
 .page-nav {
+  background-color: $navigation-bg-color;
   display: flex;
   flex-direction: column;
+  padding-top: $padding-before-content-mobile;
   position: relative;
 }
 
 .page-nav__logo {
-  background-image: url($logo-url);
+  background-image: url($logo-mobile-url);
   background-repeat: no-repeat;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: auto;
-  min-height: $logo-height;
-  min-width: $logo-width;
+  left: 20px;
+  min-height: $logo-mobile-height;
+  min-width: $logo-mobile-width;
+  position: absolute;
+}
+
+.page-nave__logo:active {
+  stroke-opacity: 0.3;
 }
 
 .page-nav__menu {
-  margin-left: auto;
+  margin-top: 45px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-min-width) {
   .page-nav__logo {
     background-image: url($logo-tablet-url);
-    margin-bottom: 42px;
     min-height: $logo-tablet-height;
     min-width: $logo-tablet-width;
+  }
+
+  .page-nav__menu {
+    margin-top: 90px;
   }
 }

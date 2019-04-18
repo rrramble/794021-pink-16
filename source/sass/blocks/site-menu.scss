@@ -2,25 +2,29 @@ $text-color: white;
 $text-color-hover: #d22856;
 $text-color-pressed: rgba(255, 255, 255, 0.302);
 
-$background-color: #283645;
+$menu-item-bg-color: rgb(40, 54, 69);
 
 $icon-menu-burger-url: "../img/icon-menu-burger.svg";
 $icon-menu-cross-url: "../img/icon-menu-cross.svg";
 $icon-menu-closed: $icon-menu-burger-url;
 $icon-menu-open: $icon-menu-cross-url;
+
 $icon-closed-width: 50px;
-$icon-closed-height: 24px;
+$icon-closed-height: 25px;
 
-$font-size: 18px;
-$font-height: 32px;
-
-$menu-item-width: 320px;
+$font-size-mobile: 18px;
+$line-height-mobile: 32px;
+$line-height-desktop: 18px;
 
 .site-menu {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.site-menu.site-menu--open {
+  background-color: $menu-item-bg-color;
 }
 
 .site-menu::before {
@@ -44,14 +48,15 @@ $menu-item-width: 320px;
 
 .site-menu__item {
   color: $text-color;
+  background-color: $menu-item-bg-color;
   border-top-color: gray;
   border-top-width: 1px;
   border-top-style: solid;
   border-bottom-color: black;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  font-size: $font-size;
-  width: $menu-item-width;
+  font-size: $font-size-mobile;
+  width: 100%;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -66,18 +71,22 @@ $menu-item-width: 320px;
   color: $text-color-pressed;
 }
 
-.site-menu__item--hidden {
+.site-menu:not(.site-menu--open) .site-menu__item {
   display: none;
 }
 
-.site-menu__item--not-clickable {
+.site-menu__item--not-clickable,
+.site-menu__item--not-clickable:hover,
+.site-menu__item--not-clickable:active,
+.site-menu__item--not-clickable:focus {
   color: $text-color;
+  cursor: default;
 }
 
 .site-menu__item-text {
   color: white;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $font-size-mobile;
+  line-height: $line-height-mobile;
   text-align: center;
   text-decoration: none;
 }
