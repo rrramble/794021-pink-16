@@ -57,10 +57,12 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   font-size: $font-size-mobile;
-  width: 100%;
+  overflow-wrap: break-word;
   padding: 15px;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .site-menu__item-text:visited {
