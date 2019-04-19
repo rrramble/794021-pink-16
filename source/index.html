@@ -36,26 +36,35 @@
   <main class="page-content">
 
     <section class="work-example">
-      <h2 class="work-example__header">Взгляните на жизнь иначе!</h2>
-      <div class="work-example__original"></div>
-      <img class="work-example__hand-with-phone" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука держит смартфон">
-    </section>
+      <img class="work-example__hand-with-phone"
+        srcset="
+          img/iphone-hand-mobile@1x.png 258w,
+          img/iphone-hand-tablet@1x.png 700w,
+          img/iphone-hand-desktop@1x.png 1050w
+        "
+        sizes="
+          (min-width: 1200px) 1050px,
+          (min-width: 660px) 700px,
+          258px"
+        src="img/iphone-hand-mobile@1x.png" alt="Рука держит смартфон"
+      >
 
-    <section class="app-download">
-      <h2 class="visually-hidden">Скачайте</h2>
-      <a class="app-download__btn" href="#">Скачать приложение</a>
-      <ul class="app-download__platforms app-platforms">
-        <li class="app-platforms__apple">
-          <span class="visually-hidden">Эппл</span>
-        </li>
-        <li class="app-platforms__android">
-            <span class="visually-hidden">Андроид</span>
+      <div class="app-download">
+        <h2 class="app-download__header">Взгляните на жизнь иначе!</h2>
+        <a class="app-download__btn" href="#">Скачать приложение</a>
+        <ul class="app-download__platforms app-platforms">
+          <li class="app-platforms__apple">
+            <span class="visually-hidden">Эппл</span>
           </li>
-        <li class="app-platforms__windows">
-          <span class="visually-hidden">Виндоуз</span>
-        </li>
-      </ul>
-      <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
+          <li class="app-platforms__android">
+              <span class="visually-hidden">Андроид</span>
+            </li>
+          <li class="app-platforms__windows">
+            <span class="visually-hidden">Виндоуз</span>
+          </li>
+        </ul>
+        <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
+      </div>
     </section>
 
     <section class="motivation">

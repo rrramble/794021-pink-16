@@ -1,7 +1,15 @@
 $main-photo-average-color: #283645;
-$main-photo-height: 462px; // точно 462
-$main-photo-height-bottom-cut: 70px;
+
+$block-mobile-min-height: 396px;
 $main-photo-y-shift: -65px;
+
+$block-tablet-min-height: 620px;
+$main-photo-tablet-y-shift: -110px;
+
+$block-desktop-min-height: 745px;
+$main-photo-desktop-y-shift: -110px;
+
+
 $hand-with-phone-width: 320;
 $hand-with-phone-height: 314;
 
@@ -9,38 +17,45 @@ $header-text-color: white;
 
 .work-example {
   background-color: $main-photo-average-color;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.work-example__header {
-  background-color: transparent;
-  color: $header-text-color;
-  display: none;
-  font-size: 40px;
-  font-weight: normal;
-  line-height: 1.2em;
-}
-
-.work-example__original {
   background-image: url($main-bg-image-mobile-filename);
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
-  flex-grow: 1;
-  flex-shrink: 1;
-  min-height: $main-photo-height - $main-photo-height-bottom-cut;
+  display: flex;
+  flex-direction: column;
+  min-height: $block-mobile-min-height;
+  position: relative;
 }
 
 .work-example__hand-with-phone {
-  position: absolute;
+  position: sticky;
   bottom: 0;
 }
 
 @media (min-width: $tablet-min-width) {
-  .work-example__header {
-    display: initial;
+  .work-example {
+    background-image: url($main-bg-image-tablet-filename);
+    background-position-y: $main-photo-tablet-y-shift;
+    min-height: $block-tablet-min-height;
   }
 
+  .work-example__hand-with-phone {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .work-example {
+    background-image: url($main-bg-image-desktop-filename);
+    background-position-y: $main-photo-desktop-y-shift;
+    min-height: $block-desktop-min-height;
+  }
+
+  .work-example__hand-with-phone {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  }
 }

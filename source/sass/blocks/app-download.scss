@@ -8,10 +8,21 @@ $button-border-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 340px;
+  max-width: 100%;
   min-width: 320px;
   padding-top: 25px;
 }
+
+.app-download__header {
+  background-color: transparent;
+  color: $header-text-color;
+  display: none;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.2em;
+  text-align: center;
+}
+
 
 .app-download__btn {
   align-self: center;
@@ -24,6 +35,7 @@ $button-border-color: white;
   font-weight: bold;
   line-height: 18px;
   margin-bottom: 20px;
+  max-width: 320px;
   padding-top: 12px;
   padding-bottom: 12px;
   text-decoration: none;
@@ -43,4 +55,16 @@ $button-border-color: white;
   line-height: 24px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .app-download {
+    background-color: transparent;
+    max-width: 340px;
+  }
+
+  .app-download__header {
+    display: initial;
+  }
+
 }
