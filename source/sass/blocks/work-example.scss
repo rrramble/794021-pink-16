@@ -6,11 +6,22 @@ $main-photo-y-shift: -65px;
 $hand-with-phone-width: 320;
 $hand-with-phone-height: 314;
 
+$header-text-color: white;
+
 .work-example {
   background-color: $main-photo-average-color;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.work-example__header {
+  background-color: transparent;
+  color: $header-text-color;
+  display: none;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.2em;
 }
 
 .work-example__original {
