@@ -25,6 +25,7 @@ $header-text-color: white;
 
 .work-example__original {
   background-image: url($main-bg-image-mobile-filename);
+  background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
   flex-grow: 1;
