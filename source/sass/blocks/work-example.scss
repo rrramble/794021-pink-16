@@ -37,3 +37,10 @@ $header-text-color: white;
   position: absolute;
   bottom: 0;
 }
+
+@media (min-width: $tablet-min-width) {
+  .work-example__header {
+    display: initial;
+  }
+
+}
