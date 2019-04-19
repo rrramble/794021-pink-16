@@ -3,11 +3,13 @@ $button-text-color: white;
 $button-border-color: white;
 
 .app-download {
+  align-content: center;
   background-color: $original-photo-average-color;
   display: flex;
   flex-direction: column;
-  align-content: center;
   justify-content: flex-start;
+  max-width: 340px;
+  min-width: 320px;
   padding-top: 25px;
 }
 
