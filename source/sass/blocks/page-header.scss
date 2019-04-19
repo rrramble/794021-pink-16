@@ -15,3 +15,9 @@
     background-image: url($main-bg-image-tablet-filename);
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .page-header {
+    background-image: url($main-bg-image-desktop-filename);
+  }
+}
