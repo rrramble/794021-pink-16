@@ -1,7 +1,3 @@
-$text-color: white;
-$text-color-hover: #d22856;
-$text-color-pressed: rgba(255, 255, 255, 0.302);
-
 $menu-item-bg-color: rgb(40, 54, 69);
 
 $icon-menu-burger-url: "../img/icon-menu-burger.svg";
@@ -16,6 +12,12 @@ $font-size-mobile: 18px;
 $line-height-mobile: 32px;
 $line-height-desktop: 18px;
 
+$gap-between-menu-items: 80px;
+
+$text-color: white;
+$text-color-hover: #d22856;
+$text-color-pressed: rgba(255, 255, 255, 0.302);
+
 .site-menu {
   list-style: none;
   display: flex;
@@ -23,7 +25,7 @@ $line-height-desktop: 18px;
   flex-wrap: wrap;
 }
 
-.site-menu.site-menu--open {
+.site-menu--open {
   background-color: $menu-item-bg-color;
 }
 
@@ -47,7 +49,6 @@ $line-height-desktop: 18px;
 }
 
 .site-menu__item {
-  color: $text-color;
   background-color: $menu-item-bg-color;
   border-top-color: gray;
   border-top-width: 1px;
@@ -62,13 +63,8 @@ $line-height-desktop: 18px;
   text-decoration: none;
 }
 
-.site-menu__item:hover,
-.site-menu__item:focus {
-  color: $text-color-hover;
-}
-
-.site-menu__item:active {
-  color: $text-color-pressed;
+.site-menu__item-text:visited {
+  color: $text-color;
 }
 
 .site-menu:not(.site-menu--open) .site-menu__item {
@@ -79,18 +75,56 @@ $line-height-desktop: 18px;
 .site-menu__item--not-clickable:hover,
 .site-menu__item--not-clickable:active,
 .site-menu__item--not-clickable:focus {
-  color: $text-color;
   cursor: default;
 }
 
 .site-menu__item-text {
-  color: white;
+  color: $text-color;
   font-size: $font-size-mobile;
   line-height: $line-height-mobile;
   text-align: center;
   text-decoration: none;
 }
 
-.site-menu__item-text:visited {
-  color: white;
+.site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:hover,
+.site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:focus {
+  color: $text-color-hover;
+}
+
+.site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:active {
+  color: $text-color-pressed;
+}
+
+@media (min-width: $desktop-min-width) {
+  .site-menu {
+    justify-content: flex-end;
+  }
+
+  .site-menu::before {
+    display: none;
+  }
+
+  .site-menu--open {
+    background-color: transparent;
+  }
+
+  .site-menu__item {
+    background-color: transparent;
+    border: none;
+    border-image: none;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-left: $gap-between-menu-items / 2;
+    margin-right: $gap-between-menu-items / 2;
+    margin-top: 10px;
+    padding: 0;
+    width: auto;
+  }
+
+  .site-menu__item-text {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1em;
+    text-align: right;
+  }
 }

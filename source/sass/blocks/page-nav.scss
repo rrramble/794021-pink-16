@@ -1,11 +1,14 @@
 $navigation-bg-color: rgba(black, 0.3);
 
+$logo-desktop-height: 40px;
 $logo-mobile-height: 22px;
 $logo-tablet-height: 40px;
 
+$logo-desktop-width: 147px;
 $logo-mobile-width: 75px;
 $logo-tablet-width: 147px;
 
+$logo-desktop-url: "../img/logo-pink-white-desktop.svg";
 $logo-mobile-url: "../img/logo-pink-white-mobile.svg";
 $logo-tablet-url: "../img/logo-pink-white-tablet.svg";
 
@@ -15,6 +18,7 @@ $padding-before-content-mobile: 20px;
   background-color: $navigation-bg-color;
   display: flex;
   flex-direction: column;
+  padding-bottom: $padding-before-content-mobile;
   padding-top: $padding-before-content-mobile;
   position: relative;
 }
@@ -37,6 +41,10 @@ $padding-before-content-mobile: 20px;
 }
 
 @media (min-width: $tablet-min-width) {
+  .page-nav {
+    min-height: 110px;
+  }
+
   .page-nav__logo {
     background-image: url($logo-tablet-url);
     min-height: $logo-tablet-height;
@@ -45,5 +53,28 @@ $padding-before-content-mobile: 20px;
 
   .page-nav__menu {
     margin-top: 90px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .page-nav {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-nav__logo {
+    background-image: url($logo-desktop-url);
+    margin-left: 130px;
+    height: $logo-desktop-height;
+    left: 0;
+    top: -9px;
+    position: relative;
+    width: $logo-desktop-width;
+  }
+
+  .page-nav__menu {
+    margin-right: 130px - (80px / 2);
+    margin-top: 0px;
   }
 }
