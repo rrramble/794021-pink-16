@@ -14,19 +14,34 @@ $line-height-desktop: 18px;
 
 $gap-between-menu-items: 80px;
 
+$nav-mobile-box-height: 68px;
+$logo-mobile-top-gap: 22px;
+$logo-mobile-height: 22px;
+$logo-mobile-bottom-gap: 24px;
+
+$nav-tablet-box-height: 110px;
+$logo-tablet-top-gap: 26px;
+$logo-tablet-height: 40px;
+$logo-tablet-bottom-gap: 44;
+
 $text-color: white;
 $text-color-hover: #d22856;
 $text-color-pressed: rgba(255, 255, 255, 0.302);
 
 .site-menu {
+  align-items: baseline;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: $logo-mobile-height + $logo-mobile-bottom-gap;
+  margin-bottom: -20px;
 }
 
 .site-menu--open {
   background-color: $menu-item-bg-color;
+  margin-top: -$logo-mobile-top-gap;
+  padding-top: $nav-mobile-box-height;
 }
 
 .site-menu::before {
@@ -97,9 +112,27 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   color: $text-color-pressed;
 }
 
+@media (min-width: $tablet-min-width) {
+  .site-menu {
+    margin-top: $logo-tablet-height + $logo-tablet-bottom-gap;
+  }
+
+  .site-menu--open {
+    margin-top: -$logo-tablet-top-gap;
+    padding-top: $nav-tablet-box-height;
+  }
+}
+
 @media (min-width: $desktop-min-width) {
   .site-menu {
     justify-content: flex-end;
+    margin-bottom: initial;
+    margin-top: initial;
+  }
+
+  .site-menu--open {
+    margin-top: initial;
+    padding-top: initial;
   }
 
   .site-menu::before {
