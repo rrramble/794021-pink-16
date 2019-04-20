@@ -1,6 +1,10 @@
 $iphone-screen-mobile-height: 320px;
 $iphone-screen-mobile-height-cut: 45px;
+$iphone-screen-tablet-height: 481px;
+$iphone-screen-tablet-height-cut: 0px;
+
 $iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
+$iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 
 .motivation {
   align-content: center;
@@ -18,11 +22,51 @@ $iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
   background-color: rgb(242, 242, 242);
 }
 
-.motivation__image {
+.motivation__images {
   background-color: rgb(242, 242, 242);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.motivation__image-shared {
   background-image: url($iphone-screen-mobile-filename);
   background-position-x: 50%;
   background-repeat: no-repeat;
   min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
-  min-width: 100%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .motivation {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .motivation__intro {
+    width: 100%;
+  }
+
+  .motivation__facts {
+    order: 3;
+    width: 50%;
+  }
+
+  .motivation__images {
+    width: 50%;
+  }
+
+  .motivation__image-shared {
+  background-image: url($iphone-screen-tablet-filename);
+  min-height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;
+  // clip-path: polygon(0 55px, 100% 28px, 100% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .motivation__image-initial {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+  }
+
+  .motivation__image-painted {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+  }
 }
