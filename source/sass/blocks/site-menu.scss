@@ -130,17 +130,14 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     margin-top: initial;
   }
 
-  .site-menu--open {
-    margin-top: initial;
-    padding-top: initial;
-  }
-
   .site-menu::before {
     display: none;
   }
 
   .site-menu--open {
     background-color: transparent;
+    margin-top: initial;
+    padding-top: initial;
   }
 
   .site-menu__item {
