@@ -11,7 +11,7 @@ $button-border-color: white;
   padding-left: 19px;
   padding-right: 19px;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
 .app-download__header {
@@ -34,7 +34,6 @@ $button-border-color: white;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  margin-top: 35px;
   max-width: 340px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -69,5 +68,9 @@ $button-border-color: white;
 
   .app-download__header {
     display: initial;
+  }
+
+  .app-download__btn {
+    margin-top: 35px;
   }
 }
