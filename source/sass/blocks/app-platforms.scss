@@ -1,13 +1,12 @@
 $max-icon-height: 56px;
 $max-icon-width: 47px;
-$min-box-padding: 320px;
+$min-box-padding: 320px - 2 * 19px;
 $max-box-padding: 340px;
 $padding: (($min-box-padding - 3 * $max-icon-width) - (2 * 34px)) / 2;
 
 .app-platforms {
-  align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: $padding;
