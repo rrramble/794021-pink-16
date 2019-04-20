@@ -1,5 +1,3 @@
-$fact-color: black;
-
 .motivation-facts {
   display: flex;
   align-content: center;
@@ -11,16 +9,28 @@ $fact-color: black;
 }
 
 .motivation-facts__header {
-  color: $fact-color;
+  color: black;
   font-size: 18px;
-  line-height: 18px * 2;
+  line-height: 24px;
   text-align: center;
 }
 
 .motivation-facts__text {
-  color: $fact-color;
+  color: $text-color-dark;
   font-size: 14px;
-  line-height: 14px * 2;
+  line-height: 24px;
   margin-bottom: 24px;
   text-align: center;
+}
+
+@media (min-width: $desktop-min-width) {
+  .motivation-facts__header {
+    font-size: 30px;
+    line-height: 1em;
+  }
+
+  .motivation-facts__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
