@@ -1,8 +1,17 @@
+$max-icon-height: 56px;
+$max-icon-width: 47px;
+$min-box-padding: 320px;
+$max-box-padding: 340px;
+$padding: (($min-box-padding - 3 * $max-icon-width) - (2 * 34px)) / 2;
+
 .app-platforms {
   align-items: center;
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: $padding;
+  padding-right: $padding;
 }
 
 @mixin social-icon($url) {
@@ -10,8 +19,8 @@
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
-  height: 52px;
-  width: 52px;
+  height: $max-icon-height;
+  width: $max-icon-width;
 }
 
 .app-platforms__apple {

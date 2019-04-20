@@ -16,6 +16,7 @@ $hand-with-phone-height: 314;
 $header-text-color: white;
 
 .work-example {
+  align-items: center;
   background-color: $main-photo-average-color;
   background-image: url($main-bg-image-mobile-filename);
   background-position-x: center;
@@ -23,6 +24,7 @@ $header-text-color: white;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   min-height: $block-mobile-min-height;
   position: relative;
 }
@@ -30,13 +32,22 @@ $header-text-color: white;
 .work-example__hand-with-phone {
   position: sticky;
   bottom: 0;
+  z-index: 1;
+}
+
+.work-example__app-download {
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-min-width) {
   .work-example {
+    align-items: flex-start;
     background-image: url($main-bg-image-tablet-filename);
     background-position-y: $main-photo-tablet-y-shift;
     min-height: $block-tablet-min-height;
+    padding-left: 20px;
+    padding-top: 90px;
   }
 
   .work-example__hand-with-phone {
@@ -51,6 +62,8 @@ $header-text-color: white;
     background-image: url($main-bg-image-desktop-filename);
     background-position-y: $main-photo-desktop-y-shift;
     min-height: $block-desktop-min-height;
+    padding-left: 130px;
+    padding-top: 100px;
   }
 
   .work-example__hand-with-phone {

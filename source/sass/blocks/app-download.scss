@@ -3,13 +3,14 @@ $button-text-color: white;
 $button-border-color: white;
 
 .app-download {
-  align-content: center;
+  align-items: stretch;
   background-color: $original-photo-average-color;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 100%;
-  min-width: 320px;
+  padding-left: 19px;
+  padding-right: 19px;
+  width: 100%;
   padding-top: 25px;
 }
 
@@ -18,11 +19,10 @@ $button-border-color: white;
   color: $header-text-color;
   display: none;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: $font-weight-light;
   line-height: 1.2em;
   text-align: center;
 }
-
 
 .app-download__btn {
   align-self: center;
@@ -34,33 +34,37 @@ $button-border-color: white;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  margin-bottom: 20px;
-  max-width: 320px;
+  margin-top: 35px;
+  max-width: 340px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 1em;
+  padding-right: 1em;
   text-decoration: none;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
 .app-download__platforms {
+  margin-top: 20px;
   list-style: none;
-  margin-bottom: 20px;
 }
 
 .app-download__info {
   color: white;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: $font-weight-light;
   line-height: 24px;
+  margin-top: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-min-width) {
   .app-download {
     background-color: transparent;
-    max-width: 340px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 340px;
   }
 
   .app-download__header {
