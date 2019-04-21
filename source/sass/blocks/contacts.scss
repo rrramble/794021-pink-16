@@ -1,7 +1,4 @@
-$header-color: rgb(40, 54, 69);
-$contact-color: #d22856;
 $map-height: 200px;
-$text-color: rgb(40, 54, 69);
 
 .contacts {
   align-content: center;
@@ -9,34 +6,20 @@ $text-color: rgb(40, 54, 69);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.contacts__text {
-  color: $text-color;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 24px * 1.2;
-  margin-bottom: 10px;
-  text-align: center;
+  padding-top: 46px;
 }
 
 .contacts__header {
-  color: $header-color;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px * 1.2;
-  margin-top: 20px;
+  color: $text-color-dark;
+  font-size: 24px;
+  font-weight: $font-weight-light;
+  line-height: 1.2em;
   text-align: center;
 }
 
-.contacts__contact {
-  color: $contact-color;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 24px * 1.2;
-  text-align: center;
-  text-decoration: none;
+.contacts__info-blocks {
+  list-style: none;
+  margin-top: 10px;
 }
 
 .contacts__map {
