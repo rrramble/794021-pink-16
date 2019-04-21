@@ -1,7 +1,7 @@
 $iphone-screen-mobile-height: 320px;
 $iphone-screen-mobile-height-cut: 45px;
 $iphone-screen-tablet-height: 481px;
-$iphone-screen-tablet-height-cut: 0px;
+$iphone-screen-tablet-height-cut: 0;
 
 $iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
 $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
@@ -55,9 +55,9 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
   }
 
   .motivation__image-shared {
-  background-image: url($iphone-screen-tablet-filename);
-  min-height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;
-  // clip-path: polygon(0 55px, 100% 28px, 100% 100%, 0% 100%);
+    background-image: url($iphone-screen-tablet-filename);
+    min-height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;
+    // clip-path: polygon(0 55px, 100% 28px, 100% 100%, 0% 100%);
   }
 }
 
