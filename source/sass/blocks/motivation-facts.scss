@@ -2,17 +2,15 @@
   display: flex;
   align-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 24px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
 @media (min-width: $tablet-min-width) {
   .motivation-facts {
-    padding-bottom: 35px;
-    padding-top: 70px;
   }
 }
