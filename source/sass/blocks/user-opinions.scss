@@ -1,30 +1,27 @@
 .user-opinions {
+  align-items: center;
   background-color: white;
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding-top: 44px;
   padding-bottom: 60px;
 }
 
-.user-opinions__list {
-  list-style: none;
-}
+@media (min-width: $desktop-min-width) {
+  .user-opinions {
+    padding-top: 74px;
+  }
 
-.user-opinions__item-header {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  text-align: center;
-}
-
-.user-opinions__item-text {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.user-opinions__item-text::before {
-  content: "«";
-}
-
-.user-opinions__item-text::after {
-  content: "»";
+  .user-opinions::before {
+    content: "";
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    height: 64px;
+    margin-bottom: 50px;
+    width: 79px;
+  }
 }
