@@ -1,7 +1,14 @@
 $iphone-screen-mobile-height: 320px;
 $iphone-screen-mobile-height-cut: 45px;
+
 $iphone-screen-tablet-height: 481px;
 $iphone-screen-tablet-height-cut: 0;
+
+$iphone-screen-desktop-height: 302px;
+$iphone-screen-desktop-height-cut: 0;
+$iphone-screen-desktop-width: 292px;
+
+
 $bg-color-grayish: rgb(242, 242, 242);
 
 $iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
@@ -33,9 +40,27 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 }
 
 .motivation__images {
+  align-items: flex-start;
   background-color: transparent;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.motivation__image-initial {
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  display: none;
+  min-width: 292px;
+}
+
+.motivation__image-painted {
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  display: none;
+  min-width: 292px;
 }
 
 .motivation__image-shared {
@@ -43,6 +68,7 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
   background-position-x: 50%;
   background-repeat: no-repeat;
   min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
+  min-width: 292px;
 }
 
 .motivation__skew-bg {
@@ -87,11 +113,35 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation__container {
+    flex-direction: column;
+    flex-wrap: initial;
+  }
+
+  .motivation__images {
+    width: 100%;
+  }
+
   .motivation__image-initial {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    display: block;
+    min-height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
+    min-width: $iphone-screen-desktop-width;
   }
 
   .motivation__image-painted {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    display: block;
+    min-height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
+    min-width: $iphone-screen-desktop-width;
+  }
+
+  .motivation__image-shared {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    min-width: $iphone-screen-desktop-width;
+  }
+
+  .motivation__skew-bg {
+    clip-path: polygon(0 95px, 100% 0, 100% 100%, 0% 100%);
   }
 }
