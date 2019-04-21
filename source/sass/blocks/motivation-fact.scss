@@ -35,6 +35,13 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation-fact {
+    width: 250px;
+    padding-left: 1em;
+    padding-right: 1em;
+    min-width: $iphone-screen-desktop-width;
+  }
+
   .motivation-fact--promo24hours {
     display: initial;
     width: $desktop-min-width;
