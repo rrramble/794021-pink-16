@@ -1,3 +1,18 @@
+.motivation-fact--promo24hours {
+  display: none;
+  width: 100%;
+}
+
+.motivation-fact--promo24hours::before {
+  background-image: url("../img/--some-24-hours--.svg");
+  display: none;
+  content: "";
+  background-position-x: 0;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 298px 345px;
+}
+
 .motivation-fact__header {
   color: black;
   font-size: 18px;
@@ -13,7 +28,23 @@
   margin-top: 0;
 }
 
+.motivation-fact__link {
+  color: #d22856;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 @media (min-width: $desktop-min-width) {
+  .motivation-fact--promo24hours {
+    display: initial;
+    width: $desktop-min-width;
+    padding-left: 450px;
+  }
+
+  .motivation-fact--promo24hours::before {
+    display: block;
+  }
+
   .motivation-fact__header {
     font-size: 30px;
     line-height: 1em;
@@ -22,5 +53,13 @@
   .motivation-fact__text {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__header {
+    text-align: left;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__text {
+    text-align: left;
   }
 }
