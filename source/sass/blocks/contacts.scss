@@ -18,6 +18,10 @@ $map-height: 200px;
 }
 
 .contacts__info-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin-top: 10px;
 }
