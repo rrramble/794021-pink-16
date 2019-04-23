@@ -1,6 +1,5 @@
 $academy-logo-width: 28px;
 $academy-logo-height: 35px;
-$color: rgb(40, 54, 69);
 $logo-pink-width: 240px;
 $logo-ping-height: 42px;
 $logo-pink-filename: "../img/logo-pink-blue-mobile.svg";
@@ -78,7 +77,7 @@ $shaded-color: #dddfe0;
 }
 
 .page-footer__text {
-  color: $color;
+  color: $text-color-dark;
   font-size: 14px;
   line-height: 18px;
   margin-right: 16px;
