@@ -1,19 +1,19 @@
-$logo-pink-width: 240px;
-$logo-ping-height: 42px;
-$logo-pink-filename: "../img/logo-pink-blue-mobile.svg";
+$logo-pink-mobile-width: 240px;
+$logo-ping-mobile-height: 42px;
+$logo-pink-mobile-filename: "../img/logo-pink-blue-mobile.svg";
 
 $logo-pink-desktop-width: 147px;
 $logo-pink-desktop-height: 40px;
 $logo-pink-desktop-filename: "../img/logo-pink-blue-desktop.svg";
 
 .footer-logo {
-  background-image: url($logo-pink-filename);
+  background-image: url($logo-pink-mobile-filename);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
   margin-bottom: 40px;
-  min-width: $logo-pink-width;
-  min-height: $logo-ping-height;
+  min-width: $logo-pink-mobile-width;
+  min-height: $logo-ping-mobile-height;
 }
 
 @media (min-width: $desktop-min-width) {
