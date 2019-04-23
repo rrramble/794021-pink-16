@@ -18,16 +18,6 @@ $shaded-color: #dddfe0;
   padding-top: 40px;
 }
 
-.page-footer__logo {
-  background-image: url($logo-pink-filename);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  margin-bottom: 40px;
-  min-width: $logo-pink-width;
-  min-height: $logo-ping-height;
-}
-
 .page-footer__socials {
   background-color: transparent;
   display: flex;
