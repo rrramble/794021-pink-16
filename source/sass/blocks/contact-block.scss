@@ -3,8 +3,9 @@
   padding-right: 1em;
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 320px;
-  word-wrap: break-word;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .contact-block__header {
