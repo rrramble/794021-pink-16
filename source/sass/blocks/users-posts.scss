@@ -1,8 +1,11 @@
 $gap-between-posts: 20px;
-$main-photo-average-color: #283645;
-$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+
+$main-bg-photo-desktop-filename:"../img/bg-back-desktop@1x.jpg";
+$main-bg-photo-mobile-filename: "../img/bg-back-mobile@1x.jpg";
+$main-bg-photo-tablet-filename:"../img/bg-back-tablet@1x.jpg";
+
 $main-photo-y-shift: -65px;
-$text-color: #283645;
+$main-bg-photo-y-shift: -110px;
 
 .users-posts {
   display: flex;
@@ -12,15 +15,16 @@ $text-color: #283645;
 }
 
 .users-posts__intro-header {
-  background-color: $main-photo-average-color;
-  background-image: url($main-photo-image-filename);
+  background-color: $main-bg-color-fallback;
+  background-image: url($main-bg-photo-mobile-filename);
+  background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
   color: white;
   font-size: 24px;
-  font-weight: 100;
-  line-height: 24px * 1.2;
-  min-height: 175px;
+  font-weight: $font-weight-light;
+  line-height: 1.2em;
+  min-height: 170px;
   padding-top: 36px;
   padding-bottom: 36px;
   text-align: center;
@@ -28,7 +32,7 @@ $text-color: #283645;
 
 .users-posts__intro-text {
   background-color: white;
-  color: $text-color;
+  color: $text-color-dark;
   font-size: 14px;
   line-height: 30px;
   padding-bottom: 50px;
@@ -41,4 +45,22 @@ $text-color: #283645;
   list-style: none;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+@media (min-width: $tablet-min-width) {
+  .users-posts__intro-header {
+    background-image: url($main-bg-photo-tablet-filename);
+    background-position-y: $main-bg-photo-y-shift;
+    font-size: 50px;
+    min-height: 330px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .users-posts__intro-header {
+    background-image: url($main-bg-photo-desktop-filename);
+    background-position-y: $main-bg-photo-y-shift;
+    font-size: 50px;
+    min-height: 285px;
+  }
 }
