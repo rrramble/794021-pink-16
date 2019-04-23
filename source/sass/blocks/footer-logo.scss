@@ -2,6 +2,10 @@ $logo-pink-width: 240px;
 $logo-ping-height: 42px;
 $logo-pink-filename: "../img/logo-pink-blue-mobile.svg";
 
+$logo-pink-desktop-width: 147px;
+$logo-pink-desktop-height: 40px;
+$logo-pink-desktop-filename: "../img/logo-pink-blue-desktop.svg";
+
 .footer-logo {
   background-image: url($logo-pink-filename);
   background-repeat: no-repeat;
@@ -10,4 +14,12 @@ $logo-pink-filename: "../img/logo-pink-blue-mobile.svg";
   margin-bottom: 40px;
   min-width: $logo-pink-width;
   min-height: $logo-ping-height;
+}
+
+@media (min-width: $desktop-min-width) {
+  .footer-logo {
+    background-image: url($logo-pink-desktop-filename);
+    height: $logo-pink-desktop-height;
+    width: $logo-pink-desktop-width;
+  }
 }
