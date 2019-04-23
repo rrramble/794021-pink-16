@@ -45,3 +45,10 @@ $academy-logo-height: 35px;
   min-width: $academy-logo-width;
   min-height: $academy-logo-height;
 }
+
+@media (min-width: $desktop-min-width) {
+  .page-footer {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
