@@ -35,4 +35,8 @@ $shaded-color: #dddfe0;
   @include social-btn("../img/icon-youtube.svg");
 }
 
+@media (min-width: $tablet-min-width) {
+  .footer-socials {
     margin-bottom: 0;
+  }
+}
