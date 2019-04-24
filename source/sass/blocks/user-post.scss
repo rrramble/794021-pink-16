@@ -1,12 +1,11 @@
 $color: rgb(40, 54, 69);
 $message-bg-color: #f2f2f2;
-$width-standard: 280 / 320 * 100%;
 $width-wide: 100%;
-$gap-between-posts: 20px;
+$vertical-gap-between-posts: 20px;
 
 .user-post {
+  align-items: stretch;
   align-content: stretch;
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,17 +13,47 @@ $gap-between-posts: 20px;
 }
 
 .user-post__img {
-  width: $width-standard;
+  flex-grow: 1;
+  flex-basis: 1;
   height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.user-post__img--panoram-of-the-day {
-  width: $width-wide;
+.user-post--panoram-of-the-day .user-post__img {
+  height: auto;
+  margin-left: initial;
+  margin-right: initial;
+  width: 100%;
 }
 
 .user-post__info {
   background-color: $message-bg-color;
-  padding: 20px;
-  padding-top: 22px;
-  width: $width-standard;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: $vertical-gap-between-posts;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .user-post {
+    width: 300px;
+  }
+
+  .user-post--panoram-of-the-day {
+    width: 100%;
+  }
+
+  .user-post__info {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  .user-post__img {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
 }

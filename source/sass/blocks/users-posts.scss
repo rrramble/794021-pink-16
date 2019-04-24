@@ -44,6 +44,7 @@ $main-bg-photo-y-shift: -110px;
   display: flex;
   list-style: none;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -53,12 +54,24 @@ $main-bg-photo-y-shift: -110px;
     background-position-y: $main-bg-photo-y-shift;
     font-size: 50px;
     min-height: 330px;
-  }
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
   .users-posts__intro-text {
     font-size: 18px;
     padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 80px;
+  }
+
+  .users-posts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
