@@ -35,8 +35,8 @@ $main-bg-photo-y-shift: -110px;
   color: $text-color-dark;
   font-size: 14px;
   line-height: 30px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -53,6 +53,12 @@ $main-bg-photo-y-shift: -110px;
     background-position-y: $main-bg-photo-y-shift;
     font-size: 50px;
     min-height: 330px;
+  }
+
+  .users-posts__intro-text {
+    font-size: 18px;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
 }
 
