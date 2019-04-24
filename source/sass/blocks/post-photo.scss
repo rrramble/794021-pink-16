@@ -1,4 +1,3 @@
-$color: rgb(40, 54, 69);
 $bg-color: #f2f2f2;
 
 .post-photo {
@@ -19,7 +18,7 @@ $bg-color: #f2f2f2;
 }
 
 .post-photo__header-text {
-  color: $color;
+  color: $text-color-dark;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -51,4 +50,15 @@ $bg-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .post-photo__header {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .post-photo__header-text {
+    font-size: 18px;
+  }
 }
