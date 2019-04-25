@@ -54,3 +54,10 @@ $submit-button-bg-color: rgb(42, 171, 109);
 .contest-request__helper-text--highlight {
   color: $highlighted-text-color;
 }
+
+@media (min-width: $tablet-min-width) {
+  .contest-request {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
