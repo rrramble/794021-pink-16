@@ -11,8 +11,9 @@ $gap-after-button: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 @mixin filter-tool-common($url, $width, $height) {
