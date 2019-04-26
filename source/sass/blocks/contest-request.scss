@@ -57,3 +57,10 @@ $submit-button-bg-color: rgb(42, 171, 109);
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .contest-request {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
