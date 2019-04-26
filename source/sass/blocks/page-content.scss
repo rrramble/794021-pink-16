@@ -48,6 +48,10 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
   text-align: center;
 }
 
+.page-content__intro-text--details {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .page-content__header {
     background-image: url($main-bg-photo-tablet-filename);
@@ -66,6 +70,13 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
     padding-top: 80px;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .page-content__intro-text--details {
+    display: initial;
+  }
+}
+
 
 @media (min-width: $desktop-min-width) {
   .page-content__header {
