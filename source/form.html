@@ -114,11 +114,15 @@
         </fieldset>
 
         <fieldset class="contest-request__contacts applicant-contacts">
-          <h3 class="visually-hidden">Контакты</h3>
-          <label class="applicant-contacts__legend">Номер телефона</label>
-          <input class="applicant-contacts__content" type="tel" placeholder="Номер, пожалуйста" />
-          <label class="applicant-contacts__legend">Адрес почты</label>
-          <input class="applicant-contacts__content" type="email" required placeholder="Введите почту *" />
+          <legend class="applicant-contacts__header">Контактная информация</legend>
+          <div class="applicant-contacts__box">
+            <label class="applicant-contacts__legend">Номер телефона</label>
+            <input class="applicant-contacts__content" type="tel" placeholder="Номер, пожалуйста" />
+          </div>
+          <div class="applicant-contacts__box">
+            <label class="applicant-contacts__legend">Адрес почты</label>
+            <input class="applicant-contacts__content" type="email" required placeholder="Введите почту *" />
+          </div>
         </fieldset>
 
         <fieldset class="contest-request__phone-type applicant-phone-type">
