@@ -4,7 +4,7 @@ $bg-color-shaded: rgb(242, 242, 242);
 $bg-color-light: white;
 
 .applicant-contacts {
-  background-color: $bg-color-light;
+  background-color: white;
   border-width: 0;
   display: flex;
   flex-direction: column;
@@ -13,15 +13,15 @@ $bg-color-light: white;
 }
 
 .applicant-contacts__legend {
-  color: $fieldname-text-color;
+  color: $text-color-redish;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .applicant-contacts__content {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: $bg-color-grayish;
   border-width: 1px;
   font-size: 18px;
   line-height: 30px;
