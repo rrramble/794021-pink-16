@@ -14,12 +14,6 @@ $academy-logo-height: 35px;
   padding-top: 40px;
 }
 
-.page-footer__item {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-
 .page-footer__academy {
   align-content: center;
   align-items: center;
@@ -44,6 +38,12 @@ $academy-logo-height: 35px;
   background-repeat: no-repeat;
   min-width: $academy-logo-width;
   min-height: $academy-logo-height;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-footer {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $desktop-min-width) {

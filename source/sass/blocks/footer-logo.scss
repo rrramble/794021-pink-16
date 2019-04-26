@@ -9,8 +9,8 @@ $logo-pink-desktop-filename: "../img/logo-pink-blue-desktop.svg";
   background-position-x: center;
   background-position-y: center;
   margin-bottom: 40px;
-  min-height: $logo-pink-all-versions-height;
-  min-width: $logo-pink-all-versions-width;
+  height: $logo-pink-all-versions-height;
+  width: $logo-pink-all-versions-width;
 }
 
 @media (min-width: $tablet-min-width) {
