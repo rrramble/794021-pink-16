@@ -55,3 +55,9 @@ $bg-color-light: white;
     flex-grow: 0;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .applicant-names {
+    width: 50%;
+  }
+}

@@ -62,3 +62,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .applicant-phone-type {
+    width: 50%;
+  }
+}
