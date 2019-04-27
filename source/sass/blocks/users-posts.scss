@@ -24,3 +24,10 @@ $gap-between-posts: 20px;
     padding-right: 20px;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .users-posts__list {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}

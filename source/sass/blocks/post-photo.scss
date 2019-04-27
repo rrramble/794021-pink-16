@@ -78,3 +78,15 @@ $bg-color: #f2f2f2;
     width: 50%;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .post-photo {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .post-photo__image {
+    height: 400px;
+    width: 300px;
+  }
+}
