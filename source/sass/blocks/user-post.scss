@@ -12,19 +12,20 @@ $vertical-gap-between-posts: 20px;
   margin-bottom: $gap-between-posts;
 }
 
+.user-post--panoram-of-the-day {
+  order: -1;
+}
+
 .user-post__img {
-  flex-grow: 1;
-  flex-basis: 1;
   height: auto;
   margin-left: 20px;
   margin-right: 20px;
+  width: 100%;
 }
 
 .user-post--panoram-of-the-day .user-post__img {
-  height: auto;
   margin-left: initial;
   margin-right: initial;
-  width: 100%;
 }
 
 .user-post__info {
@@ -35,6 +36,7 @@ $vertical-gap-between-posts: 20px;
   padding-top: $vertical-gap-between-posts;
   margin-left: 20px;
   margin-right: 20px;
+  text-align: left;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -46,12 +48,19 @@ $vertical-gap-between-posts: 20px;
     width: 100%;
   }
 
-  .user-post__info {
+  .user-post__img {
     margin-left: initial;
     margin-right: initial;
+    height: 300px;
+    width: 300px;
   }
 
-  .user-post__img {
+  .user-post--panoram-of-the-day .user-post__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .user-post__info {
     margin-left: initial;
     margin-right: initial;
   }
