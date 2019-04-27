@@ -7,6 +7,7 @@ $bg-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 .post-photo__header {
@@ -37,10 +38,12 @@ $bg-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .post-photo__filters {
   background-color: $bg-color;
+  flex-grow: 1;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
