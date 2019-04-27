@@ -7,47 +7,50 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-  <body>
-    <h1 class="visually-hidden">Приложение Пинк</h1>
+<body class="global-container">
+  <h1 class="visually-hidden">Приложение Пинк</h1>
 
-    <header class="page-header">
-      <nav class="page-header__nav page-nav">
-        <span class="page-nav__logo"></span>
+  <header class="page-header">
+    <nav class="page-header__nav page-nav">
+      <span class="page-nav__logo"></span>
 
-        <ul class="page-nav__menu site-menu site-menu--open">
-          <li class="site-menu__item site-menu__item-text">
-            Главная
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__item-text"
-              href="photo.html">Фотографии
-            </a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__item-text"
-              href="form.html">Конкурс
-            </a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__item-text"
-              href="https://htmlacademy.ru">HTML Academy
-            </a>
-          </li>
-        </ul>
+      <ul class="page-nav__menu site-menu site-menu--open">
+        <li class="site-menu__item site-menu__item-text site-menu__item--not-clickable">
+          Главная
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__item-text" href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__item-text" href="form.html">Конкурс</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__item-text" href="https://htmlacademy.ru">HTML Academy
+          </a>
+        </li>
+      </ul>
 
-      </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main class="page-content">
+  <main class="page-content">
 
-      <section class="work-example">
-        <h2 class="visually-hidden">Посмотрите как это работает</h2>
-        <div class="work-example__original"></div>
-        <img class="work-example__hand-with-phone" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука держит смартфон">
-      </section>
+    <section class="work-example">
+      <img class="work-example__hand-with-phone"
+        srcset="
+          img/iphone-hand-mobile@1x.png 258w,
+          img/iphone-hand-tablet@1x.png 700w,
+          img/iphone-hand-desktop@1x.png 1050w
+        "
+        sizes="
+          (min-width: 1200px) 1050px,
+          (min-width: 660px) 660px,
+          258px"
+        src="img/iphone-hand-mobile@1x.png" alt="Рука держит смартфон"
+      >
 
-      <section class="app-download">
-        <h2 class="visually-hidden">Скачайте</h2>
+      <div class="work-example__app-download app-download">
+        <h2 class="app-download__header">Взгляните на&nbsp;жизнь иначе!</h2>
         <a class="app-download__btn" href="#">Скачать приложение</a>
         <ul class="app-download__platforms app-platforms">
           <li class="app-platforms__apple">
@@ -61,124 +64,129 @@
           </li>
         </ul>
         <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="motivation">
-          <h2 class="visually-hidden">Мотивация</h2>
+    <section class="motivation">
+        <h2 class="visually-hidden">Мотивация</h2>
 
-          <div class="motivation__intro motivation-intro">
-            <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
-            <p class="motivation-intro__text">Нам есть, что вам предложить!</p>
-          </div>
+        <div class="motivation__intro motivation-intro">
+          <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
+          <p class="motivation-intro__text">Нам есть, что вам предложить!</p>
+        </div>
 
-          <div class="motivation__facts motivation-facts">
-            <h3 class="motivation-facts__header">
-              Поднимает настроение
-            </h3>
-            <p class="motivation-facts__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-
-            <h3 class="motivation-facts__header">
-              Меняет мир вокруг
-            </h3>
-            <p class="motivation-facts__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-
-            <h3 class="motivation-facts__header">
-              Заводит новых друзей
-            </h3>
-            <p class="motivation-facts__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </div>
-
-          <div class="motivation__image">
-          </div>
-      </section>
-
-      <section class="user-opinions">
-        <h2 class="visually-hidden">Истории успеха</h2>
-        <ul class="user-opinions__list">
-          <li class="user-opinions__item">
-            <h3 class="user-opinions__item-header">
-              Николай Петров
-            </h3>
-            <p class="user-opinions__item-text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на&nbsp;привычные серые вещи!
-              А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <h2 class="visually-hidden">Купить</h2>
-      <ul class="buy-app">
-
-        <li class="buy-app__set">
-          <div class="buy-app__set-header buy-app__set-header--hit">
-            <h3 class="buy-app__set-name">
-              Стандарт
-            </h3>
-            <p class="buy-app__set-price">
-              3,99&nbsp;USD
-            </p>
-          </div>
-
-          <ul class="buy-app__options">
-            <li class="buy-app__option buy-app__option--selected">
-              Розовый фильтр
+        <div class="motivation__container">
+          <ul class="motivation__facts motivation-facts">
+            <li class="motivation-fact">
+              <h3 class="motivation-fact__header">Поднимает настроение</h3>
+              <p class="motivation-fact__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально
+                в несколько кликов!
+              </p>
             </li>
-            <li class="buy-app__option buy-app__option--selected">
-              Смайлики
+
+            <li class="motivation-fact">
+              <h3 class="motivation-fact__header">Меняет мир вокруг</h3>
+              <p class="motivation-fact__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
             </li>
-            <li class="buy-app__option buy-app__option--not-selected">
-              Комментари
+
+            <li class="motivation-fact">
+              <h3 class="motivation-fact__header">Заводит новых друзей</h3>
+              <p class="motivation-fact__text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                и заводите новых
+              </p>
+            </li>
+
+            <li class="motivation-fact motivation-fact--promo24hours">
+              <h3 class="motivation-fact__header">Эффект на 24 часа!</h3>
+              <p class="motivation-fact__text">
+                Британские ученые провели исследования и доказали, что пложительный
+                эффект от использования приложения длится целые сутки!
+              </p>
+              <a class="motivation-fact__link" href="#">Узнать больше об исследовании</a>
             </li>
           </ul>
-        </li>
 
+          <div class="motivation__images motivation-images">
+            <div class="motivation-images__initial"></div>
+            <div class="motivation-images__painted"></div>
+            <div class="motivation-images__shared"></div>
+          </div>
+
+          <div class="motivation__skew-bg">
+          </div>
+        </div>
+
+    </section>
+
+    <h2 class="visually-hidden">Истории успеха</h2>
+    <ul class="user-opinions">
+      <li class="user-opinion">
+        <h3 class="user-opinion__header">
+          Николай Петров
+        </h3>
+        <p class="user-opinion__description">25 лет, водитель трамвая</p>
+        <p class="user-opinion__text">
+          Это приложение перевернуло мой мир и позволило по-новому взглянуть на&nbsp;привычные серые вещи!
+          А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
+        </p>
+      </li>
+    </ul>
+
+    <h2 class="visually-hidden">Купить</h2>
+    <ul class="buy-app">
+
+      <li class="buy-app__set">
+        <div class="buy-app__set-header buy-app__set-header--hit">
+          <h3 class="buy-app__set-name">Стандарт</h3>
+          <p class="buy-app__set-price">3,99&nbsp;USD</p>
+        </div>
+
+        <ul class="buy-app__options">
+          <li class="buy-app__option buy-app__option--selected">
+            Розовый фильтр</li>
+          <li class="buy-app__option buy-app__option--selected">
+            Смайлики</li>
+          <li class="buy-app__option buy-app__option--not-selected">
+            Комментари</li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <section class="contacts">
+      <h2 class="contacts__header">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
+
+      <ul class="contacts__info-blocks">
+        <li class="contact-block">
+          <h3 class="contact-block__header">Звоните:</h3>
+          <a class="contact-block__info" href="tel:+7(812)555-66-66">
+            +7&nbsp;(812) 555-66-66
+          </a>
+        </li>
+        <li class="contact-block">
+          <h3 class="contact-block__header">Пишите:</h3>
+          <a class="contact-block__info contact-block__info--email"
+            href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </li>
+        <li class="contact-block">
+          <h3 class="contact-block__header">Приезжайте в гости:</h3>
+          <address class="contact-block__info">
+            ул. Большая Конюшенная, 19/8
+          </address>
+        </li>
       </ul>
 
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__map"></div>
+    </section>
 
-        <p class="contacts__text">
-          Остались вопросы? Свяжитесь с&nbsp;нами!
-        </p>
-
-        <h3 class="contacts__header">
-          Звоните:
-        </h3>
-        <a class="contacts__contact"
-          href="tel:+7(812)555-66-66"
-        >
-          +7&nbsp;(812) 555-66-66
-        </a>
-
-        <h3 class="contacts__header">
-            Пишите:
-        </h3>
-        <a class="contacts__contact"
-          href="mailto:mail@htmlacademy.ru"
-        >
-          mail@htmlacademy.ru
-        </a>
-
-        <h3 class="contacts__header">
-            Приезжайте в гости:
-        </h3>
-        <address class="contacts__contact">
-          ул. Большая Конюшенная, 19/8
-        </address>
-
-        <div class="contacts__map">
-        </div>
-      </section>
-
-    </main>
-
+  </main>
 
 </body>
 </html>

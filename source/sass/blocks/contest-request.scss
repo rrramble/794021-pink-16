@@ -1,15 +1,10 @@
-$mobile-min-width: 320px;
-$bg-color-light: white;
-$bg-color-shaded: rbg(242, 242, 242);
-$field-text-color: #d22856;
-$highlighted-text-color: #d22856;
 $submit-button-bg-color: rgb(42, 171, 109);
 
 .contest-request {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -52,5 +47,20 @@ $submit-button-bg-color: rgb(42, 171, 109);
 }
 
 .contest-request__helper-text--highlight {
-  color: $highlighted-text-color;
+  color: $text-color-redish;
+}
+
+@media (min-width: $tablet-min-width) {
+  .contest-request {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .contest-request {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

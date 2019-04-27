@@ -1,28 +1,70 @@
-$main-photo-average-color: #283645;
-$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
-$main-photo-height: 462px; // точно 462
-$main-photo-height-bottom-cut: 70px;
+$block-mobile-min-height: 396px;
 $main-photo-y-shift: -65px;
+
+$block-tablet-min-height: 620px;
+$main-photo-tablet-y-shift: -110px;
+
+$block-desktop-min-height: 745px;
+$main-photo-desktop-y-shift: -110px;
+
 $hand-with-phone-width: 320;
 $hand-with-phone-height: 314;
 
 .work-example {
-  background-color: $main-photo-average-color;
+  align-items: center;
+  background-color: $main-bg-color-fallback;
+  background-image: url($main-bg-image-mobile-filename);
+  background-position-x: center;
+  background-position-y: $main-photo-y-shift;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  min-height: $block-mobile-min-height;
   position: relative;
 }
 
-.work-example__original {
-  background-image: url($main-photo-image-filename);
-  background-position-y: $main-photo-y-shift;
-  background-repeat: no-repeat;
-  flex-grow: 1;
-  flex-shrink: 1;
-  min-height: $main-photo-height - $main-photo-height-bottom-cut;
+.work-example__hand-with-phone {
+  margin-top: 110px;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
 }
 
-.work-example__hand-with-phone {
-  position: absolute;
-  bottom: 0;
+.work-example__app-download {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-min-width) {
+  .work-example {
+    align-items: flex-start;
+    background-image: url($main-bg-image-tablet-filename);
+    background-position-y: $main-photo-tablet-y-shift;
+    min-height: $block-tablet-min-height;
+    padding-left: 20px;
+    padding-top: 90px;
+  }
+
+  .work-example__hand-with-phone {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .work-example {
+    background-image: url($main-bg-image-desktop-filename);
+    background-position-y: $main-photo-desktop-y-shift;
+    min-height: $block-desktop-min-height;
+    padding-left: 130px;
+    padding-top: 100px;
+  }
+
+  .work-example__hand-with-phone {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  }
 }

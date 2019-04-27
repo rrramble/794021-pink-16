@@ -4,16 +4,24 @@ $bg-color-shaded: rgb(242, 242, 242);
 $bg-color-light: white;
 
 .applicant-names {
+  border-width: 0;
+  width: 100%;
+}
+
+
+.applicant-names__box {
   background-color: $bg-color-light;
   border-width: 0;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
 .applicant-names__legend {
   color: $fieldname-text-color;
+  flex-grow: 1;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -26,4 +34,30 @@ $bg-color-light: white;
   font-size: 18px;
   line-height: 30px;
   min-width: 280px;
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-min-width) {
+  .applicant-names {
+    order: -3;
+  }
+
+  .applicant-names__box {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .applicant-names__legend {
+    margin-right: 20px;
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .applicant-names {
+    width: 50%;
+  }
 }

@@ -8,7 +8,6 @@ $color: rgb(40, 54, 69);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: $width-standard;
   margin-bottom: 5px;
 }
 
@@ -49,7 +48,6 @@ $color: rgb(40, 54, 69);
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 10px;
-  width: $width-standard;
 }
 
 .user-post-info__set-your-like {

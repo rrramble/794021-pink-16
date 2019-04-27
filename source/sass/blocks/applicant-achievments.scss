@@ -10,6 +10,7 @@ $content-text-color: #283645;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 38px;
+  width: 100%;
 }
 
 .applicant-achievments__header {
@@ -49,4 +50,29 @@ $content-text-color: #283645;
   line-height: 30px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .applicant-achievments {
+    background-color: white;
+    border-width: 1px;
+    border-color: $bg-color-grayish;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .applicant-achievments {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 230px;
+  }
+
+  .applicant-achievments__field {
+    min-width: initial;
+    width: 30%;
+  }
+
+  .applicant-achievments__legend {
+    margin-right: initial;
+  }
 }

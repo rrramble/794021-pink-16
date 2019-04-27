@@ -1,0 +1,26 @@
+$logo-pink-all-versions-width: 147px;
+$logo-pink-all-versions-height: 40px;
+$logo-pink-mobile-filename: "../img/logo-pink-blue-mobile.svg";
+$logo-pink-desktop-filename: "../img/logo-pink-blue-desktop.svg";
+
+.footer-logo {
+  background-image: url($logo-pink-mobile-filename);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 40px;
+  height: $logo-pink-all-versions-height;
+  width: $logo-pink-all-versions-width;
+}
+
+@media (min-width: $tablet-min-width) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .footer-logo {
+    background-image: url($logo-pink-desktop-filename);
+  }
+}

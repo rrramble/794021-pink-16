@@ -1,9 +1,5 @@
-$bg-color-shaded: rgb(242, 242, 242);
-$content-text-color: #283645;
-$fieldname-text-color: #d22856;
-
 .applicant-phone-type {
-  background-color: $bg-color-shaded;
+  background-color: $bg-color-grayish;
   border-width: 0;
   display: flex;
   flex-direction: column;
@@ -14,7 +10,7 @@ $fieldname-text-color: #d22856;
 }
 
 .applicant-phone-type__header {
-  color: $fieldname-text-color;
+  color: $text-color-redish;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -36,7 +32,7 @@ $fieldname-text-color: #d22856;
 }
 
 .applicant-phone-type__selection {
-  border-color: $bg-color-shaded;
+  border-color: $bg-color-grayish;
   border-width: 1px;
   border-radius: 50%;
   min-width: 38px;
@@ -44,11 +40,31 @@ $fieldname-text-color: #d22856;
 }
 
 .applicant-phone-type__legend {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: $bg-color-grayish;
   border-width: 1px;
   font-size: 18px;
   line-height: 30px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .applicant-phone-type {
+    background-color: white;
+    border-width: 1px;
+    border-color: $bg-color-grayish;
+    order: -2;
+    width: 100%;
+  }
+
+  .applicant-phone-type__header {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .applicant-phone-type {
+    width: 50%;
+  }
 }

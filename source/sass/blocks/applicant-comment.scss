@@ -1,10 +1,5 @@
-$fieldname-text-color: #d22856;
-$content-text-color: #283645;
-$bg-color-shaded: rgb(242, 242, 242);
-$bg-color-light: white;
-
 .applicant-comment {
-  background-color: $bg-color-light;
+  background-color: white;
   border-width: 0;
   display: flex;
   flex-direction: row;
@@ -13,23 +8,36 @@ $bg-color-light: white;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
 .applicant-comment__header {
-  color: $fieldname-text-color;
+  color: $text-color-redish;
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 5px;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .applicant-comment__content {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: $bg-color-grayish;
   border-width: 1px;
   display: inline-block;
   font-size: 18px;
   line-height: 30px;
-  min-width: 280px;
   padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .applicant-comment {
+    border-color: $bg-color-grayish;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

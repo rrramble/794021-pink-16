@@ -1,6 +1,13 @@
-$color: rgb(40, 54, 69);
 $main-photo-average-color: #283645;
-$main-photo-image-filename: "../img/bg-back-mobile@1x.jpg";
+
+$main-bg-photo-desktop-filename:"../img/bg-back-desktop@1x.jpg";
+$main-bg-photo-mobile-filename: "../img/bg-back-mobile@1x.jpg";
+$main-bg-photo-tablet-filename:"../img/bg-back-tablet@1x.jpg";
+
+$main-photo-y-shift: -65px;
+$main-bg-photo-y-shift: -110px;
+
+
 $header-height: 170px;
 $header-font-size: 24px;
 $header-line-height: $header-font-size * 1.2;
@@ -15,13 +22,13 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
 
 .page-content__header {
   background-color: $main-photo-average-color;
-  background-image: url($main-photo-image-filename);
-  background-position-x: top;
-  background-position-y: center;
+  background-image: url($main-bg-photo-mobile-filename);
+  background-position-x: center;
+  background-position-y: $main-photo-y-shift;
   color: white;
   font-size: $header-font-size;
   font-weight: 100;
-  line-height: $header-line-height;
+  line-height: 1.2em;
   padding-bottom: $header-padding-vertical;
   padding-left: 40px;
   padding-right: 40px;
@@ -29,9 +36,9 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
   text-align: center;
 }
 
-.page-content__text {
+.page-content__intro-text {
   background-color: white;
-  color: $color;
+  color: $text-color-dark;
   font-size: 14px;
   line-height: 30px;
   padding-bottom: 30px;
@@ -39,4 +46,43 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
   padding-right: 20px;
   padding-top: 40px;
   text-align: center;
+}
+
+.page-content__intro-text--details {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-content__header {
+    background-image: url($main-bg-photo-tablet-filename);
+    background-position-y: $main-bg-photo-y-shift;
+    font-size: 50px;
+    min-height: 330px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .page-content__intro-text {
+    font-size: 18px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-content__intro-text--details {
+    display: initial;
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .page-content__header {
+    background-image: url($main-bg-photo-desktop-filename);
+    background-position-y: $main-bg-photo-y-shift;
+    font-size: 50px;
+    min-height: 285px;
+  }
 }

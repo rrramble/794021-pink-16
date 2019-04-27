@@ -1,10 +1,5 @@
 $academy-logo-width: 28px;
 $academy-logo-height: 35px;
-$color: rgb(40, 54, 69);
-$logo-pink-width: 240px;
-$logo-ping-height: 42px;
-$logo-pink-filename: "../img/logo-pink-blue-mobile.svg";
-$shaded-color: #dddfe0;
 
 .page-footer {
   align-content: flex-start;
@@ -19,54 +14,6 @@ $shaded-color: #dddfe0;
   padding-top: 40px;
 }
 
-.page-footer__logo {
-  background-image: url($logo-pink-filename);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  margin-bottom: 40px;
-  min-width: $logo-pink-width;
-  min-height: $logo-ping-height;
-}
-
-.page-footer__socials {
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-  padding-left: (320px - 240px) / 2;
-  padding-right: (320px - 240px) / 2;
-}
-
-@mixin social-btn($url) {
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  border-color: $shaded-color;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
-  margin-left: 6px;
-  margin-right: 6px;
-  width: 52px;
-  height: 52px;
-}
-
-.page-footer__social-twitter {
-  @include social-btn("../img/icon-twitter.svg");
-}
-
-.page-footer__social-facebook {
-  @include social-btn("../img/icon-facebook.svg");
-}
-
-.page-footer__social-youtube {
-  @include social-btn("../img/icon-youtube.svg");
-}
-
 .page-footer__academy {
   align-content: center;
   align-items: center;
@@ -78,7 +25,7 @@ $shaded-color: #dddfe0;
 }
 
 .page-footer__text {
-  color: $color;
+  color: $text-color-dark;
   font-size: 14px;
   line-height: 18px;
   margin-right: 16px;
@@ -91,4 +38,17 @@ $shaded-color: #dddfe0;
   background-repeat: no-repeat;
   min-width: $academy-logo-width;
   min-height: $academy-logo-height;
+}
+
+@media (min-width: $tablet-min-width) {
+  .page-footer {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .page-footer {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

@@ -1,0 +1,98 @@
+$img-promo24hours-height: 345px;
+$img-promo24hours-top-padding: 48px;
+$img-promo24hours-bottom-padding: 48px;
+
+.motivation-fact {
+  position: relative;
+}
+
+.motivation-fact--promo24hours {
+  display: none;
+}
+
+.motivation-fact--promo24hours::before {
+  background-image: url("../img/icon-timer.svg");
+  display: none;
+  content: "24";
+  background-position-x: 0;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 298px $img-promo24hours-height;
+  color: $text-color-redish;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.557;
+  height: $img-promo24hours-height;
+  position: absolute;
+  top: 80px;
+  width: 298px;
+}
+
+.motivation-fact__header {
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.motivation-fact__text {
+  color: $text-color-dark;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.motivation-fact--promo24hours .motivation-fact__header {
+  margin-left: 450px;
+  text-align: left;
+}
+
+.motivation-fact--promo24hours .motivation-fact__text {
+  margin-left: 450px;
+  text-align: left;
+}
+
+.motivation-fact__link {
+  color: #d22856;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 450px;
+  margin-top: 1em;
+  text-align: left;
+}
+
+@media (min-width: $desktop-min-width) {
+  .motivation-fact {
+    width: 250px;
+    padding-left: 1em;
+    padding-right: 1em;
+    min-width: $iphone-screen-desktop-width;
+  }
+
+  .motivation-fact--promo24hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: $img-promo24hours-bottom-padding +
+      $img-promo24hours-height +
+      $img-promo24hours-top-padding;
+    padding-left: 130px;
+    padding-top: 48px;
+    width: $desktop-min-width;
+  }
+
+  .motivation-fact--promo24hours::before {
+    display: block;
+  }
+
+  .motivation-fact__header {
+    font-size: 30px;
+    line-height: 1em;
+  }
+
+  .motivation-fact__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

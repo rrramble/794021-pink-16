@@ -11,51 +11,46 @@ $gap-after-button: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
-@mixin filter-tool-common($url, $width, $height) {
+.filter-tools__btn {
   background-color: $bg-color;
-  background-image: url($url);
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   border: 0;
-  height: $height;
+  height: $button-height;
   margin: 0;
   margin-bottom: $gap-after-button;
   margin-left: 16px;
   margin-right: 16px;
   padding: 0;
-  width: $width;
+  width: $button-width;
 }
 
 .filter-tools__crop {
-  @include filter-tool-common(
-    "../img/icon-editor-crop.svg",
-    $button-width,
-    $button-height);
+  background-image: url("../img/icon-editor-crop.svg");
 }
 
 .filter-tools__fill {
-  @include filter-tool-common(
-    "../img/icon-editor-fill.svg",
-    $button-width,
-    $button-height,
-  );
+  background-image: url("../img/icon-editor-fill.svg");
 }
 
 .filter-tools__contrast {
-  @include filter-tool-common(
-    "../img/icon-editor-contrast.svg",
-    $button-width,
-    $button-height,
-  );
+  background-image: url("../img/icon-editor-contrast.svg");
 }
 
 .filter-tools__lightness {
   min-height: 18px;
   max-width: 240px;
   min-width: 240px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .filter-tools {
+    flex-direction: column;
+  }
 }

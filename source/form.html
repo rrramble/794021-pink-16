@@ -7,31 +7,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="global-container">
   <h1 class="visually-hidden">Приложение Пинк</h1>
 
   <header class="page-header">
     <nav class="page-header__nav page-nav">
-      <a class="page-nav__logo"
-        href="/index.html"
-      >
+      <a class="page-nav__logo" href="/index.html">
         <span class="visually-hidden">Главная страница</span>
       </a>
 
-      <ul class="page-nav__menu page-nav__menu--open site-menu site-menu--open">
+      <ul class="page-nav__menu site-menu site-menu--open">
         <li class="site-menu__item">
           <a class="site-menu__item-text" href="index.html">Главная</a>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__item-text" href="photo.html">Фотографии</a>
         </li>
-        <li class="site-menu__item site-menu__item-text">
-          Конкурс
+        <li class="site-menu__item site-menu__item--not-clickable site-menu__item-text">Конкурс
         </li>
         <li class="site-menu__item">
           <a class="site-menu__item-text" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
+
     </nav>
   </header>
 
@@ -39,9 +37,10 @@
       <h1 class="page-content__header">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
-      <p class="page-content__text">
+      <p class="page-content__intro-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash;
         1000&nbsp;миль на&nbsp;вашу бонусную карту!
+        <span class="page-content__intro-text--details">Пожалуйста, заполните форму ниже:</span>
       </p>
 
       <form class="contest-request"
@@ -50,237 +49,143 @@
       >
 
         <fieldset class="contest-request__names applicant-names">
-          <label class="applicant-names__legend"
-            for="surname">
-            Фамилия:
-          </label>
-          <input class="applicant-names__content"
-            type="text"
-            name="surname"
-            id="surname"
-            placeholder="Укажите фамилию *"
-            required
-          />
+          <div class="applicant-names__box">
+            <label class="applicant-names__legend" for="surname">Фамилия:
+            </label>
+            <input class="applicant-names__content"
+              type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required
+            />
+          </div>
 
-          <label class="applicant-names__legend"
-            for="first-name">
-            Имя:
-          </label>
-          <input class="applicant-names__content"
-            type="text"
-            name="first-name"
-            id="first-name"
-            placeholder="Введите ваше имя *"
-            required
-          />
+          <div class="applicant-names__box">
+            <label class="applicant-names__legend" for="first-name">Имя:
+            </label>
+            <input class="applicant-names__content"
+              type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required
+            />
+          </div>
 
-          <label class="applicant-names__legend"
-            for="patronym">
-            Отчество:
-          </label>
-          <input class="applicant-names__content"
-            type="text"
-            name="patronym"
-            id="patronym"
-            placeholder="Ну и отчество тоже"
-          />
+          <div class="applicant-names__box">
+            <label class="applicant-names__legend" for="patronym">Отчество:
+            </label>
+            <input class="applicant-names__content"
+              type="text" name="patronym" id="patronym" placeholder="Ну и отчество тоже"
+            />
+          </div>
         </fieldset>
 
         <fieldset class="contest-request__achievments applicant-achievments">
-          <h2 class="applicant-achievments__header">
-              Ваши безбашенные достижения в&nbsp;путешествии
-          </h2>
+          <h2 class="applicant-achievments__header">Ваши безбашенные достижения в&nbsp;путешествии</h2>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="shark-selfi"
-              id="shark-selfi"
-              value="shark-selfi"
-              checked
-            />
-            <label class="applicant-achievments__legend"
-              for="shark-selfi">
-              Сделал селфи с акулой
-            </label>
+              type="checkbox" name="shark-selfi" id="shark-selfi" value="shark-selfi" checked />
+            <label class="applicant-achievments__legend" for="shark-selfi">Сделал селфи с акулой</label>
           </div>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="over-tanned"
-              id="over-tanned"
-              value="over-tanned"
-              checked
-            />
-            <label class="applicant-achievments__legend"
-              for="over-tanned">
-              Обгорел на пляже
-            </label>
+              type="checkbox" name="over-tanned" id="over-tanned" value="over-tanned" checked />
+            <label class="applicant-achievments__legend" for="over-tanned">Обгорел на пляже</label>
           </div>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="seen-chuck-norris"
-              id="seen-chuck-norris"
-              value="seen-chuck-norris"
-            />
-            <label class="applicant-achievments__legend"
-              for="seen-chuck-norris">
-              Видел Чака Норриса
-            </label>
+              type="checkbox" name="seen-chuck-norris" id="seen-chuck-norris" value="seen-chuck-norris" />
+            <label class="applicant-achievments__legend" for="seen-chuck-norris">Видел Чака Норриса</label>
           </div>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="bought-souvenirs"
-              id="bought-souvenirs"
-              value="bought-souvenirs"
-            />
-            <label class="applicant-achievments__legend"
-              for="bought-souvenirs">
-              Накупил сувениров
-            </label>
+              type="checkbox" name="bought-souvenirs" id="bought-souvenirs" value="bought-souvenirs" />
+            <label class="applicant-achievments__legend" for="bought-souvenirs">Накупил сувениров</label>
           </div>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="hold-tower"
-              id="hold-tower"
-              value="hold-tower"
-              checked
-            />
-            <label class="applicant-achievments__legend"
-              for="hold-tower">
-              Удержал башню
-            </label>
+              type="checkbox" name="hold-tower" id="hold-tower" value="hold-tower" checked />
+            <label class="applicant-achievments__legend" for="hold-tower">Удержал башню</label>
           </div>
 
           <div class="applicant-achievments__field">
             <input class="applicant-achievments__selection"
-              type="checkbox"
-              name="destroyed-hotel"
-              id="destroyed-hotel"
-              value="destroyed-hotel"
-            />
-            <label class="applicant-achievments__legend"
-              for="destroyed-hotel">
-              Разгромил отель
-            </label>
+              type="checkbox" name="destroyed-hotel" id="destroyed-hotel" value="destroyed-hotel" />
+            <label class="applicant-achievments__legend" for="destroyed-hotel">Разгромил отель</label>
           </div>
         </fieldset>
 
         <fieldset class="contest-request__contacts applicant-contacts">
-          <h3 class="visually-hidden">Контакты</h3>
-
-          <label class="applicant-contacts__legend">
-            Номер телефона
-          </label>
-          <input class="applicant-contacts__content"
-            type="tel"
-            placeholder="Номер, пожалуйста"
-          />
-
-          <label class="applicant-contacts__legend">
-            Адрес почты
-          </label>
-          <input class="applicant-contacts__content"
-            type="email"
-            required
-            placeholder="Введите почту *"
-          />
+          <legend class="applicant-contacts__header">Контактная информация</legend>
+          <div class="applicant-contacts__box">
+            <label class="applicant-contacts__legend">Номер телефона</label>
+            <input class="applicant-contacts__content" type="tel" placeholder="Номер, пожалуйста" />
+          </div>
+          <div class="applicant-contacts__box">
+            <label class="applicant-contacts__legend">Адрес почты</label>
+            <input class="applicant-contacts__content" type="email" required placeholder="Введите почту *" />
+          </div>
         </fieldset>
 
         <fieldset class="contest-request__phone-type applicant-phone-type">
-          <h3 class="applicant-phone-type__header">С каким приложением путешествовали?</h3>
+          <legend class="applicant-phone-type__header">С каким приложением путешествовали?</legend>
 
           <div class="applicant-phone-type__field">
-            <input class="applicant-phone-type__selection"
-              type="radio" name="ios" id="ios" value="ios"
-              checked
-            />
-            <label class="applicant-phone-type__legend" for="ios">
-              Pink для iOS
-            </label>
+            <input class="applicant-phone-type__selection" type="radio" name="ios" id="ios" value="ios" checked />
+            <label class="applicant-phone-type__legend" for="ios">Pink для iOS</label>
           </div>
 
           <div class="applicant-phone-type__field">
             <input class="applicant-phone-type__selection"
-              type="radio" name="android" id="android" value="android"
-            />
-            <label class="applicant-phone-type__legend"
-              for="android"
-            >Pink на Android</label>
+              type="radio" name="android" id="android" value="android" />
+            <label class="applicant-phone-type__legend" for="android">Pink на Android</label>
           </div>
 
           <div class="applicant-phone-type__field">
             <input class="applicant-phone-type__selection"
-              type="radio" name="windows-phone" id="windows-phone" value="windows-phone"
-            />
-            <label class="applicant-phone-type__legend" for="windows-phone"
-              >Windows Phone
-            </label>
+              type="radio" name="windows-phone" id="windows-phone" value="windows-phone" />
+            <label class="applicant-phone-type__legend" for="windows-phone">Windows Phone</label>
           </div>
         </fieldset>
 
         <div class="contest-request__comment applicant-comment">
-          <label class="applicant-comment__header"
-            for="comment">Опишите свои эмоции
-          </label>
-          <textarea class="applicant-comment__content"
-            rows="5" cols="20"
-            name="comment"
-            id="comment"
-            placeholder="Можно прямо в красках, не стесняясь в выражениях"
-          ></textarea>
+          <label class="applicant-comment__header" for="comment">Опишите свои эмоции</label>
+          <textarea class="applicant-comment__content" rows="5" cols="20" name="comment" id="comment"
+            placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
         </div>
 
-        <button class="contest-request__submit"
-          type="submit">Отправить форму</button>
+        <button class="contest-request__submit" type="submit">Отправить форму</button>
 
         <p class="contest-request__helper">
           <span class="contest-request__helper-text--highlight">*</span>
-          <span class="contest-request__helper-text">&mdash;&nbsp;обязательные поля
-          </span>
+          <span class="contest-request__helper-text">&mdash;&nbsp;обязательные поля</span>
         </p>
       </form>
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__logo"></div>
+    <div class="page-footer__item footer-logo"></div>
 
-    <div class="page-footer__socials">
-      <a class="page-footer__social-twitter"
-        href="#"
-      >
+    <div class="page-footer__item footer-socials">
+      <a class="footer-socials__twitter" href="#">
         <span class="visually-hidden">Твиттер</span>
       </a>
-
-      <a class="page-footer__social-facebook"
-        href="#"
-      >
+      <a class="footer-socials__facebook" href="#">
         <span class="visually-hidden">Фейсбук</span>
       </a>
-
-      <a class="page-footer__social-youtube"
-        href="#"
-      >
+      <a class="footer-socials__youtube" href="#">
         <span class="visually-hidden">Ютюб</span>
       </a>
     </div>
 
-    <div class="page-footer__academy">
-        <p class="page-footer__text">Разработано</p>
-        <a class="page-footer__academy-logo"
-          href="https://htmlacademy.ru/intensive/adaptive"
-        >
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
-      </div>
+    <div class="page-footer__item page-footer__academy">
+      <p class="page-footer__text">Разработано</p>
+      <a class="page-footer__academy-logo"
+        href="https://htmlacademy.ru/intensive/adaptive"
+      >
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
   </footer>
 
 </body>

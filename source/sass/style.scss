@@ -1,4 +1,6 @@
+@import "variables";
 @import "global";
+@import "blocks/global-container";
 @import "blocks/visually-hidden";
 @import "blocks/page-header";
 @import "blocks/page-nav";
@@ -8,11 +10,15 @@
 @import "blocks/app-download";
 @import "blocks/app-platforms";
 @import "blocks/motivation";
+@import "blocks/motivation-images";
 @import "blocks/motivation-intro";
 @import "blocks/motivation-facts";
+@import "blocks/motivation-fact";
 @import "blocks/user-opinions";
+@import "blocks/user-opinion";
 @import "blocks/buy-app";
 @import "blocks/contacts";
+@import "blocks/contact-block";
 @import "blocks/users-posts";
 @import "blocks/user-post";
 @import "blocks/user-post-info";
@@ -20,6 +26,8 @@
 @import "blocks/filter-tools";
 @import "blocks/post-actions";
 @import "blocks/page-footer";
+@import "blocks/footer-logo";
+@import "blocks/footer-socials";
 @import "blocks/contest-request";
 @import "blocks/applicant-names";
 @import "blocks/applicant-achievments";

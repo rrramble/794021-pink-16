@@ -1,0 +1,28 @@
+.contact-block {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.contact-block__header {
+  color: $text-color-dark;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-block__info {
+  color: $text-color-redish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.2em;
+  text-align: center;
+  text-decoration: none;
+}

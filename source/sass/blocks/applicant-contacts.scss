@@ -1,29 +1,66 @@
-$fieldname-text-color: #d22856;
-$content-text-color: #283645;
-$bg-color-shaded: rgb(242, 242, 242);
-$bg-color-light: white;
-
 .applicant-contacts {
-  background-color: $bg-color-light;
+  background-color: white;
   border-width: 0;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
-.applicant-contacts__legend {
-  color: $fieldname-text-color;
-  font-size: 14px;
-  line-height: 30px;
+.applicant-contacts__header {
+  display: none;
   text-transform: uppercase;
 }
 
+.applicant-contacts__box {
+  background-color: transparent;
+  border-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-contacts__legend {
+  color: $text-color-redish;
+  font-size: 14px;
+  line-height: 30px;
+}
+
 .applicant-contacts__content {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: $bg-color-grayish;
   border-width: 1px;
   font-size: 18px;
   line-height: 30px;
-  min-width: 280px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .applicant-contacts {
+    border-width: 1px;
+    border-color: $bg-color-grayish;
+    order: -1;
+    padding-bottom: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 45px - 24px;
+  }
+
+  .applicant-contacts__box {
+    margin-top: 24px;
+  }
+
+  .applicant-contacts__header {
+    color: $text-color-redish;
+    display: initial;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .applicant-contacts__content {
+    order: -1;
+  }
 }
