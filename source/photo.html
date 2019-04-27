@@ -42,8 +42,14 @@
       <li class="user-post user-post--panoram-of-the-day"
       >
         <img class="user-post__img user-post__img--panoram-of-the-day"
+          srcset="img/panorama-mobile@1x.jpg 320w,
+            img/panorama-tablet@1x.jpg 700w,
+            img/panorama-desktop@1x.jpg 1200w"
+          sizes="(min-width: 1200px) 1200px,
+            (min-width: 660px) 300px,
+            280px"
           src="img/panorama-mobile@1x.jpg" width="320" height="137"
-          alt="Фото пользователя"
+          alt="Панорама дня"
         />
 
         <div class="user-post__info">
@@ -68,6 +74,12 @@
       <li class="user-post"
       >
         <img class="user-post__img"
+          srcset="img/photo-car-mobile.jpg 280w,
+            img/photo-car-tablet@1x.jpg 300w,
+            img/photo-car-desktop@1x 300w"
+          sizes="(min-width: 1200px) 300px,
+            (min-width: 660px) 300px,
+            280px"
           src="img/photo-car-mobile@1x.jpg" width="280" height="180"
           alt="Фото пользователя"
         />
