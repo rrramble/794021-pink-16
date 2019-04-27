@@ -23,8 +23,8 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
 .page-content__header {
   background-color: $main-photo-average-color;
   background-image: url($main-bg-photo-mobile-filename);
-  background-position-x: top;
-  background-position-y: center;
+  background-position-x: center;
+  background-position-y: $main-photo-y-shift;
   color: white;
   font-size: $header-font-size;
   font-weight: 100;
