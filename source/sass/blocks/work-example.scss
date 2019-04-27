@@ -1,5 +1,3 @@
-$main-photo-average-color: #283645;
-
 $block-mobile-min-height: 396px;
 $main-photo-y-shift: -65px;
 
@@ -9,15 +7,12 @@ $main-photo-tablet-y-shift: -110px;
 $block-desktop-min-height: 745px;
 $main-photo-desktop-y-shift: -110px;
 
-
 $hand-with-phone-width: 320;
 $hand-with-phone-height: 314;
 
-$header-text-color: white;
-
 .work-example {
   align-items: center;
-  background-color: $main-photo-average-color;
+  background-color: $main-bg-color-fallback;
   background-image: url($main-bg-image-mobile-filename);
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
