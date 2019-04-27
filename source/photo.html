@@ -217,9 +217,7 @@
     </ul>
 
     <form class="post-photo"
-      action="https://echo.htmlacademy.ru"
-      method="POST"
-    >
+      action="https://echo.htmlacademy.ru" method="POST">
       <header class="post-photo__header">
         <h2 class="visually-hidden">Отправить фотографию</h2>
         <p class="post-photo__header-text">Затмите их всех!</p>
@@ -227,62 +225,30 @@
       </header>
 
       <input class="post-photo__image"
-        type="image"
-        alt="Отправить фото"
-        src="img/photo-road-mobile@1x.jpg"
-        width="280" height="374"
-      />
+        type="image" alt="Отправить фото" src="img/photo-road-mobile@1x.jpg" width="280" height="374"/>
 
       <div class="post-photo__filters filter-tools">
-
         <label class="visually-hidden" for="crop">Обрезка</label>
-        <input class="filter-tools__crop"
-          type="button"
-          name="crop"
-          value="0:0"
-          id="crop"
-        />
+        <input class="filter-tools__btn filter-tools__crop"
+          type="button" name="crop" value="0:0" id="crop"/>
 
         <label class="visually-hidden" for="fill">Заливка</label>
-        <input class="filter-tools__fill"
-          type="button"
-          name="fill"
-          value="0"
-          id="fill"
-        />
+        <input class="filter-tools__btn filter-tools__fill"
+          type="button" name="fill" value="0" id="fill"/>
 
         <label class="visually-hidden" for="contrast">Контраст</label>
-        <input class="filter-tools__contrast"
-          type="button"
-          name="contrast"
-          value="0"
-          id="contrast"
-        />
+        <input class="filter-tools__btn filter-tools__contrast"
+          type="button" name="contrast" value="0" id="contrast"/>
 
         <label class="visually-hidden" for="lightness">Осветление</label>
-        <input
-          class="filter-tools__lightness"
-          type="range" min="0" max="100"
-          value="80"
-          name="lightness"
-          id="lightness"
-          />
+        <input class="filter-tools__lightness"
+          type="range" min="0" max="100" value="80" name="lightness" id="lightness"/>
 
         <div class="post-photo__actions post-actions">
-          <button class="post-actions__send"
-            type="submit"
-          >
-            Запостить
-          </button>
-          <button class="post-actions__cancel"
-            type="button"
-          >
-          Отмена
-          </button>
+          <button class="post-actions__send" type="submit">Запостить</button>
+          <button class="post-actions__cancel" type="button">Отмена</button>
         </div>
-
       </div>
-
 
     </form>
   </main>
