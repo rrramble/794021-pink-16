@@ -1,10 +1,6 @@
-$original-photo-average-color: #283645;
-$button-text-color: white;
-$button-border-color: white;
-
 .app-download {
   align-items: stretch;
-  background-color: $original-photo-average-color;
+  background-color: $main-bg-color-fallback;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,7 +13,7 @@ $button-border-color: white;
 
 .app-download__header {
   background-color: transparent;
-  color: $header-text-color;
+  color: white;
   display: none;
   font-size: 40px;
   font-weight: $font-weight-light;
@@ -27,11 +23,11 @@ $button-border-color: white;
 
 .app-download__btn {
   align-self: center;
-  border-color: $button-border-color;
+  border-color: white;
   border-radius: 25px;
   border-width: 3px;
   border-style: solid;
-  color: $button-text-color;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
