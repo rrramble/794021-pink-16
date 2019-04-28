@@ -5,7 +5,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 41px;
 }
 
 .motivation__intro {
@@ -18,7 +18,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 .motivation__facts {
@@ -31,7 +31,7 @@ $bg-color-grayish: rgb(242, 242, 242);
 
 .motivation__skew-bg {
   background-color: $bg-color-grayish;
-  clip-path: polygon(0 35px, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0% 100%);
   left: 0;
   z-index: -1;
   position: absolute;

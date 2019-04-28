@@ -2,15 +2,16 @@ $max-icon-height: 56px;
 $max-icon-width: 47px;
 $min-box-padding: 320px - 2 * 19px;
 $max-box-padding: 340px;
-$padding: (($min-box-padding - 3 * $max-icon-width) - (2 * 34px)) / 2;
+$gap-between-icons: 33px;
+$horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-between-icons)) / 2;
 
 .app-platforms {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: $padding;
-  padding-right: $padding;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
 }
 
 @mixin social-icon($url) {
@@ -28,8 +29,12 @@ $padding: (($min-box-padding - 3 * $max-icon-width) - (2 * 34px)) / 2;
 
 .app-platforms__android {
   @include social-icon("../img/logo-android.svg");
+  position: relative;
+  top: 4px;
 }
 
 .app-platforms__windows {
   @include social-icon("../img/logo-microsoft.svg");
+  position: relative;
+  top: 5px;
 }
