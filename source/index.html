@@ -36,18 +36,12 @@
   <main class="page-content">
 
     <section class="work-example">
-      <img class="work-example__hand-with-phone"
-        srcset="
-          img/iphone-hand-mobile@1x.png 258w,
-          img/iphone-hand-tablet@1x.png 700w,
-          img/iphone-hand-desktop@1x.png 1050w
-        "
-        sizes="
-          (min-width: 1200px) 1050px,
-          (min-width: 660px) 660px,
-          258px"
-        src="img/iphone-hand-mobile@1x.png" alt="Рука держит смартфон"
-      >
+      <picture class="work-example__hand-with-phone">
+        <source srcset="img/iphone-hand-mobile@1x.png" media="(max-width: 659px)">
+        <source srcset="img/iphone-hand-tablet@1x.png" media="(max-width: 1199px)">
+        <source srcset="img/iphone-hand-desktop@1x.png">
+        <img src="img/iphone-hand-mobile@1x.png" width="258px" height="286px" alt="Как это выглядит">
+      </picture>
 
       <div class="work-example__app-download app-download">
         <h2 class="app-download__header">Взгляните на&nbsp;жизнь иначе!</h2>
