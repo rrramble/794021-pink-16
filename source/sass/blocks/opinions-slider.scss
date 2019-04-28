@@ -1,0 +1,19 @@
+.opinions-slider__btn {
+  background-color: #bec2c7;
+  border-color: white;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  height: 12px;
+  width: 12px;
+}
+
+.opinions-slider__btn--selected {
+  background-color: white;
+  border-color: $text-color-dark;
+}
+
+.opinions-slider__center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
