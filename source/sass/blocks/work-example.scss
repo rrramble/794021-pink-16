@@ -1,5 +1,5 @@
 $block-mobile-min-height: 396px;
-$main-photo-y-shift: -65px;
+$main-photo-y-shift: -67px;
 
 $block-tablet-min-height: 620px;
 $main-photo-tablet-y-shift: -110px;
@@ -25,9 +25,10 @@ $hand-with-phone-height: 314;
 }
 
 .work-example__hand-with-phone {
+  bottom: 0;
   margin-top: 110px;
   position: sticky;
-  bottom: 0;
+  width: 258px;
   z-index: 1;
 }
 
