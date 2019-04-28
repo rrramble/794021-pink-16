@@ -1,3 +1,6 @@
+$icon-24hours-tablet-width: 240px;
+$icon-24hours-tablet-height: 280px;
+
 $img-promo24hours-height: 345px;
 $img-promo24hours-top-padding: 48px;
 $img-promo24hours-bottom-padding: 48px;
@@ -11,21 +14,7 @@ $img-promo24hours-bottom-padding: 48px;
 }
 
 .motivation-fact--promo24hours::before {
-  background-image: url("../img/icon-timer.svg");
   display: none;
-  content: "24";
-  background-position-x: 0;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-size: 298px $img-promo24hours-height;
-  color: $text-color-redish;
-  font-size: 120px;
-  font-weight: bold;
-  line-height: 1.557;
-  height: $img-promo24hours-height;
-  position: absolute;
-  top: 80px;
-  width: 298px;
 }
 
 .motivation-fact__header {
@@ -44,7 +33,6 @@ $img-promo24hours-bottom-padding: 48px;
 }
 
 .motivation-fact--promo24hours .motivation-fact__header {
-  margin-left: 450px;
   text-align: left;
 }
 
@@ -54,13 +42,85 @@ $img-promo24hours-bottom-padding: 48px;
 }
 
 .motivation-fact__link {
-  color: #d22856;
+  color: $text-color-redish;
   font-size: 18px;
   line-height: 30px;
   margin-left: 450px;
   margin-top: 1em;
   text-align: left;
 }
+
+@media (min-width: $tablet-min-width) {
+  .motivation-fact {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    padding-bottom: 31px;
+    padding-right: 9px;
+    padding-left: 50%;
+    position: static;
+    width: 100%;
+  }
+
+  .motivation-fact__header {
+    margin-top: 0;
+  }
+
+  .motivation-fact--promo24hours {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 96px;
+    position: relative;
+    width: $tablet-min-width;
+  }
+
+  .motivation-fact--promo24hours::before {
+    background-image: url("../img/icon-timer.svg");
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: $icon-24hours-tablet-width $icon-24hours-tablet-height;
+    color: $text-color-redish;
+    content: "24";
+    display: inline-block;
+    font-size: 96px;
+    font-weight: bold;
+    height: $icon-24hours-tablet-height;
+    left: 20px;
+    line-height: 1.557;
+    position: absolute;
+    text-align: center;
+    vertical-align: center;
+    top: 55px;
+    width: $icon-24hours-tablet-width;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__header {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    padding-right: 35px;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__text {
+    margin-left: 50%;
+    padding-right: 25px;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__link {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 50%;
+    margin-top: 10px;
+  }
+}
+
 
 @media (min-width: $desktop-min-width) {
   .motivation-fact {
@@ -80,10 +140,6 @@ $img-promo24hours-bottom-padding: 48px;
     padding-left: 130px;
     padding-top: 48px;
     width: $desktop-min-width;
-  }
-
-  .motivation-fact--promo24hours::before {
-    display: block;
   }
 
   .motivation-fact__header {

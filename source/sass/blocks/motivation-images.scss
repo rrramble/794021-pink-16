@@ -46,6 +46,14 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 }
 
 @media (min-width: $tablet-min-width) {
+  .motivation-images {
+    padding-left: 0;
+    padding-top: 4px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
   .motivation-images__shared {
     background-image: url($iphone-screen-tablet-filename);
     height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;

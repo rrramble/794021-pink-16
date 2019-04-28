@@ -19,13 +19,18 @@
 
 @media (min-width: $tablet-min-width) {
   .motivation-intro {
-    margin-bottom: 24px;
+    margin-bottom: 45px;
   }
 
   .motivation-intro__text {
     font-size: 40px;
     line-height: 1.2em;
     margin-bottom: initial;
+  }
+
+  .motivation-intro__text--narrow {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

@@ -41,10 +41,15 @@ $bg-color-grayish: rgb(242, 242, 242);
 }
 
 @media (min-width: $tablet-min-width) {
+  .motivation {
+    padding-top: 48px;
+  }
+
   .motivation__container {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 2px;
+    position: relative;
   }
 
   .motivation__intro {
