@@ -128,7 +128,12 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 
   .site-menu--open {
     margin-top: -$logo-tablet-top-gap;
-    padding-top: $nav-tablet-box-height;
+    padding-top: $nav-tablet-box-height - 1px;
+  }
+
+  .site-menu--open::before {
+    margin-right: 19px;
+    margin-top: 44px;
   }
 }
 

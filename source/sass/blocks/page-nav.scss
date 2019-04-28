@@ -39,10 +39,12 @@ $padding-before-content-mobile: 21px;
 @media (min-width: $tablet-min-width) {
   .page-nav {
     min-height: 110px;
+    padding-top: 27px;
   }
 
   .page-nav__logo {
     background-image: url($logo-tablet-url);
+    left: 20px;
     min-height: $logo-tablet-height;
     min-width: $logo-tablet-width;
   }
