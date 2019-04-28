@@ -25,10 +25,9 @@ $hand-with-phone-height: 314;
 }
 
 .work-example__hand-with-phone {
-  bottom: 0;
-  margin-top: 110px;
-  position: sticky;
-  width: 258px;
+  margin-top: 108px;
+  position: relative;
+  left: -31px;
   z-index: 1;
 }
 
