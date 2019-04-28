@@ -9,6 +9,12 @@
   padding-bottom: 25px;
 }
 
+@media (min-width: $tablet-min-width) {
+  .user-opinions {
+    margin-top: 53px;
+  }
+}
+
 @media (min-width: $desktop-min-width) {
   .user-opinions {
     padding-top: 74px;
