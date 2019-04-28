@@ -67,6 +67,7 @@ $hand-with-phone-height: 314;
   .work-example__hand-with-phone {
     position: absolute;
     bottom: 0;
-    right: 0%;
+    left: unset;
+    right: 4px;
   }
 }

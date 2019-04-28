@@ -85,8 +85,25 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .app-download {
+    padding-top: 8px;
+  }
+
+  .app-download__header {
+    font-size: 50px;
+  }
+
   .app-download__btn {
     font-size: 21px;
     line-height: 0.857em;
+    margin-top: 52px;
+  }
+
+  .app-download__platforms {
+    margin-top: 67px;
+  }
+
+  .app-download__info {
+    margin-top: 57px;
   }
 }

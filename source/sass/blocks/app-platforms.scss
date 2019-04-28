@@ -49,3 +49,9 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
     top: 2px;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .app-platforms__android {
+    top: 4px;
+  }
+}
