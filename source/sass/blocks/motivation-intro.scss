@@ -35,7 +35,16 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation-intro {
+    margin-bottom: 68px;
+  }
+
   .motivation-intro__text {
     font-size: 50px;
+  }
+
+  .motivation-intro__text--narrow {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }

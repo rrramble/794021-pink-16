@@ -62,6 +62,11 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation-images {
+    padding-right: 0;
+    position: relative;
+  }
+
   .motivation-images__initial {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     display: block;

@@ -29,6 +29,7 @@
 @media (min-width: $desktop-min-width) {
   .motivation-facts {
     flex-direction: row;
+    justify-content: center;
     text-align: center;
   }
 }

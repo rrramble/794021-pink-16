@@ -71,6 +71,10 @@ $bg-color-grayish: rgb(242, 242, 242);
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation {
+    padding-top: 64px;
+  }
+
   .motivation__container {
     flex-direction: column;
     flex-wrap: initial;
