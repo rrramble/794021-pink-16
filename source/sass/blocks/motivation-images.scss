@@ -63,14 +63,18 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 
 @media (min-width: $desktop-min-width) {
   .motivation-images {
-    padding-right: 0;
+    padding-left: 131px;
+    padding-right: 131px;
+    padding-top: 0;
     position: relative;
+    justify-content: space-between;
   }
 
   .motivation-images__initial {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     display: block;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
+    margin-left: 3px;
     width: $iphone-screen-desktop-width;
   }
 
@@ -78,6 +82,7 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     display: initial;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
+    margin-left: 3px;
     width: $iphone-screen-desktop-width;
   }
 

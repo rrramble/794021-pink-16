@@ -124,7 +124,8 @@ $img-promo24hours-bottom-padding: 48px;
 
 @media (min-width: $desktop-min-width) {
   .motivation-fact {
-    width: 250px;
+    margin-left: 14px;
+    margin-right: 14px;
     padding-left: 1em;
     padding-right: 1em;
     width: $iphone-screen-desktop-width;
@@ -134,10 +135,13 @@ $img-promo24hours-bottom-padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
     min-height: $img-promo24hours-bottom-padding +
       $img-promo24hours-height +
       $img-promo24hours-top-padding;
     padding-left: 130px;
+    padding-right: 130px;
     padding-top: 48px;
     width: $desktop-min-width;
   }
@@ -145,10 +149,31 @@ $img-promo24hours-bottom-padding: 48px;
   .motivation-fact__header {
     font-size: 30px;
     line-height: 1em;
+    margin-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .motivation-fact__text {
     font-size: 18px;
     line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .motivation-fact--promo24hours .motivation-fact__header {
+    margin-left: 360px;
+    padding-left: 0;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__text {
+    margin-left: 360px;
+    padding-left: 0;
+  }
+
+  .motivation-fact--promo24hours .motivation-fact__link {
+    margin-left: 360px;
+    padding-left: 0;
   }
 }
