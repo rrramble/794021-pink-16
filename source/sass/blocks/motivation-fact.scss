@@ -4,8 +4,8 @@ $icon-24hours-tablet-height: 280px;
 $icon-24hours-desktop-width: 300px;
 $icon-24hours-desktop-height: 345px;
 
-$img-promo24hours-top-padding: 48px;
-$img-promo24hours-bottom-padding: 48px;
+$icon-24hours-top-padding: 48px;
+$icon-24hours-bottom-padding: 48px;
 
 .motivation-fact {
   position: relative;
@@ -140,9 +140,9 @@ $img-promo24hours-bottom-padding: 48px;
     justify-content: flex-start;
     margin-left: 0;
     margin-right: 0;
-    min-height: $img-promo24hours-bottom-padding +
+    min-height: $icon-24hours-bottom-padding +
       $icon-24hours-desktop-height +
-      $img-promo24hours-top-padding;
+      $icon-24hours-top-padding;
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 120px;
@@ -151,17 +151,17 @@ $img-promo24hours-bottom-padding: 48px;
 
   .motivation-fact--promo24hours::before {
     align-items: center;
-    background-size: $icon-24hours-desktop-width $icon-24hours-desktop-height;
     background-position-x: left;
     background-position-y: 30px;
+    background-size: $icon-24hours-desktop-width $icon-24hours-desktop-height;
     display: flex;
+    font-size: 120px;
     height: $icon-24hours-desktop-height;
     justify-content: center;
-    font-size: 120px;
     left: 130px;
     line-height: 1.557em;
     padding-top: 45px;
-    top: 0px;
+    top: 0;
     width: $icon-24hours-desktop-width;
   }
 
@@ -179,7 +179,6 @@ $img-promo24hours-bottom-padding: 48px;
     padding-left: 10px;
     padding-right: 10px;
   }
-
 
   .motivation-fact--promo24hours .motivation-fact__header {
     margin-left: 366px;
