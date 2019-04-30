@@ -54,11 +54,13 @@ $icon-24hours-bottom-padding: 48px;
 
 @media (min-width: $tablet-min-width) {
   .motivation-fact {
-    margin-top: 2px;
-    margin-bottom: 4px;
-    padding-bottom: 31px;
-    padding-right: 9px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 37px;
     padding-left: 50%;
+    padding-right: 9px;
+    padding-top: 0;
     position: static;
     width: 100%;
   }
@@ -82,6 +84,7 @@ $icon-24hours-bottom-padding: 48px;
   }
 
   .motivation-fact--promo24hours::before {
+    align-items: center;
     background-image: url("../img/icon-timer.svg");
     background-position-x: 0;
     background-position-y: 0;
@@ -89,16 +92,18 @@ $icon-24hours-bottom-padding: 48px;
     background-size: $icon-24hours-tablet-width $icon-24hours-tablet-height;
     color: $text-color-redish;
     content: "24";
-    display: inline-block;
+    display: flex;
     font-size: 96px;
     font-weight: bold;
+    justify-content: center;
     height: $icon-24hours-tablet-height;
     left: 20px;
     line-height: 1.557;
+    padding-top: 15px;
     position: absolute;
     text-align: center;
-    vertical-align: center;
     top: 55px;
+    vertical-align: center;
     width: $icon-24hours-tablet-width;
   }
 

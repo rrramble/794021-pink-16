@@ -64,33 +64,9 @@
 
 @media (min-width: $desktop-min-width) {
   .user-opinion {
-    padding-left: 130px + 130px;
-    padding-right: 130px + 130px;
-  }
-
-  .user-opinion__text {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .user-opinion__text::before {
-    color: gray;
-    content: "<";
-    font-size: 60px;
-    font-weight: 100;
-    position: relative;
-    left: -130px;
-  }
-
-  .user-opinion__text::after {
-    color: gray;
-    content: ">";
-    font-size: 60px;
-    font-weight: 100;
-    position: relative;
-    right: -130px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: auto;
   }
 
   .user-opinion__header {
@@ -99,5 +75,13 @@
 
   .user-opinion__description {
     font-size: 18px;
+  }
+
+  .user-opinion__text::before {
+    margin-right: -3px;
+  }
+
+  .user-opinion__text::after {
+    margin-left: -3px;
   }
 }
