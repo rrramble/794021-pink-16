@@ -1,17 +1,14 @@
-$main-photo-average-color: #283645;
-
 $main-bg-photo-desktop-filename:"../img/bg-back-desktop@1x.jpg";
 $main-bg-photo-mobile-filename: "../img/bg-back-mobile@1x.jpg";
 $main-bg-photo-tablet-filename:"../img/bg-back-tablet@1x.jpg";
 
-$main-photo-y-shift: -65px;
+$main-photo-y-shift: -68px;
 $main-bg-photo-y-shift: -110px;
 
 
 $header-height: 170px;
 $header-font-size: 24px;
 $header-line-height: $header-font-size * 1.2;
-$header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
 
 .page-content {
   align-items: stretch;
@@ -21,18 +18,20 @@ $header-padding-vertical: ($header-height - (3 * $header-line-height) ) / 2;
 }
 
 .page-content__header {
-  background-color: $main-photo-average-color;
+  background-color: $main-bg-color-fallback;
   background-image: url($main-bg-photo-mobile-filename);
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
+  background-repeat: no-repeat;
   color: white;
   font-size: $header-font-size;
   font-weight: 100;
   line-height: 1.2em;
-  padding-bottom: $header-padding-vertical;
+  min-height: 170px;
+  padding-bottom: 60px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: $header-padding-vertical;
+  padding-top: 30px;
   text-align: center;
 }
 
