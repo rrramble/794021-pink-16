@@ -28,3 +28,19 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+
+body {
+  width: 320px;
+}
+
+@media (min-width: $tablet-min-width) {
+  body {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  body {
+    width: 1200px;
+  }
+}
