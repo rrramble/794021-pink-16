@@ -1,44 +1,40 @@
-$color: rgb(40, 54, 69);
 $bg-color: #f2f2f2;
-$like-color: #d22856;
 $shaded-color: #dddfe0;
-$btn-bottom-margin: 10px;
 
 .post-actions {
   align-items: flex-start;
   background-color: $bg-color;
-  border-bottom: 1px solid $border-bottom-color;
+  border-top: 1px solid $border-bottom-color;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-bottom: 30px - $btn-bottom-margin;
-  padding-top: 30px;
+  justify-content: space-between;
+  min-height: 202px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 38px;
+  width: 100%;
 }
 
-@mixin common-for-buttons() {
+.post-actions__btn {
   background-color: transparent;
-  border-width: 2px;
-  border-radius: 20px;
+  border-radius: 25px;
   border-style: solid;
+  border-width: 3px;
   font-size: 18px;
+  font-weight: bold;
   line-height: 18px;
-  margin-bottom: $btn-bottom-margin;
-  max-width: 240px;
-  min-width: 240px;
-  padding: 12px;
+  padding: 15px;
+  width: 100%;
 }
 
 .post-actions__send {
-  border-color: $like-color;
-  color: $like-color;
-
-  @include common-for-buttons();
+  border-color: $text-color-redish;
+  color: $text-color-redish;
 }
 
 .post-actions__cancel {
   border-color: $shaded-color;
   color: $shaded-color;
-
-  @include common-for-buttons();
 }

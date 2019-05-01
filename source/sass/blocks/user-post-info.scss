@@ -1,14 +1,14 @@
 $like-image-filename: "../img/icon-heart.svg";
 $like-image-width: 12.545px;
 $like-image-height: 11.99px;
-$like-color: #d22856;
 $color: rgb(40, 54, 69);
 
 .user-post-info__header {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 5px;
+  justify-content: flex-start;
 }
 
 .user-post-info__name {
@@ -16,14 +16,15 @@ $color: rgb(40, 54, 69);
   font-size: 14px;
   font-weight: bold;
   line-height: 14px * 1.714;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .user-post-info__time-passed {
   color: $color;
-  font-size: 14px;
-  font-weight: 100;
-  line-height: 14px * 1.714;
+  font-size: 12px;
+  font-weight: $font-weight-light;
+  line-height: 2em;
+  text-transform: uppercase;
 }
 
 .user-post-info__time-passed::before {
@@ -47,7 +48,7 @@ $color: rgb(40, 54, 69);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .user-post-info__set-your-like {
@@ -58,11 +59,12 @@ $color: rgb(40, 54, 69);
   min-height: $like-image-height;
   border: 0;
   padding: 0;
-  margin-right: 5px;
+  margin-right: 18px;
 }
 
 .user-post-info__likes-count {
-  color: $like-color;
+  color: $text-color-redish;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
 }

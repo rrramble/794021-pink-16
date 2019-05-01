@@ -1,5 +1,5 @@
-$academy-logo-width: 28px;
-$academy-logo-height: 35px;
+$academy-logo-mobile-width: 27px;
+$academy-logo-mobile-height: 34px;
 
 .page-footer {
   align-content: flex-start;
@@ -36,8 +36,9 @@ $academy-logo-height: 35px;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
-  min-width: $academy-logo-width;
-  min-height: $academy-logo-height;
+  background-size: 40px 40px;
+  min-width: $academy-logo-mobile-width;
+  min-height: $academy-logo-mobile-height;
 }
 
 @media (min-width: $tablet-min-width) {
