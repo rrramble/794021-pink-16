@@ -1,0 +1,36 @@
+$academy-logo-mobile-width: 27px;
+$academy-logo-mobile-height: 34px;
+
+.footer-academy {
+  align-content: center;
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-academy__text {
+  color: $text-color-dark;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 16px;
+}
+
+.footer-academy__logo {
+  background-image: url("../img/htmlacademy.svg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  min-width: $academy-logo-mobile-width;
+  min-height: $academy-logo-mobile-height;
+}
+
+@media (min-width: $tablet-min-width) {
+  .footer-academy {
+    justify-content: flex-end;
+    margin-top: 12px;
+  }
+}
