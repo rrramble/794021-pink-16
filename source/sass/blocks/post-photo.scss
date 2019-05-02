@@ -46,25 +46,35 @@ $bg-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-min-width) {
-  .post-photo {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .post-photo__header {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 69px;
+    padding-top: 45px;
   }
 
   .post-photo__header-text {
     font-size: 18px;
   }
 
+  .post-photo__container {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 57px;
+    padding-top: 57px;
+  }
+
   .post-photo__image {
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 10px;
+    height: 50*1.3333333%;
     width: 50%;
   }
 
-  .post-photo__filters {
+  .post-photo__tools {
+    justify-content: space-between;
+    padding-bottom: 0;
     width: 50%;
   }
 }

@@ -38,3 +38,13 @@ $shaded-color: #dddfe0;
   border-color: $shaded-color;
   color: $shaded-color;
 }
+
+@media (min-width: $tablet-min-width) {
+  .post-actions {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 135px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
