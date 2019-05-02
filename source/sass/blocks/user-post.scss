@@ -17,7 +17,6 @@ $vertical-gap-between-posts: 20px;
 }
 
 .user-post__img {
-  // height: auto;
   line-height: 0;
   margin-left: 20px;
   margin-right: 20px;
@@ -32,14 +31,8 @@ $vertical-gap-between-posts: 20px;
 
 .user-post__info {
   background-color: $message-bg-color;
-  padding-bottom: 21px;
-  padding-left: 18px;
-  padding-right: 5px;
-  padding-top: 17px;
   margin-left: 20px;
   margin-right: 20px;
-  min-height: 145px;
-  text-align: left;
 }
 
 .user-post--panoram-of-the-day .user-post__info {
@@ -67,7 +60,8 @@ $vertical-gap-between-posts: 20px;
     margin-right: -20px;
     height: auto;
     text-align: center;
-    width: 660px;
+    width: auto;
+    height: 510px;
   }
 
   .user-post__info {
