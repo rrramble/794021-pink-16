@@ -4,7 +4,7 @@ $main-bg-photo-tablet-filename:"../img/bg-back-tablet@1x.jpg";
 
 $main-photo-y-shift: -68px;
 $main-bg-photo-y-shift: -110px;
-
+$main-bg-photo-tablet-y-shift: -112px;
 
 $header-height: 170px;
 $header-font-size: 24px;
@@ -54,19 +54,20 @@ $header-line-height: $header-font-size * 1.2;
 @media (min-width: $tablet-min-width) {
   .page-content__header {
     background-image: url($main-bg-photo-tablet-filename);
-    background-position-y: $main-bg-photo-y-shift;
+    background-position-y: $main-bg-photo-tablet-y-shift;
     font-size: 50px;
-    min-height: 330px;
+    min-height: 328px;
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 68px;
   }
 
   .page-content__intro-text {
     font-size: 18px;
-    padding-bottom: 80px;
+    padding-bottom: 76px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 80px;
+    padding-top: 92px;
   }
 }
 

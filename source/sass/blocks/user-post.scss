@@ -38,7 +38,12 @@ $vertical-gap-between-posts: 20px;
   padding-top: 17px;
   margin-left: 20px;
   margin-right: 20px;
+  min-height: 145px;
   text-align: left;
+}
+
+.user-post--panoram-of-the-day .user-post__info {
+  min-height: 120px;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -61,6 +66,7 @@ $vertical-gap-between-posts: 20px;
     margin-left: -20px;
     margin-right: -20px;
     height: auto;
+    text-align: center;
     width: 660px;
   }
 

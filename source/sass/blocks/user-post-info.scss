@@ -68,3 +68,23 @@ $color: rgb(40, 54, 69);
   line-height: 24px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-min-width) {
+  .user-post-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-post-info--panoram-of-the-day .user-post-info__header {
+    order: -2;
+    width: 50%;
+  }
+
+  .user-post-info__footer {
+    margin-top: 0;
+    order: -1;
+    width: 50%;
+  }
+}
