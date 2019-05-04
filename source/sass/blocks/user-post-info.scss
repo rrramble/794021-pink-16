@@ -131,3 +131,18 @@ $color: rgb(40, 54, 69);
     margin-right: 0;
   }
 }
+
+
+@media (min-width: $desktop-min-width) {
+  .user-post-info--panoram-of-the-day {
+    align-content: flex-start;
+    margin-bottom: 0;
+    min-height: 96px;
+    padding-right: 31px;
+    padding-bottom: 5px;
+  }
+
+  .user-post-info--panoram-of-the-day .user-post-info__text {
+    margin-top: 0;
+  }
+}
