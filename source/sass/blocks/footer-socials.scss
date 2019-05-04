@@ -34,9 +34,17 @@ $shaded-color: #dddfe0;
   background-image: url("../img/icon-youtube.svg");
 }
 
+
 @media (min-width: $tablet-min-width) {
   .footer-socials {
     margin-bottom: 0;
     margin-top: 2px;
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .footer-socials {
+    margin-top: 4px;
   }
 }

@@ -28,9 +28,18 @@ $academy-logo-mobile-height: 34px;
   min-height: $academy-logo-mobile-height;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .footer-academy {
     justify-content: flex-end;
     margin-top: 12px;
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .footer-academy__text {
+    font-size: 18px;
+    margin-right: 14px;
   }
 }
