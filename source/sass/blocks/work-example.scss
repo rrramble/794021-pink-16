@@ -24,6 +24,13 @@ $hand-with-phone-height: 314;
   position: relative;
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .work-example {
+    background-image: url($main-bg-image-mobile-filename);
+  }
+}
+
 .work-example__hand-with-phone {
   border: 0;
   left: -31px;
