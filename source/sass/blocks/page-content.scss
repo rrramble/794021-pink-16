@@ -71,6 +71,7 @@ $header-line-height: $header-font-size * 1.2;
   }
 }
 
+
 @media (min-width: $tablet-min-width) {
   .page-content__intro-text--details {
     display: initial;
@@ -84,5 +85,14 @@ $header-line-height: $header-font-size * 1.2;
     background-position-y: $main-bg-photo-y-shift;
     font-size: 50px;
     min-height: 285px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 1.28em;
+  }
+
+  .page-content__intro-text {
+    padding-bottom: 86px;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
