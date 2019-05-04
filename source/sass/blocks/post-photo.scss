@@ -45,6 +45,7 @@ $bg-color: #f2f2f2;
   width: 100%;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .post-photo__header {
     padding-bottom: 69px;
@@ -79,8 +80,10 @@ $bg-color: #f2f2f2;
   }
 }
 
+
 @media (min-width: $desktop-min-width) {
   .post-photo {
+    margin-top: 5px;
     padding-left: 130px;
     padding-right: 130px;
   }
@@ -88,5 +91,9 @@ $bg-color: #f2f2f2;
   .post-photo__image {
     height: 400px;
     width: 300px;
+  }
+
+  .post-photo__header {
+    padding-top: 0;
   }
 }
