@@ -36,18 +36,12 @@
   <main class="page-content">
 
     <section class="work-example">
-      <img class="work-example__hand-with-phone"
-        srcset="
-          img/iphone-hand-mobile@1x.png 258w,
-          img/iphone-hand-tablet@1x.png 700w,
-          img/iphone-hand-desktop@1x.png 1050w
-        "
-        sizes="
-          (min-width: 1200px) 1050px,
-          (min-width: 660px) 660px,
-          258px"
-        src="img/iphone-hand-mobile@1x.png" alt="Рука держит смартфон"
-      >
+      <picture class="work-example__hand-with-phone">
+        <source srcset="img/iphone-hand-mobile@1x.png" media="(max-width: 659px)">
+        <source srcset="img/iphone-hand-tablet@1x.png" media="(max-width: 1199px)">
+        <source srcset="img/iphone-hand-desktop@1x.png">
+        <img src="img/iphone-hand-mobile@1x.png" alt="Как это выглядит">
+      </picture>
 
       <div class="work-example__app-download app-download">
         <h2 class="app-download__header">Взгляните на&nbsp;жизнь иначе!</h2>
@@ -68,74 +62,84 @@
     </section>
 
     <section class="motivation">
-        <h2 class="visually-hidden">Мотивация</h2>
+      <header class="visually-hidden">Мотивация</header>
 
-        <div class="motivation__intro motivation-intro">
-          <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
-          <p class="motivation-intro__text">Нам есть, что вам предложить!</p>
+      <div class="motivation__intro motivation-intro">
+        <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
+        <p class="motivation-intro__text motivation-intro__text--narrow">Нам есть, что вам предложить!</p>
+      </div>
+
+      <div class="motivation__container">
+        <ul class="motivation__facts motivation-facts">
+          <li class="motivation-fact">
+            <h3 class="motivation-fact__header">Поднимает настроение</h3>
+            <p class="motivation-fact__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально
+              в несколько кликов!
+            </p>
+          </li>
+
+          <li class="motivation-fact">
+            <h3 class="motivation-fact__header">Меняет мир вокруг</h3>
+            <p class="motivation-fact__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить&nbsp;эффект
+            </p>
+          </li>
+
+          <li class="motivation-fact">
+            <h3 class="motivation-fact__header">Заводит новых друзей</h3>
+            <p class="motivation-fact__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+              и заводите новых
+            </p>
+          </li>
+
+          <li class="motivation-fact motivation-fact--promo24hours">
+            <h3 class="motivation-fact__header">Эффект на&nbsp;24&nbsp;часа!</h3>
+            <p class="motivation-fact__text">
+              Британские ученые провели исследования и доказали, что положительный
+              эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="motivation-fact__link" href="#">Узнать больше об исследовании</a>
+          </li>
+        </ul>
+
+        <div class="motivation__images motivation-images">
+          <div class="motivation-images__initial"></div>
+          <div class="motivation-images__painted"></div>
+          <div class="motivation-images__shared"></div>
         </div>
 
-        <div class="motivation__container">
-          <ul class="motivation__facts motivation-facts">
-            <li class="motivation-fact">
-              <h3 class="motivation-fact__header">Поднимает настроение</h3>
-              <p class="motivation-fact__text">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально
-                в несколько кликов!
-              </p>
-            </li>
-
-            <li class="motivation-fact">
-              <h3 class="motivation-fact__header">Меняет мир вокруг</h3>
-              <p class="motivation-fact__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-
-            <li class="motivation-fact">
-              <h3 class="motivation-fact__header">Заводит новых друзей</h3>
-              <p class="motivation-fact__text">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
-                и заводите новых
-              </p>
-            </li>
-
-            <li class="motivation-fact motivation-fact--promo24hours">
-              <h3 class="motivation-fact__header">Эффект на 24 часа!</h3>
-              <p class="motivation-fact__text">
-                Британские ученые провели исследования и доказали, что пложительный
-                эффект от использования приложения длится целые сутки!
-              </p>
-              <a class="motivation-fact__link" href="#">Узнать больше об исследовании</a>
-            </li>
-          </ul>
-
-          <div class="motivation__images motivation-images">
-            <div class="motivation-images__initial"></div>
-            <div class="motivation-images__painted"></div>
-            <div class="motivation-images__shared"></div>
-          </div>
-
-          <div class="motivation__skew-bg">
-          </div>
+        <div class="motivation__skew-bg">
         </div>
-
+      </div>
     </section>
 
-    <h2 class="visually-hidden">Истории успеха</h2>
-    <ul class="user-opinions">
-      <li class="user-opinion">
-        <h3 class="user-opinion__header">
-          Николай Петров
-        </h3>
-        <p class="user-opinion__description">25 лет, водитель трамвая</p>
-        <p class="user-opinion__text">
-          Это приложение перевернуло мой мир и позволило по-новому взглянуть на&nbsp;привычные серые вещи!
-          А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
-        </p>
-      </li>
-    </ul>
+    <section class="user-opinions">
+      <header class="visually-hidden">Мнения пользователей</header>
+      <ul class="user-opinions__list">
+        <li class="user-opinion">
+          <h3 class="user-opinion__header">Николай Петров</h3>
+          <p class="user-opinion__description">25 лет, водитель трамвая</p>
+          <p class="user-opinion__text">
+            Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
+          </p>
+        </li>
+      </ul>
+      <div class="opinions-slider">
+        <button class="opinions-slider__btn opinions-slider__btn--selected opinions-slider__back">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="opinions-slider__btn opinions-slider__center">
+          <span class="visually-hidden">Середина списка</span>
+        </button>
+        <button class="opinions-slider__btn opinions-slider__forward">
+            <span class="visually-hidden">Вперед</span>
+        </button>
+      </div>
+    </section>
 
     <h2 class="visually-hidden">Купить</h2>
     <ul class="buy-app">
@@ -159,7 +163,7 @@
     </ul>
 
     <section class="contacts">
-      <h2 class="contacts__header">Остались вопросы? Свяжитесь с&nbsp;нами!</p>
+      <h2 class="contacts__header">Остались вопросы? Свяжитесь с&nbsp;нами!</h2>
 
       <ul class="contacts__info-blocks">
         <li class="contact-block">

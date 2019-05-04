@@ -5,28 +5,29 @@ $button-width: 48px;
 $gap-after-button: 20px;
 
 .filter-tools {
-  align-items: flex-start;
+  align-items: center;
   background-color: $bg-color;
   border-bottom: 1px solid $border-bottom-color;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 20px;
-  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 21px;
 }
 
 .filter-tools__btn {
-  background-color: $bg-color;
+  background-color: transparent;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   border: 0;
   height: $button-height;
   margin: 0;
-  margin-bottom: $gap-after-button;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 0;
   width: $button-width;
 }
@@ -37,6 +38,7 @@ $gap-after-button: 20px;
 
 .filter-tools__fill {
   background-image: url("../img/icon-editor-fill.svg");
+  margin-top: 2px;
 }
 
 .filter-tools__contrast {
@@ -44,9 +46,15 @@ $gap-after-button: 20px;
 }
 
 .filter-tools__lightness {
-  min-height: 18px;
-  max-width: 240px;
-  min-width: 240px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 20%;
+  box-shadow: 1;
+  color: black;
+  cursor: pointer;
+  min-height: 50px;
+  padding-top: 10px;
+  min-width: 100%;
 }
 
 @media (min-width: $tablet-min-width) {

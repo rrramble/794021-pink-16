@@ -31,260 +31,251 @@
     </nav>
   </header>
 
-  <main class="page-content users-posts">
+  <main class="page-content">
     <h1 class="page-content__header">Фотографии пользователей</h1>
     <p class="page-content__intro-text">
       Взгляните на&nbsp;фотографии, которые выкладывают пользователи!
       Видите, как не&nbsp;хватает ваших?
     </p>
 
-    <ul class="users-posts__list">
-      <li class="user-post user-post--panoram-of-the-day"
-      >
-        <img class="user-post__img user-post__img--panoram-of-the-day"
-          srcset="img/panorama-mobile@1x.jpg 320w,
-            img/panorama-tablet@1x.jpg 700w,
-            img/panorama-desktop@1x.jpg 1200w"
-          sizes="(min-width: 1200px) 1200px,
-            (min-width: 660px) 300px,
-            280px"
-          src="img/panorama-mobile@1x.jpg" width="320" height="137"
-          alt="Панорама дня"
-        />
+    <section class="users-posts">
+      <ul class="users-posts__list">
+        <li class="user-post user-post--panoram-of-the-day">
+          <picture class="user-post__img user-post__img--panoram-of-the-day">
+            <source srcset="img/panorama-mobile@1x.jpg" media="(max-width: 659px)">
+            <source srcset="img/panorama-tablet@1x.jpg" media="(max-width: 1159px)">
+            <source srcset="img/panorama-desktop@1x.jpg">
+            <img class="user-post__img user-post__img--panoram-of-the-day" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Анна</h3>
-            <p class="user-post-info__time-passed">5 минут назад</p>
-          </header>
+          <div class="user-post__info user-post-info user-post-info--panoram-of-the-day">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Анна</h3>
+              <p class="user-post-info__time-passed">5 минут назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-              Прыгать или нет? Напишите в&nbsp;комментарии свой ответ и смотрите прямую трансляцию
-              в&nbsp;перископе, задавайте свои вопросы!
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 215</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text i-know-there-is-grammatical-error-in-the-following-phrase">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+                в&nbsp;перископе, задавайте свои вопросы!
+            </p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 215</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          srcset="img/photo-car-mobile.jpg 280w,
-            img/photo-car-tablet@1x.jpg 300w,
-            img/photo-car-desktop@1x 300w"
-          sizes="(min-width: 1200px) 300px,
-            (min-width: 660px) 300px,
-            280px"
-          src="img/photo-car-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+          <picture class="user-post__img">
+            <source srcset="img/photo-car-mobile@1x.jpg" media="(max-width: 659px)">
+            <source srcset="img/photo-car-tablet@1x.jpg" media="(max-width: 1159px)">
+            <source srcset="img/photo-car-desktop@1x.jpg">
+            <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Левон</h3>
-            <p class="user-post-info__time-passed">5 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Левон</h3>
+              <p class="user-post-info__time-passed">5 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Вчера он на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 356</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text">
+              Вчера он на&nbsp;луну летал, сегодня в руки к&nbsp;нам попал.
+            </p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 356</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+            <picture class="user-post__img">
+              <source srcset="img/photo-drumset-mobile@1x.jpg" media="(max-width: 659px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(max-width: 1159px)">
+              <source srcset="img/photo-drumset-desktop@1x.jpg">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
+            </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Антон</h3>
-            <p class="user-post-info__time-passed">12 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Антон</h3>
+              <p class="user-post-info__time-passed">12 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Соседи будут рады!
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 666</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text">
+              Соседи будут рады!
+            </p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 666</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+          <picture class="user-post__img">
+            <source srcset="img/photo-window-mobile@1x.jpg" media="(max-width: 659px)">
+            <source srcset="img/photo-window-tablet@1x.jpg" media="(max-width: 1159px)">
+            <source srcset="img/photo-window-desktop@1x.jpg">
+            <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Борис</h3>
-            <p class="user-post-info__time-passed">20 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Борис</h3>
+              <p class="user-post-info__time-passed">20 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 215</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 215</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          src="img/photo-fair-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+          <picture class="user-post__img">
+              <source srcset="img/photo-fair-mobile@1x.jpg" media="(max-width: 659px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg" media="(max-width: 1159px)">
+              <source srcset="img/photo-fair-desktop@1x.jpg">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Сергей</h3>
-            <p class="user-post-info__time-passed">25 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Сергей</h3>
+              <p class="user-post-info__time-passed">25 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Самая кубанская в мире!
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 4</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text">Самая кубанская в мире!</p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 4</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          src="img/photo-pov-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+          <picture class="user-post__img">
+              <source srcset="img/photo-pov-mobile@1x.jpg" media="(max-width: 659px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg" media="(max-width: 1159px)">
+              <source srcset="img/photo-pov-desktop@1x.jpg">
+              <img src="img/.jpg" alt="Фото пользователя">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Максим</h3>
-            <p class="user-post-info__time-passed">40 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Максим</h3>
+              <p class="user-post-info__time-passed">40 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Где снег-то?
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 150</p>
-          </footer>
-        </div>
-      </li>
+            <p class="user-post-info__text">Где снег-то?</p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 150</p>
+            </footer>
+          </div>
+        </li>
 
-      <li class="user-post"
-      >
-        <img class="user-post__img"
-          src="img/photo-wing-mobile@1x.jpg" width="280" height="180"
-          alt="Фото пользователя"
-        />
+        <li class="user-post">
+          <picture class="user-post__img">
+              <source srcset="img/photo-wing-mobile@1x.jpg" media="(max-width: 659px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg" media="(max-width: 1159px)">
+              <source srcset="img/photo-wing-desktop@1x.jpg">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
 
-        <div class="user-post__info">
-          <header class="user-post-info__header">
-            <h3 class="user-post-info__name">Надежда</h3>
-            <p class="user-post-info__time-passed">45 часов назад</p>
-          </header>
+          <div class="user-post__info user-post-info">
+            <header class="user-post-info__header">
+              <h3 class="user-post-info__name">Надежда</h3>
+              <p class="user-post-info__time-passed">45 часов назад</p>
+            </header>
 
-          <p class="user-post-info__text">
-            Всем GM и взаимные лайки!
-          </p>
-          <footer class="user-post-info__footer">
-            <button class="user-post-info__set-your-like" type="button">
-              <span class="visually-hidden">Лайкнуть</span>
-            </button>
-            <p class="user-post-info__likes-count">Нравится: 2560</p>
-          </footer>
-        </div>
-      </li>
-    </ul>
+            <p class="user-post-info__text">Всем GM и взаимные лайки!</p>
+            <footer class="user-post-info__footer">
+              <button class="user-post-info__set-your-like" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+              </button>
+              <p class="user-post-info__likes-count">Нравится: 2560</p>
+            </footer>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <form class="post-photo"
-      action="https://echo.htmlacademy.ru" method="POST">
+    <section class="post-photo">
       <header class="post-photo__header">
         <h2 class="visually-hidden">Отправить фотографию</h2>
         <p class="post-photo__header-text">Затмите их всех!</p>
-        <p class="post-photo__header-text">Выкладывайте все, что накопилось в&nbsp;телефоне!</p>
+        <p class="post-photo__header-text">Выкладывайте все, что накопилось в телефоне!</p>
       </header>
 
-      <input class="post-photo__image"
-        type="image" alt="Отправить фото" src="img/photo-road-mobile@1x.jpg" width="280" height="374"/>
+      <form class="post-photo__container" action="https://echo.htmlacademy.ru" method="POST">
+        <input class="post-photo__image"
+          type="image" alt="Отправить фото" src="img/photo-road-mobile@1x.jpg" width="280" height="374"/>
 
-      <div class="post-photo__filters filter-tools">
-        <label class="visually-hidden" for="crop">Обрезка</label>
-        <input class="filter-tools__btn filter-tools__crop"
-          type="button" name="crop" value="0:0" id="crop"/>
+        <div class="post-photo__tools">
+          <div class="filter-tools">
+            <label class="visually-hidden" for="crop">Обрезка</label>
+            <input class="filter-tools__btn filter-tools__crop"
+              type="button" name="crop" value="0" id="crop">
 
-        <label class="visually-hidden" for="fill">Заливка</label>
-        <input class="filter-tools__btn filter-tools__fill"
-          type="button" name="fill" value="0" id="fill"/>
+            <label class="visually-hidden" for="fill">Заливка</label>
+            <input class="filter-tools__btn filter-tools__fill"
+              type="button" name="fill" value="0" id="fill">
 
-        <label class="visually-hidden" for="contrast">Контраст</label>
-        <input class="filter-tools__btn filter-tools__contrast"
-          type="button" name="contrast" value="0" id="contrast"/>
+            <label class="visually-hidden" for="contrast">Контраст</label>
+            <input class="filter-tools__btn filter-tools__contrast"
+              type="button" name="contrast" value="0" id="contrast">
 
-        <label class="visually-hidden" for="lightness">Осветление</label>
-        <input class="filter-tools__lightness"
-          type="range" min="0" max="100" value="80" name="lightness" id="lightness"/>
-
-        <div class="post-photo__actions post-actions">
-          <button class="post-actions__send" type="submit">Запостить</button>
-          <button class="post-actions__cancel" type="button">Отмена</button>
+            <label class="visually-hidden" for="lightness">Осветление</label>
+            <input class="filter-tools__lightness"
+              type="range" min="0" max="100" value="80" name="lightness" id="lightness">
+          </div>
+          <div class="post-actions">
+            <button class="post-actions__btn post-actions__send" type="submit">Запостить</button>
+            <button class="post-actions__btn post-actions__cancel" type="button">Отмена</button>
+          </div>
         </div>
-      </div>
 
-    </form>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__item footer-logo"></div>
 
     <div class="page-footer__item footer-socials">
-      <a class="footer-socials__twitter" href="#">
+      <a class="footer-socials__btn footer-socials__twitter" href="#">
         <span class="visually-hidden">Твиттер</span>
       </a>
-      <a class="footer-socials__facebook" href="#">
+      <a class="footer-socials__btn footer-socials__facebook" href="#">
         <span class="visually-hidden">Фейсбук</span>
       </a>
-      <a class="footer-socials__youtube" href="#">
+      <a class="footer-socials__btn footer-socials__youtube" href="#">
         <span class="visually-hidden">Ютюб</span>
       </a>
     </div>
 
-    <div class="page-footer__item page-footer__academy">
-      <p class="page-footer__text">Разработано</p>
-      <a class="page-footer__academy-logo"
-        href="https://htmlacademy.ru/intensive/adaptive"
-      >
+    <div class="page-footer__item footer-academy">
+      <p class="footer-academy__text">Разработано</p>
+      <a class="footer-academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>

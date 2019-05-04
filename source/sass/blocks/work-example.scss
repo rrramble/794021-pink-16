@@ -1,8 +1,8 @@
 $block-mobile-min-height: 396px;
-$main-photo-y-shift: -65px;
+$main-photo-y-shift: -68px;
 
-$block-tablet-min-height: 620px;
-$main-photo-tablet-y-shift: -110px;
+$block-tablet-min-height: 618px;
+$main-photo-tablet-y-shift: -112px;
 
 $block-desktop-min-height: 745px;
 $main-photo-desktop-y-shift: -110px;
@@ -25,9 +25,11 @@ $hand-with-phone-height: 314;
 }
 
 .work-example__hand-with-phone {
-  margin-top: 110px;
-  position: sticky;
-  bottom: 0;
+  border: 0;
+  left: -31px;
+  line-height: 0;
+  margin-top: 108px;
+  position: relative;
   z-index: 1;
 }
 
@@ -43,7 +45,7 @@ $hand-with-phone-height: 314;
     background-position-y: $main-photo-tablet-y-shift;
     min-height: $block-tablet-min-height;
     padding-left: 20px;
-    padding-top: 90px;
+    padding-top: 63px;
   }
 
   .work-example__hand-with-phone {
@@ -65,6 +67,7 @@ $hand-with-phone-height: 314;
   .work-example__hand-with-phone {
     position: absolute;
     bottom: 0;
-    right: 0%;
+    left: unset;
+    right: 4px;
   }
 }

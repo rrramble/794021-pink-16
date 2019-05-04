@@ -6,16 +6,18 @@ $logo-pink-desktop-filename: "../img/logo-pink-blue-desktop.svg";
 .footer-logo {
   background-image: url($logo-pink-mobile-filename);
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: left;
   background-position-y: center;
+  background-size: $logo-pink-all-versions-width $logo-pink-all-versions-height;
   margin-bottom: 40px;
-  height: $logo-pink-all-versions-height;
-  width: $logo-pink-all-versions-width;
+  min-height: $logo-pink-all-versions-height;
+  min-width: $logo-pink-all-versions-width;
 }
 
 @media (min-width: $tablet-min-width) {
   .footer-logo {
     margin-bottom: 0;
+    // margin-top: -3px;
   }
 }
 

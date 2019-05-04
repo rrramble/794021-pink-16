@@ -5,7 +5,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 41px;
 }
 
 .motivation__intro {
@@ -18,7 +18,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 .motivation__facts {
@@ -31,7 +31,7 @@ $bg-color-grayish: rgb(242, 242, 242);
 
 .motivation__skew-bg {
   background-color: $bg-color-grayish;
-  clip-path: polygon(0 35px, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 32px, 100% 0, 100% 100%, 0% 100%);
   left: 0;
   z-index: -1;
   position: absolute;
@@ -41,10 +41,15 @@ $bg-color-grayish: rgb(242, 242, 242);
 }
 
 @media (min-width: $tablet-min-width) {
+  .motivation {
+    padding-top: 48px;
+  }
+
   .motivation__container {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 2px;
+    position: relative;
   }
 
   .motivation__intro {
@@ -66,6 +71,10 @@ $bg-color-grayish: rgb(242, 242, 242);
 }
 
 @media (min-width: $desktop-min-width) {
+  .motivation {
+    padding-top: 64px;
+  }
+
   .motivation__container {
     flex-direction: column;
     flex-wrap: initial;
@@ -82,6 +91,6 @@ $bg-color-grayish: rgb(242, 242, 242);
   }
 
   .motivation__skew-bg {
-    clip-path: polygon(0 95px, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 97px, 100% 6px, 100% 100%, 0% 100%);
   }
 }

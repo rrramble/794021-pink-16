@@ -15,7 +15,7 @@ $line-height-desktop: 18px;
 $gap-between-menu-items: 80px;
 
 $nav-mobile-box-height: 68px;
-$logo-mobile-top-gap: 22px;
+$logo-mobile-top-gap: 22px - 3px; // 3 is a height diff between open/closed menu's bar. Sic.
 $logo-mobile-height: 22px;
 $logo-mobile-bottom-gap: 24px;
 
@@ -24,8 +24,6 @@ $logo-tablet-top-gap: 26px;
 $logo-tablet-height: 40px;
 $logo-tablet-bottom-gap: 44;
 
-$text-color: white;
-$text-color-hover: #d22856;
 $text-color-pressed: rgba(255, 255, 255, 0.302);
 
 .site-menu {
@@ -38,12 +36,6 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   margin-bottom: -20px;
 }
 
-.site-menu--open {
-  background-color: $menu-item-bg-color;
-  margin-top: -$logo-mobile-top-gap;
-  padding-top: $nav-mobile-box-height;
-}
-
 .site-menu::before {
   background-color: transparent;
   background-image: url($icon-menu-closed);
@@ -51,12 +43,18 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   background-repeat: no-repeat;
   content: "";
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 19px;
   min-width: $icon-closed-width;
   min-height: $icon-closed-height;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.site-menu--open {
+  background-color: $menu-item-bg-color;
+  margin-top: -$logo-mobile-top-gap;
+  padding-top: $nav-mobile-box-height;
 }
 
 .site-menu--open::before {
@@ -68,20 +66,25 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   border-top-color: gray;
   border-top-width: 1px;
   border-top-style: solid;
-  border-bottom-color: black;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  font-size: $font-size-mobile;
   overflow-wrap: break-word;
-  padding: 15px;
-  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  position: relative;
   text-decoration: none;
   width: 100%;
   word-wrap: break-word;
 }
 
-.site-menu__item-text:visited {
-  color: $text-color;
+.site-menu__item::before {
+  border-top-width: 1px;
+  border-top-color: black;
+  border-top-style: solid;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 100%;
 }
 
 .site-menu:not(.site-menu--open) .site-menu__item {
@@ -96,16 +99,22 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 }
 
 .site-menu__item-text {
-  color: $text-color;
+  color: white;
   font-size: $font-size-mobile;
+  font-weight: bold;
   line-height: $line-height-mobile;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-menu__item-text:visited {
+  color: white;
 }
 
 .site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:hover,
 .site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:focus {
-  color: $text-color-hover;
+  color: $text-color-redish;
 }
 
 .site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:active {
@@ -119,7 +128,12 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 
   .site-menu--open {
     margin-top: -$logo-tablet-top-gap;
-    padding-top: $nav-tablet-box-height;
+    padding-top: $nav-tablet-box-height - 1px;
+  }
+
+  .site-menu--open::before {
+    margin-right: 19px;
+    margin-top: 44px;
   }
 }
 
@@ -156,6 +170,7 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   .site-menu__item-text {
     font-size: 18px;
     font-weight: normal;
+    text-transform: none;
     line-height: 1em;
     text-align: right;
   }
