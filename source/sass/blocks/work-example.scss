@@ -38,6 +38,7 @@ $hand-with-phone-height: 314;
   z-index: 2;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .work-example {
     align-items: flex-start;
@@ -54,6 +55,7 @@ $hand-with-phone-height: 314;
     right: -5%;
   }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .work-example {
