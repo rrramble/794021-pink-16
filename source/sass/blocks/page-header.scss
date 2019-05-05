@@ -7,18 +7,50 @@
   width: 100%;
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url($main-bg-image-mobile2x-filename);
+    background-size: 320px 462px;
+  }
+}
+
 .page-header__nav {
   width: 100%;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .page-header {
     background-image: url($main-bg-image-tablet-filename);
+    background-size: 1200px 729px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url($main-bg-image-tablet2x-filename);
+    }
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .page-header {
     background-image: url($main-bg-image-desktop-filename);
+    background-size: 2560px 853px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url($main-bg-image-desktop2x-filename);
+    }
   }
 }
