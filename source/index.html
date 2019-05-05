@@ -36,11 +36,12 @@
   <main class="page-content">
 
     <section class="work-example">
-      <picture class="work-example__hand-with-phone">
-        <source srcset="img/iphone-hand-mobile@1x.png" media="(max-width: 659px)">
-        <source srcset="img/iphone-hand-tablet@1x.png" media="(max-width: 1199px)">
-        <source srcset="img/iphone-hand-desktop@1x.png">
-        <img src="img/iphone-hand-mobile@1x.png" alt="Как это выглядит">
+      <picture>
+        <source srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x" media="(min-width: 1200px)">
+        <source srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x" media="(min-width: 660px)">
+        <source srcset="img/iphone-hand-mobile@1x.png, img/iphone-hand-mobile@2x.png 2x">
+        <img class="work-example__hand-with-phone"
+          src="img/iphone-hand-mobile@1x.png" alt="Пример работы">
       </picture>
 
       <div class="work-example__app-download app-download">

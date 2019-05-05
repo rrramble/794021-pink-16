@@ -105,7 +105,7 @@ $hand-with-phone-height: 314;
     .work-example {
       background-image: url($main-bg-image-desktop2x-filename);
       background-size: (2560px + 0) (853px + 0);
-      background-position-y: 2 * $main-photo-desktop-y-shift + 12px;
+      background-position-y: $main-photo-desktop-y-shift + 12px;
     }
   }
 }
