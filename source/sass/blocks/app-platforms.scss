@@ -58,7 +58,8 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
 /*
  * Desktop mode section
  */
+@media (min-width: $desktop-min-width) {
   .app-platforms__android {
-    top: 2px;
+    top: 4px;
   }
 }
