@@ -13,8 +13,10 @@
   <header class="page-header">
     <nav class="page-header__nav page-nav">
       <span class="page-nav__logo"></span>
-
-      <ul class="page-nav__menu site-menu site-menu--open">
+      <button class="page-nav__menu-btn page-nav__menu-btn--open" id="site-menu-button">
+        <span class=visually-hidden>Меню</span>
+      </button>
+      <ul class="page-nav__menu site-menu site-menu--open" id="site-menu">
         <li class="site-menu__item site-menu__item-text site-menu__item--not-clickable">
           Главная
         </li>
@@ -193,5 +195,6 @@
 
   </main>
 
+  <script src="/js/app.js"></script>
 </body>
 </html>

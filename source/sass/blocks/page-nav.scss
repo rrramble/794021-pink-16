@@ -14,6 +14,7 @@ $logo-tablet-url: "../img/logo-pink-white-tablet.svg";
 
 $padding-before-content-mobile: 21px;
 
+
 .page-nav {
   background-color: $navigation-bg-color;
   display: flex;
@@ -32,9 +33,32 @@ $padding-before-content-mobile: 21px;
   position: absolute;
 }
 
-.page-nave__logo:active {
+.page-nav__logo:active {
   stroke-opacity: 0.3;
 }
+
+.page-nav__menu-btn {
+  background-color: transparent;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 0;
+  content: "";
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 21px;
+  min-width: 50px;
+  min-height: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+.page-nav__menu-btn--open {
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
 
 @media (min-width: $tablet-min-width) {
   .page-nav {
@@ -47,6 +71,10 @@ $padding-before-content-mobile: 21px;
     left: 20px;
     min-height: $logo-tablet-height;
     min-width: $logo-tablet-width;
+  }
+
+  .page-nav__menu-btn {
+    margin-top: 45px;
   }
 
   .page-nav__menu {
@@ -70,6 +98,10 @@ $padding-before-content-mobile: 21px;
     top: -9px;
     position: relative;
     width: $logo-desktop-width;
+  }
+
+  .page-nav__menu-btn {
+    display: none;
   }
 
   .page-nav__menu {

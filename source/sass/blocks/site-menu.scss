@@ -1,12 +1,5 @@
 $menu-item-bg-color: rgb(40, 54, 69);
 
-$icon-menu-burger-url: "../img/icon-menu-burger.svg";
-$icon-menu-cross-url: "../img/icon-menu-cross.svg";
-$icon-menu-closed: $icon-menu-burger-url;
-$icon-menu-open: $icon-menu-cross-url;
-
-$icon-closed-width: 50px;
-$icon-closed-height: 25px;
 
 $line-height-mobile: 32px;
 $line-height-desktop: 18px;
@@ -35,29 +28,10 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   margin-bottom: -20px;
 }
 
-.site-menu::before {
-  background-color: transparent;
-  background-image: url($icon-menu-closed);
-  background-position: right;
-  background-repeat: no-repeat;
-  content: "";
-  margin-right: 20px;
-  margin-top: 19px;
-  min-width: $icon-closed-width;
-  min-height: $icon-closed-height;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .site-menu--open {
   background-color: $menu-item-bg-color;
   margin-top: -$logo-mobile-top-gap;
   padding-top: $nav-mobile-box-height;
-}
-
-.site-menu--open::before {
-  background-image: url($icon-menu-open);
 }
 
 .site-menu__item {
@@ -132,11 +106,6 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     margin-top: -$logo-tablet-top-gap;
     padding-top: $nav-tablet-box-height - 1px;
   }
-
-  .site-menu--open::before {
-    margin-right: 19px;
-    margin-top: 44px;
-  }
 }
 
 
@@ -148,10 +117,6 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     justify-content: flex-end;
     margin-bottom: initial;
     margin-top: initial;
-  }
-
-  .site-menu::before {
-    display: none;
   }
 
   .site-menu--open {
