@@ -55,6 +55,10 @@ $header-line-height: $header-font-size * 1.2;
   display: none;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .page-content__header {
     background-image: url($main-bg-image-tablet-filename);
@@ -91,6 +95,9 @@ $header-line-height: $header-font-size * 1.2;
 }
 
 
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .page-content__header {
     background-image: url($main-bg-image-desktop-filename);
