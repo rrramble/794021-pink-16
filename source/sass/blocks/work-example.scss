@@ -23,6 +23,7 @@ $hand-with-phone-height: 314;
   justify-content: flex-start;
   min-height: $block-mobile-min-height;
   position: relative;
+  width: 100%;
 }
 
 @media (min-resolution: $high-density-dpi),

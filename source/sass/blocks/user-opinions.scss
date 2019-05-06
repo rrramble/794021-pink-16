@@ -1,3 +1,7 @@
+.user-opinions {
+  width: 100%;
+}
+
 .user-opinions__list {
   align-items: center;
   background-color: white;
@@ -7,6 +11,7 @@
   list-style: none;
   padding-top: 42px;
   padding-bottom: 25px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-min-width) {
