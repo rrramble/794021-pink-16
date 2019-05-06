@@ -8,7 +8,6 @@ $icon-menu-open: $icon-menu-cross-url;
 $icon-closed-width: 50px;
 $icon-closed-height: 25px;
 
-$font-size-mobile: 18px;
 $line-height-mobile: 32px;
 $line-height-desktop: 18px;
 
@@ -100,7 +99,7 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 
 .site-menu__item-text {
   color: white;
-  font-size: $font-size-mobile;
+  font-size: 18px;
   font-weight: bold;
   line-height: $line-height-mobile;
   text-align: center;
@@ -121,6 +120,9 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   color: $text-color-pressed;
 }
 
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .site-menu {
     margin-top: $logo-tablet-height + $logo-tablet-bottom-gap;
@@ -137,6 +139,10 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .site-menu {
     justify-content: flex-end;
@@ -173,5 +179,9 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     text-transform: none;
     line-height: 1em;
     text-align: right;
+  }
+
+  .site-menu:not(.site-menu--open) .site-menu__item {
+    display: initial;
   }
 }

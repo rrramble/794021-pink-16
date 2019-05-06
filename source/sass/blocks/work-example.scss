@@ -17,11 +17,25 @@ $hand-with-phone-height: 314;
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
+  background-size: 320px 462px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: $block-mobile-min-height;
   position: relative;
+}
+
+@media (min-resolution: $high-density-dpi),
+  (min-resolution: $high-density-dppx) {
+  .work-example {
+    background-image: url($main-bg-image-mobile2x-filename);
+    background-size: (320px + 4px) (462px + 5px);
+    background-position-y: $main-photo-y-shift - 4px;
+  }
+}
+
+.work-example__picture-container {
+  line-height: 0;
 }
 
 .work-example__hand-with-phone {
@@ -38,28 +52,45 @@ $hand-with-phone-height: 314;
   z-index: 2;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .work-example {
     align-items: flex-start;
     background-image: url($main-bg-image-tablet-filename);
     background-position-y: $main-photo-tablet-y-shift;
+    background-size: 1200px 729px;
     min-height: $block-tablet-min-height;
     padding-left: 20px;
     padding-top: 63px;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url($main-bg-image-tablet2x-filename);
+      background-size: (1200px + 0) (729px + 4px);
+    }
   }
 
   .work-example__hand-with-phone {
     position: absolute;
     bottom: 0;
-    right: -5%;
+    left: -20px;
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .work-example {
     background-image: url($main-bg-image-desktop-filename);
     background-position-y: $main-photo-desktop-y-shift;
+    background-size: 2560px 853px;
     min-height: $block-desktop-min-height;
+    max-height: $block-desktop-min-height;
     padding-left: 130px;
     padding-top: 100px;
   }
@@ -69,5 +100,14 @@ $hand-with-phone-height: 314;
     bottom: 0;
     left: unset;
     right: 4px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .work-example {
+      background-image: url($main-bg-image-desktop2x-filename);
+      background-size: (2560px + 0) (853px + 0);
+      background-position-y: $main-photo-desktop-y-shift + 12px;
+    }
   }
 }

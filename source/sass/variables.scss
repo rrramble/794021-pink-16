@@ -2,7 +2,8 @@
 
 $tablet-min-width: 660px;
 $desktop-min-width: 1200px;
-
+$high-density-dpi: 144dpi;
+$high-density-dppx: 1.5dppx;
 
 // Colors
 
@@ -15,9 +16,11 @@ $bg-color-grayish: rgb(242, 242, 242);
 // Photos
 
 $main-bg-image-desktop-filename: "../img/bg-back-desktop@1x.jpg";
+$main-bg-image-desktop2x-filename: "../img/bg-back-desktop@2x.jpg";
 $main-bg-image-mobile-filename: "../img/bg-back-mobile@1x.jpg";
+$main-bg-image-mobile2x-filename: "../img/bg-back-mobile@2x.jpg";
 $main-bg-image-tablet-filename: "../img/bg-back-tablet@1x.jpg";
-
+$main-bg-image-tablet2x-filename: "../img/bg-back-tablet@2x.jpg";
 
 // Fonts
 

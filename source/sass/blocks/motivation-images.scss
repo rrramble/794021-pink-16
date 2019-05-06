@@ -9,9 +9,6 @@ $iphone-screen-desktop-height: 302px;
 $iphone-screen-desktop-height-cut: 0;
 $iphone-screen-desktop-width: 292px;
 
-$iphone-screen-mobile-filename: "../img/iphone-screen-mobile@1x.png";
-$iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
-
 .motivation-images {
   align-items: flex-start;
   background-color: transparent;
@@ -38,13 +35,23 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 }
 
 .motivation-images__shared {
-  background-image: url($iphone-screen-mobile-filename);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position-x: 50%;
   background-repeat: no-repeat;
+  background-size: 157px 320px;
   min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
   min-width: 157px;
+
+  @media (min-resolution: $high-density-dpi),
+    (min-resolution: $high-density-dpi) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .motivation-images {
     padding-left: 0;
@@ -55,11 +62,18 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
   }
 
   .motivation-images__shared {
-    background-image: url($iphone-screen-tablet-filename);
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-size: 268px 481px;
     height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;
     width: $iphone-screen-tablet-width;
   }
+
+  @media (min-resolution: $high-density-dpi),
+    (min-resolution: $high-density-dpi) {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
+  }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .motivation-images {
@@ -72,23 +86,41 @@ $iphone-screen-tablet-filename: "../img/iphone-screen-3-tablet@1x.png";
 
   .motivation-images__initial {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-size: 292px 302px;
     display: block;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
     margin-left: 3px;
     width: $iphone-screen-desktop-width;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
   }
 
   .motivation-images__painted {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-size: 292px 302px;
     display: initial;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
     margin-left: 3px;
     width: $iphone-screen-desktop-width;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
   }
 
   .motivation-images__shared {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-size: 292px 302px;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
     width: $iphone-screen-desktop-width;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 }

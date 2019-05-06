@@ -36,11 +36,12 @@
   <main class="page-content">
 
     <section class="work-example">
-      <picture class="work-example__hand-with-phone">
-        <source srcset="img/iphone-hand-mobile@1x.png" media="(max-width: 659px)">
-        <source srcset="img/iphone-hand-tablet@1x.png" media="(max-width: 1199px)">
-        <source srcset="img/iphone-hand-desktop@1x.png">
-        <img src="img/iphone-hand-mobile@1x.png" alt="Как это выглядит">
+      <picture class="work-example__picture-container">
+        <source srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x" media="(min-width: 1200px)">
+        <source srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x" media="(min-width: 660px)">
+        <source srcset="img/iphone-hand-mobile@1x.png, img/iphone-hand-mobile@2x.png 2x">
+        <img class="work-example__hand-with-phone"
+          src="img/iphone-hand-mobile@1x.png" alt="Пример работы">
       </picture>
 
       <div class="work-example__app-download app-download">
@@ -98,8 +99,8 @@
           <li class="motivation-fact motivation-fact--promo24hours">
             <h3 class="motivation-fact__header">Эффект на&nbsp;24&nbsp;часа!</h3>
             <p class="motivation-fact__text">
-              Британские ученые провели исследования и доказали, что положительный
-              эффект от использования приложения длится целые сутки!
+              Британские ученые провели исследования и доказали, что&nbsp;положительный
+              эффект от&nbsp;использования приложения длится целые сутки!
             </p>
             <a class="motivation-fact__link" href="#">Узнать больше об исследовании</a>
           </li>
