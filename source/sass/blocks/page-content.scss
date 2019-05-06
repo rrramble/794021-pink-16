@@ -85,10 +85,7 @@ $header-line-height: $header-font-size * 1.2;
     padding-right: 80px;
     padding-top: 92px;
   }
-}
 
-
-@media (min-width: $tablet-min-width) {
   .page-content__intro-text--details {
     display: initial;
   }
