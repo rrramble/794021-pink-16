@@ -39,6 +39,10 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
   top: 5px;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .app-platforms {
     padding-left: 47px;
@@ -50,7 +54,10 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
   }
 }
 
-@media (min-width: $tablet-min-width) {
+
+/*
+ * Desktop mode section
+ */
   .app-platforms__android {
     top: 2px;
   }
