@@ -25,8 +25,8 @@ $hand-with-phone-height: 314;
   position: relative;
 }
 
-@media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+@media (min-resolution: $high-density-dpi),
+  (min-resolution: $high-density-dppx) {
   .work-example {
     background-image: url($main-bg-image-mobile2x-filename);
     background-size: (320px + 4px) (462px + 5px);
