@@ -65,21 +65,20 @@ $hand-with-phone-height: 314;
     min-height: $block-tablet-min-height;
     padding-left: 20px;
     padding-top: 63px;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url($main-bg-image-tablet2x-filename);
+      background-size: (1200px + 0) (729px + 4px);
+    }
   }
 
   .work-example__hand-with-phone {
     position: absolute;
     bottom: 0;
-    right: -5%;
+    left: -20px;
   }
 
-  @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-    .work-example {
-      background-image: url($main-bg-image-tablet2x-filename);
-      background-size: (1200px + 0) (729px + 4px);
-    }
-  }
 }
 
 
