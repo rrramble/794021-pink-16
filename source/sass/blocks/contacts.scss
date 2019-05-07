@@ -37,6 +37,10 @@ $map-desktop-height: 500px;
   margin-top: 20px;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
@@ -44,7 +48,28 @@ $map-desktop-height: 500px;
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
+  .contacts {
+    padding-top: 66px;
+  }
+
+  .contacts__header {
+    font-size: 50px;
+    line-height: 1.2em;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .contacts__info-blocks {
+    margin-top: 38px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
   .contacts__map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
     min-height: $map-desktop-height;

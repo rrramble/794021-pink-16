@@ -26,3 +26,17 @@
   text-align: center;
   text-decoration: none;
 }
+
+
+/*
+ * Desktop mode section
+ */
+@media (min-width: $desktop-min-width) {
+  .contact-block--write-us {
+    order: 2;
+  }
+
+  .contact-block__header {
+    margin-bottom: 25px;
+  }
+}
