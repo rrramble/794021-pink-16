@@ -207,7 +207,10 @@
 
 @media (min-width: $desktop-min-width) {
   .app-sets__set-header {
-    padding: 19px 0;
+    padding-bottom: 19px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 16px;
   }
 
   .app-sets__set-header--hit::before {
@@ -227,6 +230,7 @@
 
   .app-sets__set-price {
     font-size: 24px;
+    margin-top: 2px;
   }
 
   .app-sets__feature {
@@ -236,5 +240,9 @@
   .app-sets__cell:first-child {
     font-size: 18px;
     padding-left: 20px;
+  }
+
+  .app-sets__feature--absent {
+    padding-top: 14px;
   }
 }
