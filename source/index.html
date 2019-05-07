@@ -144,26 +144,84 @@
       </div>
     </section>
 
-    <h2 class="visually-hidden">Купить</h2>
-    <ul class="buy-app">
+    <section class="buy-app">
+      <header class="visually-hidden">Купить</header>
 
-      <li class="buy-app__set">
-        <div class="buy-app__set-header buy-app__set-header--hit">
-          <h3 class="buy-app__set-name">Стандарт</h3>
-          <p class="buy-app__set-price">3,99&nbsp;USD</p>
-        </div>
+      <div class="buy-app__container">
+        <table class="app-sets">
+          <thead>
+            <tr>
+              <th class="app-sets__set-header"></th>
+              <th class="app-sets__set-header">
+                <p class="app-sets__set-title">База</p>
+                <p class="app-sets__set-price">1,99 USD</p>
+              </th>
+              <th class="app-sets__set-header app-sets__set-header--hit" data-hit-text="Хит">
+                <p class="app-sets__set-title">Стандарт</p>
+                <p class="app-sets__set-price">3,99 USD</p>
+              </th>
+              <th class="app-sets__set-header">
+                <p class="app-sets__set-title">Анлим</p>
+                <p class="app-sets__set-price">9,99 USD</p>
+              </th>
+            </tr>
+          </thead>
 
-        <ul class="buy-app__options">
-          <li class="buy-app__option buy-app__option--selected">
-            Розовый фильтр</li>
-          <li class="buy-app__option buy-app__option--selected">
-            Смайлики</li>
-          <li class="buy-app__option buy-app__option--not-selected">
-            Комментари</li>
-        </ul>
-      </li>
+          <tbody>
+            <tr>
+              <th class="app-sets__cell">Розовый фильтр</td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
 
-    </ul>
+            <tr>
+              <th class="app-sets__cell">Смайлики</td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+
+            <tr>
+              <th class="app-sets__cell">Комментарии</td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+
 
     <section class="contacts">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с&nbsp;нами!</h2>

@@ -1,0 +1,240 @@
+.app-sets {
+  border-spacing: 0;
+  margin-bottom: 43px;
+  width: 3 * 280px;
+
+  @media (max-width: $mobile-max-width) {
+    transform: translateX(-280px);
+  }
+}
+
+.app-sets__set-header {
+  background-color: $main-bg-color-fallback;
+  border-right: 2px solid #e5e5e5;
+  padding-bottom: 22px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  position: relative;
+  width: 25%;
+}
+
+.app-sets__set-header:first-child {
+  background-color: transparent;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 0;
+  display: none;
+}
+
+.app-sets__set-title {
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.app-sets__set-price {
+  color: white;
+  display: block;
+  font-size: 24px;
+  font-weight: $font-weight-light;
+  line-height: 30px;
+}
+
+.app-sets__set-header:last-child {
+  border-right-color: $main-bg-color-fallback;
+}
+
+.app-sets__set-header--hit::before {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  content: "";
+  height: 73px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 74px;
+}
+
+.app-sets__set-header--hit::after {
+  content: attr(data-hit-text);
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  height: 30px;
+  left: -12px;
+  padding-top: 5px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 12px;
+  transform: rotate(-45deg);
+  width: 74px;
+}
+
+.app-sets__cell {
+  background-color: white;
+  border-bottom: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  color: $text-color-dark;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  min-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.app-sets__cell:first-child {
+  border-left: 2px solid #e5e5e5;
+  display: none;
+  padding-left: 14px;
+  width: 0;
+}
+
+.app-sets__feature {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 30px;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 17px;
+  padding-top: 16px;
+}
+
+.app-sets__feature::before {
+  content: attr(app-set-title);
+  display: inline-block;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.app-sets__feature--exists::after {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+  content: "";
+  display: inline-block;
+  margin-left: auto;
+  height: 26px;
+  width: 31px;
+}
+
+.app-sets__feature--absent::after {
+  background-image: url("../img/icon-no.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 26px;
+  display: block;
+  width: 27px;
+}
+
+
+@media (min-width: $tablet-min-width) {
+  .app-sets {
+    width: 100%;
+  }
+
+  .app-sets__set-header:first-child {
+    display: table-cell;
+  }
+
+  .app-sets__set-header {
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 12px;
+  }
+
+  .app-sets__set-header--hit::before {
+    background-image: url("../img/bg-hit-tablet.svg");
+    height: 61px;
+    width: 61px;
+  }
+
+  .app-sets__set-header--hit::after {
+    left: -15px;
+    top: 3px;
+  }
+
+  .app-sets__set-title {
+    font-size: 16px;
+  }
+
+  .app-sets__set-price {
+    font-size: 18px;
+    margin-top: -3px;
+  }
+
+  .app-sets__cell {
+    display: table-cell;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-transform: none;
+  }
+
+  .app-sets__cell:first-child {
+    display: table-cell;
+  }
+
+  .app-sets__feature {
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+  }
+
+  .app-sets__feature::before {
+    content: "";
+    height: 0;
+    margin-right: unset;
+    width: 0;
+  }
+
+  .app-sets__feature::after {
+    margin-left: unset;
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .app-sets__set-header {
+    padding: 19px 0;
+  }
+
+  .app-sets__set-header--hit::before {
+    background-image: url("../img/bg-hit.svg");
+    height: 73px;
+    width: 74px;
+  }
+
+  .app-sets__set-header--hit::after {
+    left: -13px;
+    top: 13px;
+  }
+
+  .app-sets__set-title {
+    font-size: 18px;
+  }
+
+  .app-sets__set-price {
+    font-size: 24px;
+  }
+
+  .app-sets__feature {
+    padding: 21px 20px 13px 22px;
+  }
+
+  .app-sets__cell:first-child {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+}
