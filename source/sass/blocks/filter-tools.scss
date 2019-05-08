@@ -59,6 +59,32 @@ $gap-after-button: 20px;
 
 @media (min-width: $tablet-min-width) {
   .filter-tools {
+    align-items: flex-start;
     flex-direction: column;
+    padding-left: 22px;
+    padding-top: 5px;
+  }
+
+  .filter-tools__btn {
+    background-position: 0 center;
+    border-bottom-width: 2px;
+    border-color: #dddfe0;
+    border-style: solid;
+    min-height: 72px;
+    padding-left: 52px;
+    width: 100%;
+  }
+
+  .filter-tools__crop {
+    background-size: 22px 22px;
+  }
+
+  .filter-tools__fill {
+    background-size: 24px 22px;
+  }
+
+  .filter-tools__contrast {
+    background-position: 6px center;
+    background-size: 16px 16px;
   }
 }
