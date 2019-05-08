@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 18px;
   width: 100%;
 }
 
@@ -14,25 +15,40 @@
 }
 
 .applicant-contacts__box {
-  background-color: transparent;
+  background-color: white;
   border-width: 0;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  width: 100%;
 }
 
 .applicant-contacts__legend {
   color: $text-color-redish;
+  flex-grow: 1;
   font-size: 14px;
   line-height: 30px;
+  margin-bottom: 7px;
+  padding-left: 22px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .applicant-contacts__content {
-  color: $text-color-dark;
-  border-color: $bg-color-grayish;
-  border-width: 1px;
+  color: $main-bg-color-fallback;
+  border-color: #f2f2f2;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  flex-grow: 1;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
+  min-width: 280px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+  padding-top: 14px;
 }
 
 @media (min-width: $tablet-min-width) {
