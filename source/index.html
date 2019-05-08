@@ -13,8 +13,10 @@
   <header class="page-header">
     <nav class="page-header__nav page-nav">
       <span class="page-nav__logo"></span>
-
-      <ul class="page-nav__menu site-menu site-menu--open">
+      <button class="page-nav__menu-btn page-nav__menu-btn--open" id="site-menu-button">
+        <span class=visually-hidden>Меню</span>
+      </button>
+      <ul class="page-nav__menu site-menu site-menu--open" id="site-menu">
         <li class="site-menu__item site-menu__item-text site-menu__item--not-clickable">
           Главная
         </li>
@@ -29,7 +31,6 @@
           </a>
         </li>
       </ul>
-
     </nav>
   </header>
 
@@ -63,7 +64,7 @@
     </section>
 
     <section class="motivation">
-      <header class="visually-hidden">Мотивация</header>
+      <h2 class="visually-hidden">Мотивация</h2>
 
       <div class="motivation__intro motivation-intro">
         <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
@@ -118,14 +119,14 @@
     </section>
 
     <section class="user-opinions">
-      <header class="visually-hidden">Мнения пользователей</header>
+      <h2 class="visually-hidden">Мнения пользователей</h2>
       <ul class="user-opinions__list">
         <li class="user-opinion">
           <h3 class="user-opinion__header">Николай Петров</h3>
           <p class="user-opinion__description">25 лет, водитель трамвая</p>
           <p class="user-opinion__text">
             Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А&nbsp;еще я познакомился со своей будущей женой в&nbsp;комментариях к выложенной фотографии!
+            А&nbsp;еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
           </p>
         </li>
       </ul>
@@ -142,30 +143,84 @@
       </div>
     </section>
 
-    <h2 class="visually-hidden">Купить</h2>
-    <ul class="buy-app">
+    <section class="buy-app">
+      <h2 class="visually-hidden">Купить</h2>
+      <div class="buy-app__container">
+        <table class="app-sets">
+          <thead>
+            <tr>
+              <th class="app-sets__set-header"></th>
+              <th class="app-sets__set-header">
+                <p class="app-sets__set-title">База</p>
+                <p class="app-sets__set-price">1,99 USD</p>
+              </th>
+              <th class="app-sets__set-header app-sets__set-header--hit" data-hit-text="Хит">
+                <p class="app-sets__set-title">Стандарт</p>
+                <p class="app-sets__set-price">3,99 USD</p>
+              </th>
+              <th class="app-sets__set-header">
+                <p class="app-sets__set-title">Анлим</p>
+                <p class="app-sets__set-price">9,99 USD</p>
+              </th>
+            </tr>
+          </thead>
 
-      <li class="buy-app__set">
-        <div class="buy-app__set-header buy-app__set-header--hit">
-          <h3 class="buy-app__set-name">Стандарт</h3>
-          <p class="buy-app__set-price">3,99&nbsp;USD</p>
-        </div>
+          <tbody>
+            <tr>
+              <th class="app-sets__cell">Розовый фильтр</th>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Розовый фильтр"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
 
-        <ul class="buy-app__options">
-          <li class="buy-app__option buy-app__option--selected">
-            Розовый фильтр</li>
-          <li class="buy-app__option buy-app__option--selected">
-            Смайлики</li>
-          <li class="buy-app__option buy-app__option--not-selected">
-            Комментари</li>
-        </ul>
-      </li>
+            <tr>
+              <th class="app-sets__cell">Смайлики</td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Смайлики"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
 
-    </ul>
+            <tr>
+              <th class="app-sets__cell">Комментарии</td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--absent" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="app-sets__cell">
+                <div class="app-sets__feature app-sets__feature--exists" app-set-title="Комментарии"></div>
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
 
     <section class="contacts">
       <h2 class="contacts__header">Остались вопросы? Свяжитесь с&nbsp;нами!</h2>
-
       <ul class="contacts__info-blocks">
         <li class="contact-block">
           <h3 class="contact-block__header">Звоните:</h3>
@@ -173,7 +228,7 @@
             +7&nbsp;(812) 555-66-66
           </a>
         </li>
-        <li class="contact-block">
+        <li class="contact-block contact-block--write-us">
           <h3 class="contact-block__header">Пишите:</h3>
           <a class="contact-block__info contact-block__info--email"
             href="mailto:mail@htmlacademy.ru">
@@ -187,11 +242,44 @@
           </address>
         </li>
       </ul>
+    </section>
 
-      <div class="contacts__map"></div>
+    <section class="map">
+      <h2 class="visually-hidden">Схема проезда</h2>
+      <picture>
+        <source srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+        <source srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 660px)">
+        <source srcset="img/bg-map-mobile@1x.jpg, img/bg-map-mobile@2x.jpg 2x">
+        <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Схема проезда">
+      </picture>
+      <div class="map__pointer"></div>
     </section>
 
   </main>
 
+  <footer class="page-footer page-footer--unnecessary">
+    <div class="page-footer__item footer-logo"></div>
+
+    <div class="page-footer__item footer-socials">
+      <a class="footer-socials__btn footer-socials__twitter" href="#">
+        <span class="visually-hidden">Твиттер</span>
+      </a>
+      <a class="footer-socials__btn footer-socials__facebook" href="#">
+        <span class="visually-hidden">Фейсбук</span>
+      </a>
+      <a class="footer-socials__btn footer-socials__youtube" href="#">
+        <span class="visually-hidden">Ютюб</span>
+      </a>
+    </div>
+
+    <div class="page-footer__item footer-academy">
+      <p class="footer-academy__text">Разработано</p>
+      <a class="footer-academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
 </body>
 </html>

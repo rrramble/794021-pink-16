@@ -5,15 +5,8 @@ $submit-button-bg-color: rgb(42, 171, 109);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 15px;
   width: 100%;
-}
-
-.contest-request__names {
-  margin-bottom: 20px;
-}
-
-.contest-request__achievments {
-  margin-bottom: 20px;
 }
 
 .contest-request__contacts {
@@ -32,7 +25,7 @@ $submit-button-bg-color: rgb(42, 171, 109);
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   min-width: 280px;
   padding: 16px;
   text-transform: uppercase;
@@ -50,11 +43,20 @@ $submit-button-bg-color: rgb(42, 171, 109);
   color: $text-color-redish;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .contest-request {
     padding-left: 20px;
     padding-right: 20px;
     justify-content: space-between;
+  }
+
+  .contest-request__submit {
+    min-width: 300px;
+  }
+
+  .contest-request__helper {
+    padding-top: 17px;
   }
 }
 

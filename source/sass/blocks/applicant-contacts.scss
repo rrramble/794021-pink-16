@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 18px;
   width: 100%;
 }
 
@@ -14,40 +15,64 @@
 }
 
 .applicant-contacts__box {
-  background-color: transparent;
+  background-color: white;
   border-width: 0;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  width: 100%;
 }
 
 .applicant-contacts__legend {
   color: $text-color-redish;
+  flex-grow: 1;
   font-size: 14px;
   line-height: 30px;
+  margin-bottom: 7px;
+  padding-left: 22px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .applicant-contacts__content {
-  color: $text-color-dark;
-  border-color: $bg-color-grayish;
-  border-width: 1px;
+  color: $main-bg-color-fallback;
+  border-color: #f2f2f2;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 2px;
+  flex-grow: 1;
   font-size: 18px;
   line-height: 30px;
-  width: 100%;
+  min-width: 280px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+  padding-top: 14px;
 }
+
+.applicant-contacts__content::placeholder {
+  color: $text-color-dark;
+}
+
 
 @media (min-width: $tablet-min-width) {
   .applicant-contacts {
     border-width: 1px;
     border-color: $bg-color-grayish;
     order: -1;
-    padding-bottom: 45px;
-    padding-left: 60px;
+    padding-bottom: 8px;
+    padding-left: 58px;
     padding-right: 60px;
-    padding-top: 45px - 24px;
+    padding-top: 24px;
   }
 
   .applicant-contacts__box {
-    margin-top: 24px;
+    padding-bottom: 19px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 8px;
+    position: relative;
   }
 
   .applicant-contacts__header {
@@ -60,7 +85,38 @@
     text-align: center;
   }
 
+  .applicant-contacts__legend {
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+
   .applicant-contacts__content {
+    padding-left: 20px;
+    padding-right: calc(62px + 1em);
     order: -1;
+  }
+
+  .applicant-contacts__content::after {
+    content: "";
+    display: inline-block;
+    height: 62px;
+    background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62px;
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .applicant-contacts {
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .applicant-contacts__box {
+    width: 400px;
   }
 }

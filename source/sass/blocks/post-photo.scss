@@ -62,12 +62,12 @@ $bg-color: #f2f2f2;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 54px;
-    padding-top: 57px;
+    padding-top: 36px;
   }
 
   .post-photo__image {
     padding-bottom: 0;
-    padding-top: 0;
+    padding-top: 21px;
     padding-right: 10px;
     height: 50*1.3333333%;
     width: 50%;
@@ -81,15 +81,35 @@ $bg-color: #f2f2f2;
 }
 
 
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .post-photo {
-    margin-top: 5px;
+    margin-top: 2px;
     padding-left: 130px;
     padding-right: 130px;
   }
 
+  .post-photo__tools {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 90px;
+  }
+
+  .post-photo__container {
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 56px;
+  }
+
   .post-photo__image {
     height: 400px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
     width: 300px;
   }
 

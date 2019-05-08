@@ -1,3 +1,7 @@
+.user-opinions {
+  width: 100%;
+}
+
 .user-opinions__list {
   align-items: center;
   background-color: white;
@@ -7,6 +11,7 @@
   list-style: none;
   padding-top: 42px;
   padding-bottom: 25px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -20,6 +25,7 @@
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 72px;
+    position: relative;
   }
 
   .user-opinions::before {
@@ -38,31 +44,9 @@
 
   .user-opinions__list {
     align-items: flex-start;
-    margin-top: 7px;
+    margin-top: 9px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .user-opinions__list::before {
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-size: 21px 41px;
-    content: "";
-    flex-shrink: 0;
-    position: relative;
-    top: 29px;
-    width: 21px;
-    height: 41px;
-  }
-
-  .user-opinions__list::after {
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-size: 21px 41px;
-    content: "";
-    flex-shrink: 0;
-    position: relative;
-    top: 29px;
-    width: 21px;
-    height: 41px;
   }
 }

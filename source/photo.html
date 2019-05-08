@@ -13,8 +13,10 @@
       <a class="page-nav__logo" href="/index.html">
         <span class="visually-hidden">Главная страница</span>
       </a>
-
-      <ul class="page-nav__menu site-menu site-menu--open">
+      <button class="page-nav__menu-btn page-nav__menu-btn--open" id="site-menu-button">
+        <span class=visually-hidden>Меню</span>
+      </button>
+      <ul class="page-nav__menu site-menu site-menu--open" id="site-menu">
         <li class="site-menu__item">
           <a class="site-menu__item-text" href="index.html">Главная</a>
         </li>
@@ -234,15 +236,15 @@
           <div class="filter-tools">
             <label class="visually-hidden" for="crop">Обрезка</label>
             <input class="filter-tools__btn filter-tools__crop"
-              type="button" name="crop" value="0" id="crop">
+              type="button" name="crop" value="80" id="crop">
 
             <label class="visually-hidden" for="fill">Заливка</label>
             <input class="filter-tools__btn filter-tools__fill"
-              type="button" name="fill" value="0" id="fill">
+              type="button" name="fill" value="80" id="fill">
 
             <label class="visually-hidden" for="contrast">Контраст</label>
             <input class="filter-tools__btn filter-tools__contrast"
-              type="button" name="contrast" value="0" id="contrast">
+              type="button" name="contrast" value="80" id="contrast">
 
             <label class="visually-hidden" for="lightness">Осветление</label>
             <input class="filter-tools__lightness"
@@ -281,5 +283,6 @@
     </div>
   </footer>
 
+  <script src="/js/app.js"></script>
 </body>
 </html>

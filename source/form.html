@@ -15,8 +15,10 @@
       <a class="page-nav__logo" href="/index.html">
         <span class="visually-hidden">Главная страница</span>
       </a>
-
-      <ul class="page-nav__menu site-menu site-menu--open">
+      <button class="page-nav__menu-btn page-nav__menu-btn--open" id="site-menu-button">
+        <span class=visually-hidden>Меню</span>
+      </button>
+      <ul class="page-nav__menu site-menu site-menu--open" id="site-menu">
         <li class="site-menu__item">
           <a class="site-menu__item-text" href="index.html">Главная</a>
         </li>
@@ -33,17 +35,17 @@
     </nav>
   </header>
 
-  <main class="page-content">
-      <h1 class="page-content__header">
+  <main class="contest">
+      <h1 class="contest__header">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
-      <p class="page-content__intro-text">
+      <p class="contest__intro-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;&mdash;
-        1000&nbsp;миль на&nbsp;вашу бонусную карту!
-        <span class="page-content__intro-text--details">Пожалуйста, заполните форму ниже:</span>
+        1000 миль на вашу бонусную карту!
+        <span class="contest__intro-text--details">Пожалуйста, заполните форму ниже:</span>
       </p>
 
-      <form class="contest-request"
+      <form class="content__request contest-request"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
@@ -150,7 +152,7 @@
         <div class="contest-request__comment applicant-comment">
           <label class="applicant-comment__header" for="comment">Опишите свои эмоции</label>
           <textarea class="applicant-comment__content" rows="5" cols="20" name="comment" id="comment"
-            placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
         <button class="contest-request__submit" type="submit">Отправить форму</button>
@@ -178,15 +180,14 @@
       </a>
     </div>
 
-    <div class="page-footer__item page-footer__academy">
-      <p class="page-footer__text">Разработано</p>
-      <a class="page-footer__academy-logo"
-        href="https://htmlacademy.ru/intensive/adaptive"
-      >
+    <div class="page-footer__item footer-academy">
+      <p class="footer-academy__text">Разработано</p>
+      <a class="footer-academy__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>
   </footer>
 
+  <script src="/js/app.js"></script>
 </body>
 </html>

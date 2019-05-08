@@ -1,12 +1,8 @@
-$bg-color-shaded: rgb(242, 242, 242);
-$content-text-color: #283645;
-
 .applicant-achievments {
-  background-color: $bg-color-shaded;
+  background-color: #f2f2f2;
   border-width: 0;
   display: flex;
   flex-direction: column;
-  padding-bottom: 38px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 38px;
@@ -14,11 +10,13 @@ $content-text-color: #283645;
 }
 
 .applicant-achievments__header {
-  color: $fieldname-text-color;
+  color: $text-color-redish;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -32,37 +30,51 @@ $content-text-color: #283645;
   flex-wrap: wrap;
   justify-content: flex-start;
   min-width: 280px;
-  margin-bottom: 20px;
+  padding-bottom: 43px;
 }
 
 .applicant-achievments__selection {
-  border-color: $bg-color-shaded;
-  border-width: 1px;
-  min-width: 38px;
-  min-height: 38px;
+  border-color: transparent;
+  border-width: 0;
+  border-style: none;
+  width: 39px;
+  height: 39px;
 }
 
 .applicant-achievments__legend {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: #f2f2f2;
   border-width: 1px;
   font-size: 18px;
+  font-weight: normal;
   line-height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 32px;
 }
+
 
 @media (min-width: $tablet-min-width) {
   .applicant-achievments {
     background-color: white;
     border-width: 1px;
     border-color: $bg-color-grayish;
+    margin-top: 46px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    padding-top: 0;
+  }
+
+  .applicant-achievments__header {
+    margin-bottom: 35px;
+    position: relative;
+    top: -0.5em;
   }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .applicant-achievments {
     align-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 230px;
   }

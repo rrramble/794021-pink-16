@@ -11,10 +11,18 @@
   padding-top: 40px;
 }
 
+.page-footer--unnecessary {
+  display: none;
+}
+
 @media (min-width: $tablet-min-width) {
   .page-footer {
     justify-content: space-between;
     padding-top: 36px;
+  }
+
+  .page-footer--unnecessary {
+    display: flex;
   }
 
   .page-footer__item {
@@ -27,6 +35,6 @@
     padding-bottom: 10px;
     padding-left: 130px;
     padding-right: 130px;
-    padding-top: 98px;
+    padding-top: 70px;
   }
 }

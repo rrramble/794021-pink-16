@@ -3,10 +3,12 @@
   border-width: 0;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  margin-top: 21px;
+  padding-bottom: 6px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 108px;
   padding-right: 20px;
+  position: relative;
 }
 
 .applicant-phone-type__header {
@@ -14,9 +16,10 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  margin-bottom: 20px;
+  position: absolute;
   text-align: center;
   text-transform: uppercase;
+  top: 39px;
 }
 
 .applicant-phone-type__field {
@@ -28,7 +31,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   min-width: 280px;
-  margin-bottom: 20px;
+  padding-bottom: 37px;
 }
 
 .applicant-phone-type__selection {
@@ -41,28 +44,48 @@
 
 .applicant-phone-type__legend {
   color: $text-color-dark;
-  border-color: $bg-color-grayish;
+  border-color: #f2f2f2;
   border-width: 1px;
   font-size: 18px;
+  font-weight: normal;
   line-height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 32px;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .applicant-phone-type {
     background-color: white;
     border-width: 1px;
     border-color: $bg-color-grayish;
+    margin-bottom: 52px;
+    margin-top: 7px;
     order: -2;
+    padding-bottom: 18px;
+    padding-left: 60px;
+    padding-top: 38px;
     width: 100%;
   }
 
   .applicant-phone-type__header {
     line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: initial;
+  }
+
+  .applicant-phone-type__legend {
+    padding-left: 20px;
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .applicant-phone-type {
     width: 50%;

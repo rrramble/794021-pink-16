@@ -2,8 +2,8 @@
   background-color: #bec2c7;
   border-color: white;
   border-radius: 50%;
-  border-width: 3px;
   border-style: solid;
+  border-width: 3px;
   height: 12px;
   width: 12px;
 }
@@ -16,4 +16,41 @@
 .opinions-slider__center {
   margin-left: 9px;
   margin-right: 9px;
+}
+
+
+/*
+ * Desktop mode section
+ */
+@media (min-width: $desktop-min-width) {
+  .opinions-slider {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 53.3%;
+    width: 1200px - 2 * 130px;
+  }
+
+  .opinions-slider__back {
+    background-color: transparent;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-size: 27px 46px;
+    border-width: 0;
+    height: 46px;
+    width: 27px;
+  }
+
+  .opinions-slider__center {
+    display: none;
+  }
+
+  .opinions-slider__forward {
+    background-color: transparent;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-size: 27px 46px;
+    border-width: 0;
+    height: 46px;
+    position: relative;
+    width: 27px;
+  }
 }

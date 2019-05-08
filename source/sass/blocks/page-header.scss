@@ -5,11 +5,9 @@
   background-position-x: center;
   background-position-y: top;
   width: 100%;
-}
 
-@media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-  .page-header {
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     background-image: url($main-bg-image-mobile2x-filename);
     background-size: 320px 462px;
   }
@@ -27,11 +25,9 @@
   .page-header {
     background-image: url($main-bg-image-tablet-filename);
     background-size: 1200px 729px;
-  }
 
-  @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-    .page-header {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background-image: url($main-bg-image-tablet2x-filename);
     }
   }
@@ -45,11 +41,9 @@
   .page-header {
     background-image: url($main-bg-image-desktop-filename);
     background-size: 2560px 853px;
-  }
 
-  @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-    .page-header {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
       background-image: url($main-bg-image-desktop2x-filename);
       background-position-y: 12px;
     }
