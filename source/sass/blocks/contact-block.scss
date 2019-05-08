@@ -5,8 +5,6 @@
   flex-grow: 1;
   flex-shrink: 1;
   justify-content: flex-start;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 27px;
   padding-left: 1em;
   padding-right: 1em;
@@ -36,8 +34,33 @@
   text-decoration: none;
 }
 
-.contact-block--write-us .contact-block__info {
+.contact-block__info--email {
   margin-top: 5px;
+}
+
+
+/*
+ * Tablet mode section
+ */
+@media (min-width: $tablet-min-width) {
+  .contact-block {
+    margin-top: 0;
+    margin-bottom: 48px;
+    min-width: 40%;
+    max-width: 50%;
+  }
+
+  .contact-block__info {
+    margin-top: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contact-block__info--email {
+    margin-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 

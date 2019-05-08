@@ -23,10 +23,35 @@ $map-desktop-height: 500px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-start;
   list-style: none;
   margin-top: 10px;
+}
+
+
+/*
+ * Tablet mode section
+ */
+@media (min-width: $tablet-min-width) {
+  .contacts {
+    padding-top: 46px;
+  }
+
+  .contacts__header {
+    font-size: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .contacts__info-blocks {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 
