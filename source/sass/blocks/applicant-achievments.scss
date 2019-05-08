@@ -1,8 +1,5 @@
-$bg-color-shaded: rgb(242, 242, 242);
-$content-text-color: #283645;
-
 .applicant-achievments {
-  background-color: $bg-color-shaded;
+  background-color: #f2f2f2;
   border-width: 0;
   display: flex;
   flex-direction: column;
@@ -14,7 +11,7 @@ $content-text-color: #283645;
 }
 
 .applicant-achievments__header {
-  color: $fieldname-text-color;
+  color: $text-color-redish;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -36,15 +33,15 @@ $content-text-color: #283645;
 }
 
 .applicant-achievments__selection {
-  border-color: $bg-color-shaded;
+  border-color: #f2f2f2;
   border-width: 1px;
   min-width: 38px;
   min-height: 38px;
 }
 
 .applicant-achievments__legend {
-  color: $content-text-color;
-  border-color: $bg-color-shaded;
+  color: $text-color-dark;
+  border-color: #f2f2f2;
   border-width: 1px;
   font-size: 18px;
   line-height: 30px;
