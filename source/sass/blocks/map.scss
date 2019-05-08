@@ -62,7 +62,12 @@
  */
 @media (min-width: $desktop-min-width) {
   .map {
-    height: 524px;
+    clip-path: polygon(0 0, 50% 105px, 100% 0, 100% 100%, 0 100%);
+    height: 500px;
     margin-top: 0;
+  }
+
+  .map__image {
+    bottom: -180px;
   }
 }
