@@ -3,17 +3,19 @@
   padding-right: 1em;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 8px;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+  margin-top: 27px;
 }
 
 .contact-block__header {
   color: $text-color-dark;
   font-size: 18px;
+  font-style: normal;
   font-weight: bold;
   line-height: 1.2em;
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -21,8 +23,9 @@
   color: $text-color-redish;
   font-size: 24px;
   font-style: normal;
-  font-weight: 100;
+  font-weight: $font-weight-light;
   line-height: 1.2em;
+  margin-top: 2px;
   text-align: center;
   text-decoration: none;
 }
