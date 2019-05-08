@@ -51,13 +51,24 @@
   padding-left: 32px;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .applicant-achievments {
     background-color: white;
     border-width: 1px;
     border-color: $bg-color-grayish;
+    margin-top: 46px;
+    padding-left: 60px;
+    padding-top: 0px;
+  }
+
+  .applicant-achievments__header {
+    margin-bottom: 35px;
+    position: relative;
+    top: -0.5em;
   }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .applicant-achievments {
