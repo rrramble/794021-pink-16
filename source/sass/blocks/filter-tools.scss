@@ -57,6 +57,10 @@ $gap-after-button: 20px;
   min-width: 100%;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .filter-tools {
     align-items: flex-start;
@@ -86,5 +90,39 @@ $gap-after-button: 20px;
   .filter-tools__contrast {
     background-position: 6px center;
     background-size: 16px 16px;
+  }
+}
+
+
+/*
+ * Desktop mode section
+ */
+@media (min-width: $desktop-min-width) {
+  .filter-tools {
+    margin-top: -16px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .filter-tools__btn {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-width: 1px;
+  }
+
+  .filter-tools__crop {
+    background-size: 48px 48px;
+    background-position: -2px center;
+  }
+
+  .filter-tools__fill {
+    background-size: 54px 48px;
+    background-position: -3px center;
+  }
+
+  .filter-tools__contrast {
+    background-size: 32px 32px;
   }
 }
