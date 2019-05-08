@@ -5,6 +5,7 @@ $submit-button-bg-color: rgb(42, 171, 109);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 15px;
   width: 100%;
 }
 
@@ -30,10 +31,6 @@ $submit-button-bg-color: rgb(42, 171, 109);
   text-transform: uppercase;
 }
 
-.contest-request {
-  padding-bottom: 15px;
-}
-
 .contest-request__helper-text {
   color: black;
   font-size: 14px;
@@ -45,6 +42,7 @@ $submit-button-bg-color: rgb(42, 171, 109);
 .contest-request__helper-text--highlight {
   color: $text-color-redish;
 }
+
 
 @media (min-width: $tablet-min-width) {
   .contest-request {
