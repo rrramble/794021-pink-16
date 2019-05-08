@@ -44,12 +44,26 @@
   font-weight: normal;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .applicant-comment {
     border-color: $bg-color-grayish;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
+    margin-bottom: 68px;
+    margin-top: 67px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 0;
+  }
+
+  .applicant-comment__header {
+    margin-bottom: 15px;
+    position: relative;
+    top: -1em;
+  }
+
+  .applicant-comment__content {
+    min-height: 194px;
   }
 }

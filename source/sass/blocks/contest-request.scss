@@ -50,6 +50,14 @@ $submit-button-bg-color: rgb(42, 171, 109);
     padding-right: 20px;
     justify-content: space-between;
   }
+
+  .contest-request__submit {
+    min-width: 300px;
+  }
+
+  .contest-request__helper {
+    padding-top: 17px;
+  }
 }
 
 @media (min-width: $desktop-min-width) {
