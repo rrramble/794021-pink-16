@@ -1,0 +1,119 @@
+$main-photo-y-shift: -68px;
+$main-bg-photo-y-shift: -110px;
+$main-bg-photo-tablet-y-shift: -112px;
+
+$header-height: 170px;
+
+.contest {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contest__header {
+  background-color: $main-bg-color-fallback;
+  background-image: url($main-bg-image-mobile-filename);
+  background-position-x: center;
+  background-position-y: $main-photo-y-shift;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  color: white;
+  font-size: 24px;
+  font-weight: $font-weight-light;
+  line-height: 1.2em;
+  min-height: 170px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  text-align: center;
+
+  @media (min-resolution: $high-density-dpi),
+    (min-resolution: $high-density-dppx) {
+    background-image: url($main-bg-image-mobile2x-filename);
+    background-position-y: $main-photo-y-shift - 3px;
+    background-size: (320px + 3px) (462px + 3px);
+  }
+}
+
+.contest__intro-text {
+  background-color: white;
+  color: $text-color-dark;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 49px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.contest__intro-text--details {
+  display: none;
+}
+
+
+/*
+ * Tablet mode section
+ */
+@media (min-width: $tablet-min-width) {
+  .contest__header {
+    background-image: url($main-bg-image-tablet-filename);
+    background-position-y: $main-bg-photo-tablet-y-shift;
+    background-size: 1200px 729px;
+    font-size: 50px;
+    min-height: 328px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 68px;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url($main-bg-image-tablet2x-filename);
+      background-position-y: $main-bg-photo-tablet-y-shift + 2px;
+      background-size: (1200px - 4px) (729px - 2px);
+    }
+  }
+
+  .contest__intro-text {
+    font-size: 18px;
+    padding-bottom: 76px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 92px;
+  }
+
+  .contest__intro-text--details {
+    display: initial;
+  }
+}
+
+
+/*
+ * Desktop mode section
+ */
+@media (min-width: $desktop-min-width) {
+  .contest__header {
+    background-image: url($main-bg-image-desktop-filename);
+    background-position-y: $main-bg-photo-y-shift;
+    background-size: 2560px 853px;
+    font-size: 50px;
+    min-height: 285px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 1.28em;
+
+    @media (min-resolution: $high-density-dpi),
+      (min-resolution: $high-density-dppx) {
+      background-image: url($main-bg-image-desktop2x-filename);
+    }
+  }
+
+  .contest__intro-text {
+    padding-bottom: 87px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
