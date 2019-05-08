@@ -39,8 +39,20 @@
  */
 @media (min-width: $tablet-min-width) {
   .map {
-    height: 368px;
-    margin-top: -8px;
+    clip-path: polygon(0 0, 50% 68px, 100% 0, 100% 100%, 0 100%);
+    height: 375px;
+    margin-top: -17px;
+  }
+
+  .map__image {
+    bottom: -106px;
+  }
+
+  .map__pointer {
+    background-repeat: no-repeat;
+    bottom: 44%; // 165/375 = 44%
+    top: unset;
+    transform: translate(-50%, 50%);
   }
 }
 
