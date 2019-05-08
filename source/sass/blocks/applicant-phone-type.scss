@@ -52,20 +52,40 @@
   padding-left: 32px;
 }
 
+
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .applicant-phone-type {
     background-color: white;
     border-width: 1px;
     border-color: $bg-color-grayish;
+    margin-bottom: 52px;
+    margin-top: 7px;
     order: -2;
+    padding-bottom: 18px;
+    padding-left: 60px;
+    padding-top: 38px;
     width: 100%;
   }
 
   .applicant-phone-type__header {
     line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: initial;
+  }
+
+  .applicant-phone-type__legend {
+    padding-left: 20px;
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .applicant-phone-type {
     width: 50%;
