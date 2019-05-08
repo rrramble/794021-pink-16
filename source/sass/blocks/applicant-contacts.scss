@@ -107,3 +107,16 @@
     width: 62px;
   }
 }
+
+
+@media (min-width: $desktop-min-width) {
+  .applicant-contacts {
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .applicant-contacts__box {
+    width: 400px;
+  }
+}

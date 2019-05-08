@@ -74,6 +74,7 @@
 @media (min-width: $desktop-min-width) {
   .applicant-achievments {
     align-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     height: 230px;
   }
