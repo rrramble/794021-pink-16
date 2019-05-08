@@ -71,8 +71,9 @@ $map-desktop-height: 500px;
   }
 
   .contacts__info-blocks {
-    margin-top: 38px;
-    padding-left: 120px;
-    padding-right: 120px;
+    justify-content: space-between;
+    margin-top: 58px;
+    padding-left: 142px;
+    padding-right: 142px;
   }
 }
