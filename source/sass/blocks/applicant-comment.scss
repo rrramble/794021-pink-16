@@ -23,9 +23,9 @@
 }
 
 .applicant-comment__content {
-  color: $text-color-dark;
   border-color: $bg-color-grayish;
   border-width: 2px;
+  color: $text-color-dark;
   display: inline-block;
   font-family: inherit;
   font-size: 18px;
@@ -37,6 +37,11 @@
   padding-right: 18px;
   padding-top: 14px;
   width: 100%;
+}
+
+.applicant-comment__content::placeholder {
+  color: $text-color-dark;
+  font-weight: normal;
 }
 
 @media (min-width: $tablet-min-width) {
