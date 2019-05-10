@@ -107,7 +107,7 @@
 }
 
 .app-sets__feature::before {
-  content: attr(app-set-title);
+  content: attr(data-app-set-title);
   display: inline-block;
   margin-right: auto;
   text-transform: uppercase;
