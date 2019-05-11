@@ -1,10 +1,16 @@
 //Sizes
 
+$mobile-min-width: 320px;
 $mobile-max-width: 659px;
+
 $tablet-min-width: 660px;
+
 $desktop-min-width: 1200px;
+$desktop-max-width: 1400px;
+
 $high-density-dpi: 144dpi;
 $high-density-dppx: 1.5dppx;
+
 
 // Colors
 
@@ -22,6 +28,7 @@ $main-bg-image-mobile-filename: "../img/bg-back-mobile@1x.jpg";
 $main-bg-image-mobile2x-filename: "../img/bg-back-mobile@2x.jpg";
 $main-bg-image-tablet-filename: "../img/bg-back-tablet@1x.jpg";
 $main-bg-image-tablet2x-filename: "../img/bg-back-tablet@2x.jpg";
+
 
 // Fonts
 
