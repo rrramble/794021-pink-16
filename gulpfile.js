@@ -52,8 +52,9 @@ gulp.task("server", function () {
   });
 
   gulp.watch(SOURCE_FOLDER + "/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch(SOURCE_FOLDER + "/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch(SOURCE_FOLDER + "/*.html", gulp.series("html", "refresh"));
+  gulp.watch(SOURCE_FOLDER + "/img/icon-*.svg", gulp.series("sprite", "html"));
+  gulp.watch(SOURCE_FOLDER + "/*.html", gulp.series("html"));
+  gulp.watch(RESULT_FOLDER + "/**/*", gulp.series("refresh"));
 });
 
 gulp.task("refresh", function (done) {
