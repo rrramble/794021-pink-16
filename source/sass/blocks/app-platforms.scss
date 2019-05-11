@@ -14,27 +14,37 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
   padding-right: $horizontal-padding;
 }
 
-@mixin social-icon($url) {
-  background-image: url($url);
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
+.app-platforms__box {
+  display: block;
   height: $max-icon-height;
   width: $max-icon-width;
 }
 
-.app-platforms__apple {
-  @include social-icon("../img/logo-apple.svg");
+.app-platforms__icon {
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-.app-platforms__android {
-  @include social-icon("../img/logo-android.svg");
+.app-platforms__icon--apple {
+  background-image: url("../img/logo-apple.svg");
+  background-size: 47px 56px;
+}
+
+.app-platforms__icon--android {
+  background-image: url("../img/logo-android.svg");
+  background-size: 46px 47px;
+  left: -1px;
   position: relative;
-  top: 4px;
+  top: 3px;
 }
 
-.app-platforms__windows {
-  @include social-icon("../img/logo-microsoft.svg");
+.app-platforms__icon--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  background-size: 46px 41px;
   position: relative;
   top: 5px;
 }
@@ -49,7 +59,7 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
     padding-right: 47px;
   }
 
-  .app-platforms__android {
+  .app-platforms__icon--android {
     top: 2px;
   }
 }
@@ -59,7 +69,7 @@ $horizontal-padding: (($min-box-padding - 3 * $max-icon-width) - (2 * $gap-betwe
  * Desktop mode section
  */
 @media (min-width: $desktop-min-width) {
-  .app-platforms__android {
+  .app-platforms__icon--android {
     top: 4px;
   }
 }
