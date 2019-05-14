@@ -10,6 +10,7 @@ $bg-color-grayish: rgb(242, 242, 242);
 
 .motivation__intro {
   background-color: white;
+  width: 100%;
 }
 
 .motivation__container {
@@ -19,6 +20,13 @@ $bg-color-grayish: rgb(242, 242, 242);
   justify-content: flex-start;
   position: relative;
   padding-top: 50px;
+  width: 100%;
+}
+
+.motivation__content-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: $mobile-max-content-width;
 }
 
 .motivation__facts {
@@ -40,6 +48,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   height: 100%;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .motivation {
     padding-top: 48px;
@@ -50,6 +59,10 @@ $bg-color-grayish: rgb(242, 242, 242);
     flex-wrap: wrap;
     padding-top: 2px;
     position: relative;
+  }
+
+  .motivation__content-box {
+    width: $tablet-max-content-width;
   }
 
   .motivation__intro {
@@ -70,6 +83,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   }
 }
 
+
 @media (min-width: $desktop-min-width) {
   .motivation {
     padding-top: 64px;
@@ -78,6 +92,10 @@ $bg-color-grayish: rgb(242, 242, 242);
   .motivation__container {
     flex-direction: column;
     flex-wrap: initial;
+  }
+
+  .motivation__content-box {
+    width: $desktop-max-content-width;
   }
 
   .motivation__facts {

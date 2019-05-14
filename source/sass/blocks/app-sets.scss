@@ -4,7 +4,7 @@
   width: 3 * 280px;
 
   @media (max-width: $mobile-max-width) {
-    transform: translateX(-280px);
+    transform: translateX(calc(55.9vw - 458.88px));
   }
 }
 

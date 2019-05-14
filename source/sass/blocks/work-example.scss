@@ -17,7 +17,7 @@ $hand-with-phone-height: 314;
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
-  background-size: 320px 462px;
+  background-size: 100% auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -49,8 +49,8 @@ $hand-with-phone-height: 314;
 }
 
 .work-example__app-download {
-  position: relative;
-  z-index: 2;
+  background-color: #1d2631;
+  width: 100%;
 }
 
 
@@ -71,6 +71,10 @@ $hand-with-phone-height: 314;
       (min-resolution: $high-density-dppx) {
       background-image: url($main-bg-image-tablet2x-filename);
       background-size: (1200px + 0) (729px + 4px);
+    }
+
+    .work-example__app-download {
+      background-color: unset;
     }
   }
 

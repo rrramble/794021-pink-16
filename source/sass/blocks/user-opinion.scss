@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 14px;
-  padding-right: 14px;
   width: 100%;
 }
 
@@ -31,14 +29,17 @@
 .user-opinion__text::before {
   content: "«";
   position: relative;
-  left: 2px;
+  margin-right: -4px;
+  // left: -2px;
 }
 
 .user-opinion__text::after {
   content: "»";
+  margin-left: -4px;
   position: relative;
-  right: 2px;
+  // right: 2px;
 }
+
 
 @media (min-width: $tablet-min-width) {
   .user-opinion__header {
@@ -62,6 +63,7 @@
     margin: initial;
   }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .user-opinion {

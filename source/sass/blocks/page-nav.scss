@@ -1,5 +1,3 @@
-$navigation-bg-color: rgba(black, 0.3);
-
 $logo-desktop-height: 40px;
 $logo-mobile-height: 22px;
 $logo-tablet-height: 40px;
@@ -16,7 +14,6 @@ $padding-before-content-mobile: 21px;
 
 
 .page-nav {
-  background-color: $navigation-bg-color;
   display: flex;
   flex-direction: column;
   padding-bottom: $padding-before-content-mobile;
@@ -92,7 +89,7 @@ $padding-before-content-mobile: 21px;
 
   .page-nav__logo {
     background-image: url($logo-desktop-url);
-    margin-left: 130px;
+    margin-left: 20px;
     height: $logo-desktop-height;
     left: 0;
     top: -9px;
@@ -105,7 +102,7 @@ $padding-before-content-mobile: 21px;
   }
 
   .page-nav__menu {
-    margin-right: 130px - (80px / 2);
+    margin-right: 20px;
     margin-top: 0;
   }
 }

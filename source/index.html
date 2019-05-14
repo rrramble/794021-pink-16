@@ -13,6 +13,7 @@
 <body class="global-container">
   <h1 class="visually-hidden">Приложение Пинк</h1>
   <header class="page-header">
+    <div class="page-header__box">
     <nav class="page-header__nav page-nav">
       <span class="page-nav__logo"></span>
       <button class="page-nav__menu-btn page-nav__menu-btn--open" id="site-menu-button">
@@ -34,10 +35,10 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <main class="page-content">
-
+  <main>
     <section class="work-example">
       <picture class="work-example__picture-container">
         <source srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x" media="(min-width: 1200px)">
@@ -47,7 +48,8 @@
           src="img/iphone-hand-mobile@1x.png" alt="Пример работы">
       </picture>
 
-      <div class="work-example__app-download app-download">
+      <div class="work-example__app-download">
+        <div class="app-download">
         <h2 class="app-download__header">Взгляните на&nbsp;жизнь иначе!</h2>
         <a class="app-download__btn" href="https://itunes.apple.com">Скачать приложение</a>
         <ul class="app-download__platforms app-platforms">
@@ -69,17 +71,21 @@
         </ul>
         <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8</p>
       </div>
+      </div>
     </section>
 
     <section class="motivation">
       <h2 class="visually-hidden">Мотивация</h2>
 
-      <div class="motivation__intro motivation-intro">
+      <div class="motivation__intro">
+        <div class="motivation-intro">
         <p class="motivation-intro__text">Устали от серости мегаполиса?</p>
         <p class="motivation-intro__text motivation-intro__text--narrow">Нам есть, что вам предложить!</p>
       </div>
+      </div>
 
       <div class="motivation__container">
+        <div class="motivation__content-box">
         <ul class="motivation__facts motivation-facts">
           <li class="motivation-fact">
             <h3 class="motivation-fact__header">Поднимает настроение</h3>
@@ -123,6 +129,7 @@
 
         <div class="motivation__skew-bg">
         </div>
+      </div>
       </div>
     </section>
 
