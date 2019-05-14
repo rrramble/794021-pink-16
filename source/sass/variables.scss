@@ -1,11 +1,14 @@
 //Sizes
 
 $mobile-min-width: 320px;
+$mobile-max-content-width: $mobile-min-width - 2 * 20px;
 $mobile-max-width: 659px;
 
 $tablet-min-width: 660px;
+$tablet-max-content-width: $tablet-min-width - 2 * 20px;
 
-$desktop-min-width: 1200px;
+$desktop-min-width: 960px;
+$desktop-max-content-width: $desktop-min-width * 2 - 20px;
 $desktop-max-width: 1400px;
 
 $high-density-dpi: 144dpi;
