@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  width: $mobile-min-width;
+  max-width: $tablet-min-width - 1px;
 }
 
 
@@ -42,7 +42,7 @@ body {
  */
 @media (min-width: $tablet-min-width) {
   body {
-    width: $tablet-min-width;
+    max-width: $desktop-min-width - 1px;
   }
 }
 
@@ -52,6 +52,6 @@ body {
  */
 @media (min-width: $desktop-min-width) {
   body {
-    width: $desktop-min-width;
+    min-width: unset;
   }
 }
