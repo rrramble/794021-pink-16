@@ -1,0 +1,34 @@
+.buy-app-slider {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1005;
+}
+
+.buy-app-slider__btn {
+  background-color: #bec2c7;
+  border-color: $bg-color-grayish;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  height: 12px;
+  margin-left: 6.5px;
+  margin-right: 6.5px;
+  width: 12px;
+}
+
+.buy-app-slider__btn--selected {
+  background-color: white;
+  border-color: $text-color-dark;
+}
+
+
+/*
+ * Tablet + Desktop mode section
+ */
+@media (min-width: $tablet-min-width) {
+  .buy-app-slider {
+    visibility: hidden;
+  }
+}
