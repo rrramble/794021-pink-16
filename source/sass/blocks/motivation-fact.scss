@@ -52,6 +52,7 @@ $icon-24hours-bottom-padding: 48px;
   text-align: left;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .motivation-fact {
     display: inline-block;
@@ -63,6 +64,10 @@ $icon-24hours-bottom-padding: 48px;
     padding-top: 0;
     position: static;
     width: 100%;
+  }
+
+  .motivation-fact--last-of-equals {
+    padding-bottom: 16px;
   }
 
   .motivation-fact__header {
