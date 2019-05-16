@@ -15,6 +15,7 @@
   display: none;
 }
 
+
 @media (min-width: $tablet-min-width) {
   .page-footer {
     justify-content: space-between;
@@ -29,6 +30,7 @@
     width: 33.3333%;
   }
 }
+
 
 @media (min-width: $desktop-min-width) {
   .page-footer {
