@@ -99,7 +99,12 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function () {
-  return del("build");
+// If 'RESULT_FOLDER' is equal to 'SOURCE_FOLDER, running of the 'Clean' task must be skipped,
+// otherwise it will delete all files in the source folder.
+  if (RESULT_FOLDER.toUpperCase() === SOURCE_FOLDER.toUpperCase()) {
+    return;
+  }
+  return del(RESULT_FOLDER);
 });
 
 gulp.task("build", gulp.series(
