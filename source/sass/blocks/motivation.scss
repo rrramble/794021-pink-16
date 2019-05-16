@@ -62,6 +62,7 @@ $bg-color-grayish: rgb(242, 242, 242);
   }
 
   .motivation__content-box {
+    position: relative;
     width: $tablet-max-content-width;
   }
 

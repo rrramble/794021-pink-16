@@ -54,6 +54,7 @@ $iphone-screen-desktop-width: 292px;
  */
 @media (min-width: $tablet-min-width) {
   .motivation-images {
+    justify-content: flex-start;
     padding-left: 0;
     padding-top: 4px;
     top: 0;
