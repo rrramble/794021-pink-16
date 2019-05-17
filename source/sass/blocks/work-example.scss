@@ -22,6 +22,7 @@ $hand-with-phone-height: 314;
   flex-direction: column;
   justify-content: flex-start;
   min-height: $block-mobile-min-height;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
