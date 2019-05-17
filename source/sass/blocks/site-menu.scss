@@ -43,6 +43,7 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
   padding-top: 15px;
   padding-bottom: 16px;
   position: relative;
+  text-align: center;
   text-decoration: none;
   width: 100%;
   word-wrap: break-word;
@@ -93,6 +94,7 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
 .site-menu__item:not(.site-menu__item--not-clickable) .site-menu__item-text:active {
   color: $text-color-pressed;
 }
+
 
 /*
  * Tablet mode section
