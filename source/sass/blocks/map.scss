@@ -45,7 +45,7 @@
     margin-top: 28px;
     overflow: hidden;
 
-    @media(max-width: 699px) {
+    @media (max-width: 699px) {
       // Map image for tablet mode is 700px-wide, so from 660px to 699px it doesn't scale
       height: 373px;
     }
@@ -57,7 +57,7 @@
     transform: translate(-50%, 0%);
     width: 100%;
 
-    @media(max-width: 699px) {
+    @media (max-width: 699px) {
       // Map image for tablet mode is 700px-wide, so from 660px to 699px it doesn't scale
       bottom: -127px;
       width: 700px;
@@ -70,7 +70,7 @@
     top: unset;
     transform: translate(-50%, 50%);
 
-    @media(max-width: 699px) {
+    @media (max-width: 699px) {
       // Map image for tablet mode is 700px-wide, so from 660px to 699px it doesn't scale
       bottom: 163px;
     }
@@ -87,17 +87,16 @@
     height: 41.75vw; // 41.75% = 501px height / 1200px width
     margin-top: 0;
 
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
       // Map image for desktop mode is 1200px-wide, so from 960px to 1199px it doesn't scale
       height: 501px;
     }
-
   }
 
   .map__image {
     bottom: -16.5vw; // -16.5% = 198px / image width 1200px
 
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
       // Map image for desktop mode is 1200px-wide, so from 960px to 1199px it doesn't scale
       bottom: -198px;
       width: 1200px;
@@ -107,11 +106,9 @@
   .map__pointer {
     bottom: 18.33333vw; // 18.(3)% = 221 / 1200px
 
-    @media(max-width: 1199px) {
+    @media (max-width: 1199px) {
       // Map image for desktop mode is 1200px-wide (wider than 960px min desktop wide), so from 960px to 1200px it doesn't scale
       bottom: 221px;
     }
   }
-
-
 }
