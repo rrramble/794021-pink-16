@@ -52,6 +52,7 @@ body {
  */
 @media (min-width: $desktop-min-width) {
   body {
+    max-width: unset;
     min-width: unset;
   }
 }
