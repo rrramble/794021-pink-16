@@ -1,5 +1,6 @@
 .motivation-intro {
   align-content: center;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,7 +9,7 @@
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 2px;
-  width: $mobile-max-content-width;
+  max-width: $mobile-max-content-width;
 }
 
 .motivation-intro__text {
@@ -24,7 +25,7 @@
 @media (min-width: $tablet-min-width) {
   .motivation-intro {
     margin-bottom: 45px;
-    width: $tablet-max-content-width;
+    max-width: $tablet-max-content-width;
   }
 
   .motivation-intro__text {
@@ -42,8 +43,8 @@
 
 @media (min-width: $desktop-min-width) {
   .motivation-intro {
-    margin-bottom: 72px;
-    width: $desktop-max-content-width;
+    margin-bottom: 74px;
+    max-width: $desktop-max-content-width;
   }
 
   .motivation-intro__text {

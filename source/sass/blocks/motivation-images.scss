@@ -9,38 +9,30 @@ $iphone-screen-desktop-height: 302px;
 $iphone-screen-desktop-height-cut: 0;
 $iphone-screen-desktop-width: 292px;
 
+
 .motivation-images {
   align-items: flex-start;
   background-color: transparent;
-  padding-left: 20px;
-  padding-top: 6px;
-  padding-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-right: 20px;
 }
 
-.motivation-images__initial {
-  background-position-x: 50%;
-  background-repeat: no-repeat;
-  display: none;
-  min-width: $iphone-screen-desktop-width;
-}
-
-.motivation-images__painted {
-  background-position-x: 50%;
-  background-repeat: no-repeat;
-  display: none;
-  min-width: $iphone-screen-desktop-width;
-}
-
-.motivation-images__shared {
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+.motivation-images__item {
   background-position-x: 50%;
   background-repeat: no-repeat;
   background-size: 157px 320px;
+  display: none;
   min-height: $iphone-screen-mobile-height - $iphone-screen-mobile-height-cut;
   min-width: 157px;
+}
+
+.motivation-images__item--shared {
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  display: unset;
 
   @media (min-resolution: $high-density-dpi),
     (min-resolution: $high-density-dpi) {
@@ -55,18 +47,21 @@ $iphone-screen-desktop-width: 292px;
 @media (min-width: $tablet-min-width) {
   .motivation-images {
     justify-content: flex-start;
-    padding-left: 0;
-    padding-top: 4px;
-    top: 0;
     left: 0;
+    padding-left: 20px;
+    padding-top: 4px;
     position: absolute;
+    top: 0;
   }
 
-  .motivation-images__shared {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+  .motivation-images__item {
     background-size: 268px 481px;
     height: $iphone-screen-tablet-height - $iphone-screen-tablet-height-cut;
     width: $iphone-screen-tablet-width;
+  }
+
+  .motivation-images__item--shared {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
   }
 
   @media (min-resolution: $high-density-dpi),
@@ -78,20 +73,41 @@ $iphone-screen-desktop-width: 292px;
 
 @media (min-width: $desktop-min-width) {
   .motivation-images {
-    padding-left: 131px;
-    padding-right: 131px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0;
     position: relative;
-    justify-content: space-between;
+    max-width: $desktop-max-content-width;
   }
 
-  .motivation-images__initial {
-    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+  .motivation-images__item {
     background-size: 292px 302px;
     display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: $desktop-max-content-width / 3 - 2 * 20px;
     height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
-    margin-left: 3px;
-    width: $iphone-screen-desktop-width;
+    position: relative;
+    width: unset;
+  }
+
+  .motivation-images__item:first-of-type {
+    left: -14px; // Due to image asymmetry
+  }
+
+  .motivation-images__item:nth-child(2) {
+    left: 3px; // Due to image asymmetry
+  }
+
+  .motivation-images__item:last-of-type {
+    right: -15px; // Due to image asymmetry
+  }
+
+
+  .motivation-images__item--initial {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    // margin-left: 3px;
 
     @media (min-resolution: $high-density-dpi),
       (min-resolution: $high-density-dppx) {
@@ -99,13 +115,9 @@ $iphone-screen-desktop-width: 292px;
     }
   }
 
-  .motivation-images__painted {
+  .motivation-images__item--painted {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    background-size: 292px 302px;
-    display: initial;
-    height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
-    margin-left: 3px;
-    width: $iphone-screen-desktop-width;
+    // margin-left: 3px;
 
     @media (min-resolution: $high-density-dpi),
       (min-resolution: $high-density-dppx) {
@@ -113,11 +125,8 @@ $iphone-screen-desktop-width: 292px;
     }
   }
 
-  .motivation-images__shared {
+  .motivation-images__item--shared {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-size: 292px 302px;
-    height: $iphone-screen-desktop-height - $iphone-screen-desktop-height-cut;
-    width: $iphone-screen-desktop-width;
 
     @media (min-resolution: $high-density-dpi),
       (min-resolution: $high-density-dppx) {
