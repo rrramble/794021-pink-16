@@ -1,3 +1,9 @@
+.opinions-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .opinions-slider__btn {
   background-color: #bec2c7;
   border-color: white;
@@ -5,6 +11,8 @@
   border-style: solid;
   border-width: 3px;
   height: 12px;
+  margin-left: 4px;
+  margin-right: 4px;
   width: 12px;
 }
 
