@@ -95,12 +95,17 @@ $hand-with-phone-height: 314;
   .work-example {
     background-image: url($main-bg-image-desktop-filename);
     background-position-y: $main-photo-desktop-y-shift;
-    background-size: 2560px 853px;
+    background-size: 100% auto;
     min-height: $block-desktop-min-height;
     max-height: $block-desktop-min-height;
     padding-left: 130px;
     padding-top: 100px;
+
+    @media (max-width: 2560px) {
+      background-size: 2560px 853px;
+    }
   }
+
 
   .work-example__hand-with-phone {
     position: absolute;

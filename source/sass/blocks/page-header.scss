@@ -45,7 +45,11 @@
 @media (min-width: $desktop-min-width) {
   .page-header {
     background-image: url($main-bg-image-desktop-filename);
-    background-size: 2560px 853px;
+    background-size: 100% auto;
+
+    @media (max-width: 2560px) {
+      background-size: 2560px 853px;
+    }
 
     @media (min-resolution: $high-density-dpi),
       (min-resolution: $high-density-dppx) {
