@@ -1,4 +1,4 @@
-$block-mobile-min-height: 396px;
+$block-mobile-min-height: 394px;
 $main-photo-y-shift: -68px;
 
 $block-tablet-min-height: 618px;
@@ -7,52 +7,59 @@ $main-photo-tablet-y-shift: -112px;
 $block-desktop-min-height: 745px;
 $main-photo-desktop-y-shift: -110px;
 
-$hand-with-phone-width: 320;
-$hand-with-phone-height: 314;
+$hand-with-phone-width: 258px;
+$hand-with-phone-height: 314px;
+
 
 .work-example {
   align-items: center;
   background-color: $main-bg-color-fallback;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: $mobile-max-content-width;
+}
+
+.work-example::before {
   background-image: url($main-bg-image-mobile-filename);
   background-position-x: center;
   background-position-y: $main-photo-y-shift;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: $block-mobile-min-height;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
+  background-size: 100vw auto;
+  content: "";
+  display: block;
+  height: $block-mobile-min-height;
+  // margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: absolute;
+  top: 0;
+  width: 100vw;
 
-@media (min-resolution: $high-density-dpi),
-  (min-resolution: $high-density-dppx) {
-  .work-example {
+  @media (min-resolution: $high-density-dpi),
+    (min-resolution: $high-density-dppx) {
     background-image: url($main-bg-image-mobile2x-filename);
-    background-size: (320px + 4px) (462px + 5px);
-    background-position-y: $main-photo-y-shift - 4px;
   }
 }
 
 .work-example__picture-container {
+  height: 286px;
   line-height: 0;
-  overflow: hidden;
+  margin-top: $block-mobile-min-height - 286px;
+  position: relative;
+  width: 100%;
 }
 
 .work-example__hand-with-phone {
+  bottom: 0;
   border: 0;
-  left: -31px;
+  left: 0;
   line-height: 0;
-  margin-top: 108px;
-  position: relative;
+  position: absolute;
+  width: $hand-with-phone-width;
   z-index: 1;
-}
-
-.work-example__app-download {
-  background-color: #1d2631;
-  width: 100%;
 }
 
 
@@ -62,28 +69,49 @@ $hand-with-phone-height: 314;
 @media (min-width: $tablet-min-width) {
   .work-example {
     align-items: flex-start;
+    height: unset;
+    min-height: $block-tablet-min-height;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: flex-start;
+    width: $tablet-max-content-width;
+  }
+
+  .work-example::before {
     background-image: url($main-bg-image-tablet-filename);
     background-position-y: $main-photo-tablet-y-shift;
     background-size: 1200px 729px;
+    margin-left: calc(50% - 50vw - 20px);
     min-height: $block-tablet-min-height;
-    padding-left: 20px;
-    padding-top: 63px;
 
     @media (min-resolution: $high-density-dpi),
       (min-resolution: $high-density-dppx) {
       background-image: url($main-bg-image-tablet2x-filename);
       background-size: (1200px + 0) (729px + 4px);
     }
+  }
 
-    .work-example__app-download {
-      background-color: unset;
-    }
+  .work-example__picture-container {
+    bottom: 0;
+    height: unset;
+    margin-top: unset;
+    right: 0;
+    position: absolute;
+    width: unset;
   }
 
   .work-example__hand-with-phone {
-    position: absolute;
-    bottom: 0;
-    left: -20px;
+    height: 545px;
+    position: relative;
+    width: 700px;
+  }
+
+  .work-example__app-download {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    width: $tablet-max-content-width;
   }
 }
 
@@ -93,25 +121,36 @@ $hand-with-phone-height: 314;
  */
 @media (min-width: $desktop-min-width) {
   .work-example {
+    min-height: $block-desktop-min-height;
+    padding-top: 100px;
+    width: $desktop-max-content-width;
+  }
+
+  .work-example::before {
     background-image: url($main-bg-image-desktop-filename);
     background-position-y: $main-photo-desktop-y-shift;
-    background-size: 100% auto;
-    min-height: $block-desktop-min-height;
-    max-height: $block-desktop-min-height;
-    padding-left: 130px;
-    padding-top: 100px;
+    background-size: auto;
+    height: 100%;
+    margin-left: calc(50% - 50vw - 20px);
 
     @media (max-width: 2560px) {
       background-size: 2560px 853px;
     }
   }
 
+  .work-example__picture-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: $desktop-max-content-width;
+  }
 
   .work-example__hand-with-phone {
     position: absolute;
     bottom: 0;
+    height: 645px;
     left: unset;
     right: 4px;
+    width: 1050px;
   }
 
   @media (min-resolution: 144dpi),

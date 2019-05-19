@@ -5,11 +5,25 @@
   justify-content: flex-start;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 28px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   position: relative;
   width: $mobile-max-content-width;
   z-index: 2;
+}
+
+.app-download::before {
+  background-color: #1d2631;
+  content: "";
+  height: 100%;
+  margin-left: calc(50% - 50vw - 20px);
+  margin-right: calc(50% - 50vw - 20px);
+  margin-top: -20px;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
 }
 
 .app-download__header {
@@ -20,6 +34,7 @@
   font-weight: $font-weight-light;
   line-height: 1.2em;
   text-align: center;
+  width: 100%;
 }
 
 .app-download__btn {
@@ -68,6 +83,10 @@
     padding-left: 0;
     padding-right: 0;
     width: 300px;
+  }
+
+  .app-download::before {
+    content: none;
   }
 
   .app-download__header {
