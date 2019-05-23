@@ -46,9 +46,10 @@
   .page-header {
     background-image: url($main-bg-image-desktop-filename);
     background-size: 100% auto;
+    background-position-x: calc(50% + 8px);
 
     @media (max-width: 2560px) {
-      background-size: 2560px 853px;
+      background-size: 2560px 855px;
     }
 
     @media (min-resolution: $high-density-dpi),

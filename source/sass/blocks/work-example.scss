@@ -32,8 +32,6 @@ $hand-with-phone-height: 314px;
   content: "";
   display: block;
   height: $block-mobile-min-height;
-  // margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
   position: absolute;
   top: 0;
   width: 100vw;
@@ -71,17 +69,17 @@ $hand-with-phone-height: 314px;
     align-items: flex-start;
     height: unset;
     min-height: $block-tablet-min-height;
-    padding-left: 20px;
-    padding-right: 20px;
     justify-content: flex-start;
     width: $tablet-max-content-width;
   }
 
   .work-example::before {
     background-image: url($main-bg-image-tablet-filename);
+    background-position-x: center;
     background-position-y: $main-photo-tablet-y-shift;
     background-size: 1200px 729px;
-    margin-left: calc(50% - 50vw - 20px);
+    left: 50%;
+    transform: translateX(-50%);
     min-height: $block-tablet-min-height;
 
     @media (min-resolution: $high-density-dpi),
@@ -95,13 +93,18 @@ $hand-with-phone-height: 314px;
     bottom: 0;
     height: unset;
     margin-top: unset;
-    right: 0;
+    left: 50%;
+    max-width: 100%;
+    overflow: hidden;
     position: absolute;
+    transform: translateX(-50%);
     width: unset;
   }
 
   .work-example__hand-with-phone {
     height: 545px;
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
     width: 700px;
   }
@@ -128,13 +131,13 @@ $hand-with-phone-height: 314px;
 
   .work-example::before {
     background-image: url($main-bg-image-desktop-filename);
+    background-position-x: calc(50% + 8px);
     background-position-y: $main-photo-desktop-y-shift;
     background-size: auto;
     height: 100%;
-    margin-left: calc(50% - 50vw - 20px);
 
     @media (max-width: 2560px) {
-      background-size: 2560px 853px;
+      background-size: 2560px $block-desktop-min-height - $main-photo-desktop-y-shift;
     }
   }
 
@@ -145,11 +148,9 @@ $hand-with-phone-height: 314px;
   }
 
   .work-example__hand-with-phone {
-    position: absolute;
     bottom: 0;
     height: 645px;
-    left: unset;
-    right: 4px;
+    left: 558px;
     width: 1050px;
   }
 
