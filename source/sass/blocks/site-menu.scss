@@ -4,7 +4,7 @@ $menu-item-bg-color: rgb(40, 54, 69);
 $line-height-mobile: 32px;
 $line-height-desktop: 18px;
 
-$gap-between-menu-items: 80px;
+$gap-between-menu-items-desktop: 80px;
 
 $nav-mobile-box-height: 68px;
 $logo-mobile-top-gap: 22px - 3px; // 3 is a height diff between open/closed menu's bar. Sic.
@@ -119,6 +119,8 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     justify-content: flex-end;
     margin-bottom: initial;
     margin-top: initial;
+    padding-right: 10px;
+    padding-top: 10px;
   }
 
   .site-menu--open {
@@ -133,11 +135,19 @@ $text-color-pressed: rgba(255, 255, 255, 0.302);
     border-image: none;
     justify-content: flex-end;
     margin-bottom: 10px;
-    margin-left: $gap-between-menu-items / 2;
-    margin-right: $gap-between-menu-items / 2;
-    margin-top: 10px;
+    margin-left: $gap-between-menu-items-desktop / 2;
+    margin-right: $gap-between-menu-items-desktop / 2;
+    margin-top:-desktop 10px;
     padding: 0;
     width: auto;
+  }
+
+  .site-menu__item:first-of-type {
+    margin-left: 0;
+  }
+
+  .site-menu__item:last-of-type {
+    margin-right: 0;
   }
 
   .site-menu__item-text {

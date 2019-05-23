@@ -131,7 +131,7 @@ $hand-with-phone-height: 314px;
 
   .work-example::before {
     background-image: url($main-bg-image-desktop-filename);
-    background-position-x: calc(50% + 8px);
+    background-position-x: calc(50%);
     background-position-y: $main-photo-desktop-y-shift;
     background-size: auto;
     height: 100%;

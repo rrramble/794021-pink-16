@@ -58,6 +58,9 @@ $padding-before-content-mobile: 21px;
 }
 
 
+/*
+ * Tablet mode section
+ */
 @media (min-width: $tablet-min-width) {
   .page-nav {
     min-height: 110px;
@@ -80,6 +83,10 @@ $padding-before-content-mobile: 21px;
   }
 }
 
+
+/*
+ * Desktop mode section
+ */
 @media (min-width: $desktop-min-width) {
   .page-nav {
     align-items: center;
@@ -90,7 +97,7 @@ $padding-before-content-mobile: 21px;
 
   .page-nav__logo {
     background-image: url($logo-desktop-url);
-    margin-left: 20px;
+    margin-left: 10px;
     height: $logo-desktop-height;
     left: 0;
     top: -9px;
@@ -103,7 +110,7 @@ $padding-before-content-mobile: 21px;
   }
 
   .page-nav__menu {
-    margin-right: 20px;
+    margin-right: 0 ;
     margin-top: 0;
   }
 }
